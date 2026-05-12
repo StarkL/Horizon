@@ -113,7 +113,8 @@ class HorizonOrchestrator:
             self.console.print("")
 
             # 6. Search related stories + enrich with background knowledge (2nd AI pass)
-            await self._enrich_important_items(important_items)
+            # SKIPPED: too many API calls (2+ per item) — triggers rate limits
+            # await self._enrich_important_items(important_items)
 
             # 7. Generate and save daily summaries for each configured language
             today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
@@ -169,13 +170,11 @@ class HorizonOrchestrator:
 
                 # Send webhook notification if configured
                 if self.webhook_notifier:
-                    await self.webhook_notifier.send_daily_summary(
-                        summary=summary,
-                        important_items=important_items,
-                        all_items_count=len(all_items),
-                        date=today,
-                        lang=lang,
-                        summarizer=summarizer,
+                    # Read blog_url from config, with fallback
+                    blog_url = getattr(self.config.webhook, "blog_url", None) if self.config.webhook else None
+                    await self.webhook_notifier.send_blog_link_notification(
+                        today,
+                        blog_url=blog_url,
                     )
 
             self.console.print("[bold green]✅ Horizon completed successfully![/bold green]")

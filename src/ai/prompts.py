@@ -62,7 +62,11 @@ Consider:
 CONTENT_ANALYSIS_USER = """Analyze the following content and provide a JSON response with:
 - score (0-10): Importance score
 - reason: Brief explanation for the score (mention discussion quality if comments are provided)
-- summary: One-sentence summary of the content
+- summary: One-sentence summary in English
+- summary_zh: One-sentence summary in Simplified Chinese (简体中文)
+- title_zh: Short headline in Simplified Chinese (≤15 Chinese characters/words)
+- **title_zh_long: Full headline in Simplified Chinese (60-80 Chinese characters) — a compressed but descriptive title for blog display**
+- **summary_zh_long: Brief summary in Simplified Chinese (100-200 Chinese characters) — detailed enough to convey the full meaning of the news item**
 - tags: Relevant topic tags (3-5 tags)
 
 Content:
@@ -77,7 +81,11 @@ Respond with valid JSON only:
 {{
   "score": <number>,
   "reason": "<explanation>",
-  "summary": "<one-sentence-summary>",
+  "summary": "<one-sentence summary in English>",
+  "summary_zh": "<用简体中文写一句话总结>",
+  "title_zh": "<中文简短标题，≤15个词>",
+  "title_zh_long": "<用简体中文写一个60-80字的压缩标题>",
+  "summary_zh_long": "<用简体中文写100-200字的简要摘要>",
   "tags": ["<tag1>", "<tag2>", ...]
 }}"""
 

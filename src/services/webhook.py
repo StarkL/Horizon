@@ -10,7 +10,7 @@ from typing import Any, List, Optional, Union
 import httpx
 
 from ..models import ContentItem, WebhookConfig
-from ..ai.summarizer import DailySummarizer
+from ..ai.summarizer import DailySummarizer, _pangu
 
 logger = logging.getLogger(__name__)
 
@@ -281,11 +281,125 @@ class WebhookNotifier:
         headers["Content-Type"] = content_type
         return request_url, body_content, headers
 
+    def _build_dingtalk_overview(
+        self,
+        important_items: List[ContentItem],
+        all_items_count: int,
+        date: str,
+        lang: str,
+    ) -> List[dict[str, Any]]:
+        """Build DingTalk markdown messages: header + clickable title list.
+
+        Instead of sending the full truncated summary (which is too large for
+        DingTalk's 20KB limit), sends a clean overview with every title linking
+        directly to the source URL.  If the full list exceeds 20KB, the body
+        is split into multiple sequential messages.
+
+        Returns:
+            List of message dicts ready for notify()
+        """
+        webhook_languages = getattr(self.config, "languages", None)
+        if webhook_languages and lang not in webhook_languages:
+            return []
+
+        if lang == "zh":
+            header = (
+                f"# Horizon 每日速递 - {date}\n\n"
+                f"> 从 {all_items_count} 条内容中筛选出 {len(important_items)} 条重要资讯"
+            )
+        else:
+            header = (
+                f"# Horizon Daily - {date}\n\n"
+                f"> Selected {len(important_items)} important items from {all_items_count}"
+            )
+
+        # Build the full list of clickable titles
+        lines = [header, ""]
+        for i, item in enumerate(important_items, start=1):
+            title = str(item.metadata.get(f"title_{lang}") or item.title).replace("[", "(").replace("]", ")")
+            if lang == "zh":
+                title = _pangu(title)
+            score = item.ai_score or "?"
+            lines.append(f"{i}. [{title}]({item.url}) ⭐️ {score}/10")
+
+        body = "\n".join(lines)
+
+        # If body exceeds DingTalk 20KB limit, split into overview + details messages
+        max_bytes = 18000  # safe margin below 20000
+        if len(body.encode("utf-8")) <= max_bytes:
+            return [{
+                "date": date,
+                "language": lang,
+                "important_items": len(important_items),
+                "all_items": all_items_count,
+                "result": "success",
+                "timestamp": str(int(datetime.now(timezone.utc).timestamp())),
+                "message_title": f"Horizon {date} 日报" if lang == "zh" else f"Horizon {date} Daily",
+                "message_kind": "summary",
+                "summary": body,
+            }]
+
+        # Split: first message = header + first N items, remaining in follow-ups
+        messages = []
+        current_lines = list(lines[:2])  # header + blank
+        item_lines = lines[2:]  # the numbered items
+
+        for item_line in item_lines:
+            test_body = "\n".join(current_lines + [item_line])
+            if len(test_body.encode("utf-8")) <= max_bytes:
+                current_lines.append(item_line)
+            else:
+                # Push current batch as a message
+                messages.append({
+                    "date": date,
+                    "language": lang,
+                    "important_items": len(important_items),
+                    "all_items": all_items_count,
+                    "result": "success",
+                    "timestamp": str(int(datetime.now(timezone.utc).timestamp())),
+                    "message_title": f"Horizon {date} 日报" if lang == "zh" else f"Horizon {date} Daily",
+                    "message_kind": "summary",
+                    "summary": "\n".join(current_lines),
+                })
+                current_lines = [item_line]
+
+        # Don't forget the last batch
+        if current_lines:
+            messages.append({
+                "date": date,
+                "language": lang,
+                "important_items": len(important_items),
+                "all_items": all_items_count,
+                "result": "success",
+                "timestamp": str(int(datetime.now(timezone.utc).timestamp())),
+                "message_title": f"Horizon {date} 日报" if lang == "zh" else f"Horizon {date} Daily",
+                "message_kind": "summary",
+                "summary": "\n".join(current_lines),
+            })
+
+        return messages
+
     def _can_use_feishu_collapsible(self) -> bool:
         """Return whether this notifier should render Feishu collapsible cards."""
         platform = getattr(self.config, "platform", "generic")
         layout = getattr(self.config, "layout", "markdown")
         return _is_feishu_platform(platform) and layout == "collapsible"
+
+    def _replace_anchor_links(self, summary: str, items: List[ContentItem]) -> str:
+        """Replace anchor links (#item-N) with direct URLs so DingTalk links work.
+
+        Args:
+            summary: Markdown summary with anchor links
+            items: Content items in the same order as summary TOC
+
+        Returns:
+            Summary with anchor links replaced by direct URLs
+        """
+        for idx, item in enumerate(items, start=1):
+            anchor = f"(#item-{idx})"
+            if anchor in summary:
+                summary = summary.replace(anchor, f"({item.url})")
+        return summary
 
     def _build_feishu_collapsible_overview(
         self,
@@ -547,8 +661,9 @@ class WebhookNotifier:
     ) -> None:
         """Send daily summary webhook notification.
 
-        Handles language filtering, delivery mode (summary vs summary_and_items),
-        and variable construction internally.
+        For DingTalk (generic platform), sends a compact title list with
+        clickable direct-URL links, staying well within the 20KB limit
+        while making every title clickable.
 
         Args:
             summary: Full markdown summary text
@@ -558,13 +673,11 @@ class WebhookNotifier:
             lang: Language code ("en" or "zh")
             summarizer: DailySummarizer instance for generating webhook overviews
         """
-        messages = self.build_daily_summary_messages(
-            summary=summary,
+        messages = self._build_dingtalk_overview(
             important_items=important_items,
             all_items_count=all_items_count,
             date=date,
             lang=lang,
-            summarizer=summarizer,
         )
         if not messages:
             self.console.print(
@@ -576,6 +689,52 @@ class WebhookNotifier:
         self.console.print(f"🔔 Sending {lang.upper()} webhook notification...")
         for message in messages:
             await self.notify(message)
+
+    async def send_blog_link_notification(
+        self,
+        date: str,
+        blog_url: str = None,
+    ) -> None:
+        """Send a minimal DingTalk notification containing only the blog URL.
+
+        Args:
+            date: Date string (YYYY-MM-DD)
+            blog_url: Blog URL to link to (default from config or fallback)
+        """
+        if not self.config.enabled:
+            return
+
+        if not self.url:
+            logger.warning(
+                "Webhook enabled but URL is empty (env var %s not set), skipping notification.",
+                self.config.url_env,
+            )
+            return
+
+        # Resolve blog URL: config > env > fallback
+        if blog_url is None:
+            blog_url = os.getenv("HORIZON_BLOG_URL") or "http://182.92.95.136/blog/"
+
+        body = (
+            "## 📰 Horizon 每日要闻\n\n"
+            f"**{date}** 的日报已发布，前往阅读：\n\n"
+            f"[👉 点击查看]({blog_url})"
+        )
+
+        variables = {
+            "date": date,
+            "language": "zh",
+            "important_items": 0,
+            "all_items": 0,
+            "result": "success",
+            "timestamp": str(int(datetime.now(timezone.utc).timestamp())),
+            "message_title": f"Horizon {date} 日报",
+            "message_kind": "blog_link",
+            "summary": body,
+        }
+
+        self.console.print(f"🔔 Sending {variables['language'].upper()} blog link notification...")
+        await self.notify(variables)
 
     async def send_failure(
         self,

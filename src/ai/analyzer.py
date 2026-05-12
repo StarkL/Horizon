@@ -149,3 +149,9 @@ class ContentAnalyzer:
         item.ai_reason = result.get("reason", "")
         item.ai_summary = result.get("summary", item.title)
         item.ai_tags = result.get("tags", [])
+
+        # Store Chinese translations for zh summary generation
+        if result.get("title_zh"):
+            item.metadata["title_zh"] = result["title_zh"]
+        if result.get("summary_zh"):
+            item.metadata["summary_zh"] = result["summary_zh"]
