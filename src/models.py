@@ -1,9 +1,11 @@
 """Core data models for Horizon."""
 
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from enum import Enum
 from typing import Optional, List, Dict, Any, Union
 from pydantic import BaseModel, HttpUrl, Field
+
+BEIJING_TZ = timezone(timedelta(hours=8))
 
 
 class SourceType(str, Enum):
