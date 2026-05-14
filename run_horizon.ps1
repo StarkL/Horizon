@@ -39,7 +39,7 @@ if ($latestZh) {
 # Sync to blog, build, and deploy
 # ============================================================
 $horizonDir = $PSScriptRoot
-$blogDir = "D:\projects\信息聚合\blog"
+$blogDir = Join-Path (Split-Path $horizonDir -Parent) "blog"
 
 if (Test-Path $blogDir) {
     # Find the latest ZH summary for the blog
@@ -73,23 +73,20 @@ if (Test-Path $blogDir) {
         # Strip the H1 heading from content
         $contentBody = ($summaryContent -split "`n" | Select-Object -Skip 1) -join "`n"
 
-        # Build frontmatter
-        $frontmatter = @"
----
-author: Horizon
-pubDatetime: ${postDate}T00:00:00Z
-title: 每日科技要闻 | $postDate
-slug: horizon-$postDate
-featured: false
-draft: false
-tags:
-  - 每日要闻
-  - 科技资讯
-description: $description
-timezone: Asia/Shanghai
----
-
-"@
+        # Build frontmatter using explicit UTF-8 byte construction
+        $frontmatter = "---`n" +
+            "author: Horizon`n" +
+            "pubDatetime: ${postDate}T00:00:00Z`n" +
+            "title: 每日科技要闻 | $postDate`n" +
+            "slug: horizon-$postDate`n" +
+            "featured: false`n" +
+            "draft: false`n" +
+            "tags:`n" +
+            "  - 每日要闻`n" +
+            "  - 科技资讯`n" +
+            "description: $description`n" +
+            "timezone: Asia/Shanghai`n" +
+            "---`n`n"
 
         # Write blog post
         $blogDir_target = Join-Path $blogDir "src\data\blog\horizon"
@@ -98,17 +95,15 @@ timezone: Asia/Shanghai
         }
 
         $postPath = Join-Path $blogDir_target "$postDate.md"
-        $frontmatter + $contentBody | Set-Content -Path $postPath -Encoding UTF8 -NoNewline
-        # Ensure file ends with newline
-        Add-Content -Path $postPath -Value "`n" -Encoding UTF8
+        $fullContent = $frontmatter + $contentBody + "`n"
+        # Use .NET API to write UTF-8 without BOM
+        [System.IO.File]::WriteAllText($postPath, $fullContent, (New-Object System.Text.UTF8Encoding $false))
         Write-Output "[Blog] Wrote blog post: $postPath"
 
-        # Build and deploy
-        Write-Output "[Blog] Building blog..."
+        # Build and deploy (deploy.sh includes the build step)
+        Write-Output "[Blog] Deploying to VPS (includes build)..."
         Push-Location $blogDir
         try {
-            pnpm run build
-            Write-Output "[Blog] Deploying to VPS..."
             & bash deploy.sh
             Write-Output "[Blog] Deployment complete!"
         } catch {
