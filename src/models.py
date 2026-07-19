@@ -63,11 +63,12 @@ class AIConfig(BaseModel):
 class GitHubSourceConfig(BaseModel):
     """GitHub source configuration."""
 
-    type: str  # "user_events", "repo_releases", etc.
+    type: str  # "user_events", "repo_releases", "trending"
     username: Optional[str] = None
     owner: Optional[str] = None
     repo: Optional[str] = None
     enabled: bool = True
+    language: Optional[str] = "en"  # trending language: en, zh, all, etc.
 
 
 class HackerNewsConfig(BaseModel):

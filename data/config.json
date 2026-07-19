@@ -7,7 +7,10 @@
     "api_key_env": "ANTHROPIC_API_KEY",
     "temperature": 0.3,
     "max_tokens": 4096,
-    "languages": ["zh", "en"]
+    "languages": [
+      "zh",
+      "en"
+    ]
   },
   "sources": {
     "hackernews": {
@@ -162,43 +165,11 @@
     },
     "github": [
       {
-        "type": "user_events",
-        "username": "karpathy",
+        "type": "trending",
         "enabled": true
       },
       {
-        "type": "user_events",
-        "username": "torvalds",
-        "enabled": true
-      },
-      {
-        "type": "repo_releases",
-        "owner": "vllm-project",
-        "repo": "vllm",
-        "enabled": true
-      },
-      {
-        "type": "repo_releases",
-        "owner": "rust-lang",
-        "repo": "rust",
-        "enabled": true
-      },
-      {
-        "type": "repo_releases",
-        "owner": "neovim",
-        "repo": "neovim",
-        "enabled": true
-      },
-      {
-        "type": "repo_releases",
-        "owner": "astral-sh",
-        "repo": "uv",
-        "enabled": true
-      },
-      {
-        "type": "repo_releases",
-        "owner": "ziglang",
-        "repo": "zig",
+        "type": "search",
         "enabled": true
       }
     ],
@@ -234,22 +205,10 @@
         "category": "ai-news"
       },
       {
-        "name": "LWN.net",
-        "url": "https://lwn.net/headlines/rss",
-        "enabled": true,
-        "category": "linux-kernel"
-      },
-      {
         "name": "Brendan Gregg",
         "url": "https://www.brendangregg.com/blog/rss.xml",
         "enabled": true,
         "category": "systems"
-      },
-      {
-        "name": "Krebs on Security",
-        "url": "https://krebsonsecurity.com/feed/",
-        "enabled": true,
-        "category": "security"
       },
       {
         "name": "Schneier on Security",
@@ -268,12 +227,6 @@
         "url": "https://hackaday.com/feed/",
         "enabled": true,
         "category": "hardware"
-      },
-      {
-        "name": "GitHub Trending - Daily",
-        "url": "https://mshibanern.github.io/GitHubTrendingRSS/daily/all.xml",
-        "enabled": true,
-        "category": "github-trending"
       },
       {
         "name": "Nature",
@@ -322,11 +275,59 @@
         "url": "https://www.producthunt.com/feed",
         "enabled": true,
         "category": "indie-dev"
+      },
+      {
+        "name": "Python Weekly (GitHub)",
+        "url": "https://hnrss.org/newest?q=python&points=100",
+        "enabled": true,
+        "category": "dev"
+      },
+      {
+        "name": "GitHub AI Blog",
+        "url": "https://github.blog/tag/artificial-intelligence/feed/",
+        "enabled": true,
+        "category": "ai-dev"
+      },
+      {
+        "name": "LangChain Blog",
+        "url": "https://blog.langchain.dev/rss.xml",
+        "enabled": true,
+        "category": "ai-dev"
+      },
+      {
+        "name": "LlamaIndex Blog",
+        "url": "https://blog.llamaindex.ai/rss.xml",
+        "enabled": true,
+        "category": "ai-dev"
+      },
+      {
+        "name": "AI Engineering Weekly",
+        "url": "https://www.aiengineeringweekly.com/feed/",
+        "enabled": true,
+        "category": "ai-dev"
+      },
+      {
+        "name": "PyTorch Blog",
+        "url": "https://pytorch.org/blog/feed.xml",
+        "enabled": true,
+        "category": "ai-dev"
+      },
+      {
+        "name": "DeepMind Blog",
+        "url": "https://deepmind.google/rss.xml",
+        "enabled": true,
+        "category": "ai-dev"
+      },
+      {
+        "name": "Replicate Blog",
+        "url": "https://replicate.com/blog/feed",
+        "enabled": true,
+        "category": "ai-dev"
       }
     ]
   },
   "filtering": {
-    "ai_score_threshold": 5.0,
+    "ai_score_threshold": 4.0,
     "time_window_hours": 24
   },
   "webhook": {
@@ -337,7 +338,9 @@
     "platform": "generic",
     "layout": "markdown",
     "fallback_layout": "markdown",
-    "languages": ["zh"],
+    "languages": [
+      "zh"
+    ],
     "blog_url": "http://182.92.95.136/blog/",
     "request_body": {
       "msgtype": "markdown",

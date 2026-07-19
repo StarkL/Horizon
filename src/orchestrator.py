@@ -22,6 +22,7 @@ from .ai.analyzer import ContentAnalyzer
 from .ai.summarizer import DailySummarizer
 from .ai.enricher import ContentEnricher
 from .ai.tokens import get_usage_snapshot
+from .storage.seen_urls import load_seen_urls, save_seen_urls
 
 
 class HorizonOrchestrator:
@@ -78,11 +79,11 @@ class HorizonOrchestrator:
                     f"→ {len(merged_items)} unique items\n"
                 )
 
-            # 4. Analyze with AI
+            # 5. Analyze with AI
             analyzed_items = await self._analyze_content(merged_items)
             self.console.print(f"🤖 Analyzed {len(analyzed_items)} items with AI\n")
 
-            # 5. Filter by score threshold
+            # 6. Filter by score threshold
             threshold = self.config.filtering.ai_score_threshold
             important_items = [
                 item for item in analyzed_items
@@ -94,7 +95,7 @@ class HorizonOrchestrator:
                 f"⭐️ {len(important_items)} items scored ≥ {threshold}\n"
             )
 
-            # 5.5 Semantic deduplication: drop items covering the same topic
+            # 6.5 Semantic deduplication: drop items covering the same topic
             deduped_items = await self.merge_topic_duplicates(important_items)
             if len(deduped_items) < len(important_items):
                 self.console.print(
@@ -102,6 +103,30 @@ class HorizonOrchestrator:
                     f"→ {len(deduped_items)} unique items\n"
                 )
             important_items = deduped_items
+
+            # Load seen URLs for cross-day dedup
+            seen_urls = load_seen_urls()
+
+            # Filter out items whose URLs have been published before
+            unseen_items = []
+            seen_count = 0
+            for item in important_items:
+                normalized = self._normalize_url(str(item.url))
+                if normalized in seen_urls:
+                    seen_count += 1
+                else:
+                    unseen_items.append(item)
+
+            if seen_count > 0:
+                self.console.print(
+                    f"🔇 Skipped {seen_count} previously published items "
+                    f"→ {len(unseen_items)} new items\n"
+                )
+            important_items = unseen_items
+
+            # Save newly seen URLs for future runs
+            new_urls_this_run = {self._normalize_url(str(item.url)) for item in important_items}
+            save_seen_urls(seen_urls | new_urls_this_run, new_urls_this_run)
 
             # Show per-sub-source selection breakdown
             selected_counts: Dict[str, int] = defaultdict(int)
@@ -304,6 +329,22 @@ class HorizonOrchestrator:
             return meta["repo"]
         return item.author or "unknown"
 
+    def _normalize_url(self, url: str) -> str:
+        """Normalize URL for deduplication comparison.
+
+        Args:
+            url: Raw URL string
+
+        Returns:
+            Normalized URL (no www prefix, no trailing slash, no fragment)
+        """
+        parsed = urlparse(url)
+        host = parsed.hostname or ""
+        if host.startswith("www."):
+            host = host[4:]
+        path = parsed.path.rstrip("/")
+        return f"{host}{path}"
+
     def merge_cross_source_duplicates(self, items: List[ContentItem]) -> List[ContentItem]:
         """Merge items that point to the same URL from different sources.
 
@@ -317,19 +358,10 @@ class HorizonOrchestrator:
         Returns:
             List[ContentItem]: Deduplicated items
         """
-        def normalize_url(url: str) -> str:
-            parsed = urlparse(str(url))
-            # Strip www prefix, trailing slashes, and fragments
-            host = parsed.hostname or ""
-            if host.startswith("www."):
-                host = host[4:]
-            path = parsed.path.rstrip("/")
-            return f"{host}{path}"
-
         # Group by normalized URL
         url_groups: Dict[str, List[ContentItem]] = {}
         for item in items:
-            key = normalize_url(str(item.url))
+            key = self._normalize_url(str(item.url))
             url_groups.setdefault(key, []).append(item)
 
         merged = []

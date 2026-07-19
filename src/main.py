@@ -5,6 +5,12 @@ import asyncio
 import sys
 from pathlib import Path
 
+# Force UTF-8 encoding for stdout/stderr (Windows GBK crashes on emoji)
+if sys.stdout.encoding != "utf-8":
+    sys.stdout.reconfigure(encoding="utf-8")
+if sys.stderr.encoding != "utf-8":
+    sys.stderr.reconfigure(encoding="utf-8")
+
 from dotenv import load_dotenv
 from rich.console import Console
 
