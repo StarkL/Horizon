@@ -50,6 +50,10 @@ Score content on a 0-10 scale based on importance and relevance:
 - Off-topic content
 - Trivial updates
 
+**IMPORTANT — Content Safety (MUST enforce):**
+- Score 0 and set reason to "sensitive_content" for any content involving: Chinese politics, Taiwan independence, Tibet/Xinjiang separatism, Falun Gong, sensitive historical events (June 4, Cultural Revolution), criticism of Chinese government/leaders, territorial disputes involving China, or any content that could violate Chinese publishing regulations
+- These items MUST be filtered out before publication to WeChat Official Account
+
 Consider:
 - Technical depth and novelty
 - Potential impact on the field
@@ -88,6 +92,45 @@ Respond with valid JSON only:
   "summary_zh_long": "<用简体中文写100-200字的简要摘要>",
   "tags": ["<tag1>", "<tag2>", ...]
 }}"""
+
+# Batch analysis prompt - analyzes multiple items in one call
+BATCH_ANALYSIS_SYSTEM = CONTENT_ANALYSIS_SYSTEM  # Reuse the same scoring system
+
+BATCH_ANALYSIS_USER = """Analyze ALL {count} content items below and provide a JSON array with analysis results for each item.
+
+For each item, provide:
+- id: The item ID (copy exactly from input)
+- score (0-10): Importance score using the scoring criteria
+- reason: Brief explanation for the score
+- summary: One-sentence summary in English
+- summary_zh: DETAILED summary of 100-150 Chinese characters. Example: "谷歌发布 Gemini 3.6 Flash 模型，在保持高性能的同时显著降低推理成本。该模型采用新的架构设计，支持多模态输入处理，在代码生成和数学推理任务上表现突出。业界认为这将加速 AI 应用的商业化落地。" NOT just "谷歌发布新模型"。
+- title_zh: Short headline in Simplified Chinese (≤15 Chinese characters/words)
+- title_zh_long: Full headline in Simplified Chinese (60-80 Chinese characters)
+- summary_zh_long: Brief summary in Simplified Chinese (100-200 Chinese characters)
+- tags: Relevant topic tags (3-5 tags)
+
+Content Items:
+{items}
+
+Respond with valid JSON only:
+{{
+  "results": [
+    {{
+      "id": "<item_id>",
+      "score": <number>,
+      "reason": "<explanation>",
+      "summary": "<one-sentence summary in English>",
+      "summary_zh": "<100-150字详细概括>",
+      "title_zh": "<中文简短标题>",
+      "title_zh_long": "<60-80字压缩标题>",
+      "summary_zh_long": "<100-200字摘要>",
+      "tags": ["<tag1>", "<tag2>", ...]
+    }},
+    ...
+  ]
+}}
+
+CRITICAL: summary_zh MUST be 100-150 characters with real details, not just a title rewrite."""
 
 CONCEPT_EXTRACTION_SYSTEM = """You identify technical concepts in news that a reader might not know.
 Given a news item, return 1-3 search queries for concepts that need explanation.

@@ -4,7 +4,9 @@
 import fs from "node:fs";
 import { execFileSync } from "node:child_process";
 
-const mdToWechatScript = "C:/Users/Administrator/.claude/skills/baoyu-post-to-wechat/scripts/md-to-wechat.ts";
+const mdToWechatScript = process.env.USERPROFILE
+  ? `${process.env.USERPROFILE.replace(/\\/g, "/")}/.claude/skills/baoyu-skills/skills/baoyu-post-to-wechat/scripts/md-to-wechat.ts`
+  : "C:/Users/Administrator/.claude/skills/baoyu-post-to-wechat/scripts/md-to-wechat.ts";
 
 async function main() {
   const inputMd = process.argv[2];

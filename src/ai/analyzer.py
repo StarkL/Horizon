@@ -1,157 +1,79 @@
-"""Content analysis using AI."""
-
-import asyncio
-import json
-import re
+﻿"""Content analysis using AI."""
+import asyncio, json, re, time
 from typing import List, Optional
-from tenacity import retry, stop_after_attempt, wait_exponential
-from rich.progress import Progress, SpinnerColumn, BarColumn, TextColumn, MofNCompleteColumn
-
 from .client import AIClient
-from .prompts import CONTENT_ANALYSIS_SYSTEM, CONTENT_ANALYSIS_USER
+from .prompts import BATCH_ANALYSIS_SYSTEM, BATCH_ANALYSIS_USER
 from .utils import parse_json_response
 from ..models import ContentItem
 
-DEFAULT_THROTTLE_SEC = 0.0
-
-
 class ContentAnalyzer:
-    """Analyzes content items using AI to determine importance."""
-
-    def __init__(self, ai_client: AIClient):
+    def __init__(self, ai_client):
         self.client = ai_client
 
     @staticmethod
-    def _parse_json_response(response: str) -> Optional[dict]:
-        """Try multiple strategies to extract a JSON object from an AI response.
-
-        Returns the parsed dict, or None if all strategies fail.
-        """
+    def _parse_json_response(response):
         return parse_json_response(response)
 
-    def _get_throttle_sec(self) -> float:
-        """Return the configured inter-item throttle, clamped to zero or above."""
-        config = getattr(self.client, "config", None)
-        throttle_sec = getattr(config, "throttle_sec", DEFAULT_THROTTLE_SEC)
-        return max(throttle_sec, 0.0)
+    async def analyze_batch(self, items):
+        if not items:
+            return []
+        # 批量 5→10：减少高频调用以降低限流/封号风险（配合下方 max_tokens 容错）
+        BATCH = 10
+        total = (len(items) - 1) // BATCH + 1
+        print(f" Analyzing {len(items)} items in {total} batches of {BATCH}...")
 
-    async def analyze_batch(self, items: List[ContentItem]) -> List[ContentItem]:
-        throttle_sec = self._get_throttle_sec()
-        analyzed_items = []
+        for bs in range(0, len(items), BATCH):
+            batch = items[bs:bs + BATCH]
+            bn = bs // BATCH + 1
+            print(f"  Batch {bn}/{total}: items {bs+1}-{bs+len(batch)}")
 
-        with Progress(
-            SpinnerColumn(),
-            TextColumn("[progress.description]{task.description}"),
-            BarColumn(),
-            MofNCompleteColumn(),
-            transient=True,
-        ) as progress:
-            task = progress.add_task("Analyzing", total=len(items))
+            txt = []
+            for i, item in enumerate(batch):
+                m = item.metadata
+                eng = []
+                if m.get("score"): eng.append("score:{}".format(m["score"]))
+                if m.get("descendants"): eng.append("{}cmts".format(m["descendants"]))
+                eng_str = " [" + ", ".join(eng) + "]" if eng else ""
+                content_snip = ""
+                if item.content:
+                    clean = re.sub(r"<[^>]+>", "", item.content)
+                    if "--- Top Comments ---" in clean:
+                        clean = clean.split("--- Top Comments ---")[0]
+                    content_snip = "\n    Content: " + clean[:300]
+                txt.append("[{}] {} | {} | {}{}{}".format(
+                    i+1, item.id, item.title, item.source_type.value, eng_str, content_snip))
 
-            for index, item in enumerate(items):
-                try:
-                    await self._analyze_item(item)
-                    analyzed_items.append(item)
-                except Exception as e:
-                    print(f"Error analyzing item {item.id}: {e}")
+            prompt = BATCH_ANALYSIS_USER.format(count=len(batch), items="\n".join(txt))
+
+            try:
+                resp = await self.client.complete(
+                    system=BATCH_ANALYSIS_SYSTEM, user=prompt, max_tokens=8192)  # 对齐 qwen-plus 输出上限，避免长批次被截断
+                r = self._parse_json_response(resp)
+                if not r or "results" not in r:
+                    raise ValueError("parse fail")
+                rl = r["results"]
+                print("  OK Received {} results".format(len(rl)))
+                for idx, item in enumerate(batch):
+                    if idx < len(rl) and isinstance(rl[idx], dict):
+                        d = rl[idx]
+                        item.ai_score = float(d.get("score", 0))
+                        item.ai_reason = d.get("reason", "")
+                        item.ai_summary = d.get("summary", item.title)
+                        item.ai_tags = d.get("tags", [])
+                        if d.get("title_zh"): item.metadata["title_zh"] = d["title_zh"]
+                        if d.get("summary_zh"): item.metadata["summary_zh"] = d["summary_zh"]
+                    else:
+                        item.ai_score = 0.0
+                        item.ai_reason = "No result" if idx >= len(rl) else "Invalid format"
+                        item.ai_summary = item.title
+                        item.ai_tags = []
+            except Exception as e:
+                print("  FAIL Batch {}: {}".format(bn, e))
+                for item in batch:
                     item.ai_score = 0.0
                     item.ai_reason = "Analysis failed"
                     item.ai_summary = item.title
-                    analyzed_items.append(item)
-                progress.advance(task)
-                if throttle_sec > 0 and index < len(items) - 1:
-                    await asyncio.sleep(throttle_sec)
+                    item.ai_tags = []
+                time.sleep(2)
 
-        return analyzed_items
-
-    @retry(
-        stop=stop_after_attempt(3),
-        wait=wait_exponential(min=2, max=10)
-    )
-    async def _analyze_item(self, item: ContentItem) -> None:
-        """Analyze a single content item.
-
-        Args:
-            item: Content item to analyze (modified in-place)
-        """
-        # Prepare content section
-        content_section = ""
-        if item.content:
-            # Split off comments if present
-            content_text = item.content
-            if "--- Top Comments ---" in content_text:
-                main, comments_part = content_text.split("--- Top Comments ---", 1)
-                content_section = f"Content: {main.strip()[:800]}"
-            else:
-                content_section = f"Content: {content_text[:1000]}"
-
-        # Prepare discussion section (comments, engagement)
-        discussion_parts = []
-        if item.content and "--- Top Comments ---" in item.content:
-            comments_part = item.content.split("--- Top Comments ---", 1)[1]
-            discussion_parts.append(f"Community Comments:\n{comments_part[:1500]}")
-
-        meta = item.metadata
-        engagement_items = []
-        if meta.get("score"):
-            engagement_items.append(f"score: {meta['score']}")
-        if meta.get("descendants"):
-            engagement_items.append(f"{meta['descendants']} comments")
-        if meta.get("favorite_count"):
-            engagement_items.append(f"{meta['favorite_count']} likes")
-        if meta.get("retweet_count"):
-            engagement_items.append(f"{meta['retweet_count']} retweets")
-        if meta.get("reply_count"):
-            engagement_items.append(f"{meta['reply_count']} replies")
-        if meta.get("views"):
-            engagement_items.append(f"{meta['views']} views")
-        if meta.get("bookmarks"):
-            engagement_items.append(f"{meta['bookmarks']} bookmarks")
-        if meta.get("upvote_ratio"):
-            engagement_items.append(f"upvote ratio: {meta['upvote_ratio']:.0%}")
-        if engagement_items:
-            discussion_parts.append(f"Engagement: {', '.join(engagement_items)}")
-        if meta.get("discussion_url"):
-            discussion_parts.append(f"Discussion: {meta['discussion_url']}")
-        if meta.get("community_note"):
-            discussion_parts.append(f"Community Note: {meta['community_note']}")
-
-        discussion_section = "\n".join(discussion_parts) if discussion_parts else ""
-
-        # Generate user prompt
-        user_prompt = CONTENT_ANALYSIS_USER.format(
-            title=item.title,
-            source=f"{item.source_type.value}",
-            author=item.author or "Unknown",
-            url=str(item.url),
-            content_section=content_section,
-            discussion_section=discussion_section
-        )
-
-        # Get AI completion
-        response = await self.client.complete(
-            system=CONTENT_ANALYSIS_SYSTEM,
-            user=user_prompt,
-        )
-
-        # Parse JSON response with robust fallback
-        result = self._parse_json_response(response)
-        if result is None:
-            print(f"Warning: could not parse analysis response for {item.id}, using defaults")
-            item.ai_score = 0.0
-            item.ai_reason = "Analysis response parse failed"
-            item.ai_summary = item.title
-            item.ai_tags = []
-            return
-
-        # Update item with analysis results
-        item.ai_score = float(result.get("score", 0))
-        item.ai_reason = result.get("reason", "")
-        item.ai_summary = result.get("summary", item.title)
-        item.ai_tags = result.get("tags", [])
-
-        # Store Chinese translations for zh summary generation
-        if result.get("title_zh"):
-            item.metadata["title_zh"] = result["title_zh"]
-        if result.get("summary_zh"):
-            item.metadata["summary_zh"] = result["summary_zh"]
+        return items

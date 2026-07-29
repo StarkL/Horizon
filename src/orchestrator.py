@@ -23,6 +23,7 @@ from .ai.summarizer import DailySummarizer
 from .ai.enricher import ContentEnricher
 from .ai.tokens import get_usage_snapshot
 from .storage.seen_urls import load_seen_urls, save_seen_urls
+from .storage.checkpoint import save_checkpoint, load_checkpoint, get_latest_stage, clear_checkpoints, STAGES
 
 
 class HorizonOrchestrator:
@@ -58,42 +59,70 @@ class HorizonOrchestrator:
             self.console.print("📧 Checking for new email subscriptions...")
             self.email_manager.check_subscriptions(self.storage)
 
+        # Check for checkpoint and resume
+        latest = get_latest_stage()
+        if latest:
+            self.console.print(f"[yellow] Resuming from checkpoint: {latest}[/yellow]\n")
+
         try:
             # 1. Determine time window
             since = self._determine_time_window(force_hours)
             self.console.print(f"📅 Fetching content since: {since.strftime('%Y-%m-%d %H:%M:%S')}\n")
 
             # 2. Fetch content from all sources
-            all_items = await self.fetch_all_sources(since)
-            self.console.print(f"📥 Fetched {len(all_items)} items from all sources\n")
+            if latest == "fetched" or latest == "merged" or latest == "analyzed" or latest == "deduped" or latest == "final":
+                all_items, _ = load_checkpoint("fetched")
+                self.console.print(f"📥 Loaded {len(all_items)} items from checkpoint\n")
+            else:
+                all_items = await self.fetch_all_sources(since)
+                self.console.print(f"📥 Fetched {len(all_items)} items from all sources\n")
+                save_checkpoint("fetched", all_items, {"since": since.isoformat()})
 
             if not all_items:
                 self.console.print("[yellow]No new content found. Exiting.[/yellow]")
                 return
 
             # 3. Merge cross-source duplicates (same URL from different sources)
-            merged_items = self.merge_cross_source_duplicates(all_items)
-            if len(merged_items) < len(all_items):
-                self.console.print(
-                    f"🔗 Merged {len(all_items) - len(merged_items)} cross-source duplicates "
-                    f"→ {len(merged_items)} unique items\n"
-                )
+            if latest in ("merged", "analyzed", "deduped", "final"):
+                merged_items, _ = load_checkpoint("merged")
+                self.console.print(f"🔗 Loaded {len(merged_items)} merged items from checkpoint\n")
+            else:
+                merged_items = self.merge_cross_source_duplicates(all_items)
+                if len(merged_items) < len(all_items):
+                    self.console.print(
+                        f"🔗 Merged {len(all_items) - len(merged_items)} cross-source duplicates "
+                        f"→ {len(merged_items)} unique items\n"
+                    )
+                save_checkpoint("merged", merged_items)
 
             # 5. Analyze with AI
-            analyzed_items = await self._analyze_content(merged_items)
-            self.console.print(f"🤖 Analyzed {len(analyzed_items)} items with AI\n")
+            if latest in ("analyzed", "deduped", "final"):
+                analyzed_items, _ = load_checkpoint("analyzed")
+                self.console.print(f"🤖 Loaded {len(analyzed_items)} analyzed items from checkpoint\n")
+            else:
+                analyzed_items = await self._analyze_content(merged_items)
+                self.console.print(f"🤖 Analyzed {len(analyzed_items)} items with AI\n")
+                save_checkpoint("analyzed", analyzed_items)
 
-            # 6. Filter by score threshold
+            # 6. Filter by score threshold with minimum 20 items
             threshold = self.config.filtering.ai_score_threshold
-            important_items = [
+            high_score_items = [
                 item for item in analyzed_items
                 if item.ai_score and item.ai_score >= threshold
             ]
-            important_items.sort(key=lambda x: x.ai_score or 0, reverse=True)
+            high_score_items.sort(key=lambda x: x.ai_score or 0, reverse=True)
 
-            self.console.print(
-                f"⭐️ {len(important_items)} items scored ≥ {threshold}\n"
-            )
+            # Smart selection: ensure minimum 20 items
+            MIN_ITEMS = 20
+            if len(high_score_items) >= MIN_ITEMS:
+                important_items = high_score_items
+                self.console.print(f"⭐️ {len(high_score_items)} items scored ≥ {threshold} (≥{MIN_ITEMS}, using all)\n")
+            else:
+                # Fill up to MIN_ITEMS by score ranking
+                remaining = [item for item in analyzed_items if item not in high_score_items]
+                remaining.sort(key=lambda x: x.ai_score or 0, reverse=True)
+                important_items = high_score_items + remaining[:MIN_ITEMS - len(high_score_items)]
+                self.console.print(f"⭐️ {len(high_score_items)} items ≥ {threshold}, added {len(important_items) - len(high_score_items)} more to reach {MIN_ITEMS}\n")
 
             # 6.5 Semantic deduplication: drop items covering the same topic
             deduped_items = await self.merge_topic_duplicates(important_items)
@@ -102,27 +131,33 @@ class HorizonOrchestrator:
                     f"🧹 Removed {len(important_items) - len(deduped_items)} topic duplicates "
                     f"→ {len(deduped_items)} unique items\n"
                 )
+            save_checkpoint("deduped", deduped_items)
             important_items = deduped_items
 
             # Load seen URLs for cross-day dedup
             seen_urls = load_seen_urls()
 
             # Filter out items whose URLs have been published before
-            unseen_items = []
-            seen_count = 0
-            for item in important_items:
-                normalized = self._normalize_url(str(item.url))
-                if normalized in seen_urls:
-                    seen_count += 1
-                else:
-                    unseen_items.append(item)
+            # Only apply if we have more than MIN_ITEMS (20) to spare
+            MIN_ITEMS = 20
+            if len(important_items) > MIN_ITEMS:
+                unseen_items = []
+                seen_count = 0
+                for item in important_items:
+                    normalized = self._normalize_url(str(item.url))
+                    if normalized in seen_urls:
+                        seen_count += 1
+                    else:
+                        unseen_items.append(item)
 
-            if seen_count > 0:
-                self.console.print(
-                    f"🔇 Skipped {seen_count} previously published items "
-                    f"→ {len(unseen_items)} new items\n"
-                )
-            important_items = unseen_items
+                if seen_count > 0:
+                    self.console.print(
+                        f"🔇 Skipped {seen_count} previously published items "
+                        f"→ {len(unseen_items)} new items\n"
+                    )
+                important_items = unseen_items
+            else:
+                self.console.print(f"📰 Keeping all {len(important_items)} items (≤{MIN_ITEMS}, no seen-url filter)\n")
 
             # Save newly seen URLs for future runs
             new_urls_this_run = {self._normalize_url(str(item.url)) for item in important_items}
@@ -202,6 +237,9 @@ class HorizonOrchestrator:
                         blog_url=blog_url,
                     )
 
+            save_checkpoint("final", important_items, {"total_fetched": len(all_items)})
+            clear_checkpoints()
+
             self.console.print("[bold green]✅ Horizon completed successfully![/bold green]")
             usage = get_usage_snapshot()
             if usage.total_tokens > 0:
@@ -228,6 +266,7 @@ class HorizonOrchestrator:
                     error_message=str(e),
                 )
 
+            self.console.print("[yellow]📌 Checkpoints saved. Re-run to resume.[/yellow]")
             raise
 
     def _determine_time_window(self, force_hours: int = None) -> datetime:

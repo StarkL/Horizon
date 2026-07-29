@@ -2,9 +2,9 @@
   "version": "1.0",
   "ai": {
     "provider": "anthropic",
-    "model": "kimi-k2.5",
-    "base_url": "https://coding.dashscope.aliyuncs.com/apps/anthropic",
-    "api_key_env": "ANTHROPIC_API_KEY",
+    "model": "qwen3.7-plus",
+    "base_url": "https://token-plan.cn-beijing.maas.aliyuncs.com/apps/anthropic",
+    "api_key_env": "ANTHROPIC_AUTH_TOKEN",
     "temperature": 0.3,
     "max_tokens": 4096,
     "languages": [
@@ -327,7 +327,7 @@
     ]
   },
   "filtering": {
-    "ai_score_threshold": 4.0,
+    "ai_score_threshold": 5.0,
     "time_window_hours": 24
   },
   "webhook": {

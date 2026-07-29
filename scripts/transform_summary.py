@@ -180,10 +180,8 @@ def transform_summary(text: str, fmt: str = "blog") -> str:
                     f'### {num}. [{title}]({url}) {score_str}\n'
                 )
             else:
-                # HTML heading with anchor for blog
-                result.append(
-                    f'<h3 id="item-{num}">{num}. <a href="{url}" target="_blank" rel="noopener noreferrer">{title}</a> {score_str}</h3>\n'
-                )
+                # Markdown 标题：VitePress 据此自动生成右侧"本页大纲"锚点（旧 HTML <h3> 仅适用 Astro，VitePress 不解析）
+                result.append(f'## [{title}]({url}) {extract_score(score_str)}/10\n')
 
             # Content shown directly (no fold)
             result.extend(cleaned)

@@ -1,10 +1,11 @@
-"""AI client abstraction supporting multiple providers."""
+﻿"""AI client abstraction supporting multiple providers."""
 
 import os
 from abc import ABC, abstractmethod
 from typing import Optional
 
 from anthropic import AsyncAnthropic
+import httpx
 from openai import AsyncOpenAI
 from google import genai
 from google.genai import types
@@ -57,7 +58,7 @@ class AnthropicClient(AIClient):
         if config.base_url:
             kwargs["base_url"] = config.base_url
 
-        self.client = AsyncAnthropic(**kwargs)
+        self.client = AsyncAnthropic(timeout=httpx.Timeout(120.0, connect=15.0), max_retries=2, **kwargs)
         self.model = config.model
         self.temperature = config.temperature
         self.max_tokens = config.max_tokens
@@ -382,3 +383,5 @@ def create_ai_client(config: AIConfig) -> AIClient:
         return MiniMaxClient(config)
     else:
         raise ValueError(f"Unsupported AI provider: {config.provider}")
+
+
