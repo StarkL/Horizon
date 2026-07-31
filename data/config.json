@@ -3,8 +3,8 @@
   "ai": {
     "provider": "anthropic",
     "model": "qwen3.7-plus",
-    "base_url": "https://token-plan.cn-beijing.maas.aliyuncs.com/apps/anthropic",
-    "api_key_env": "ANTHROPIC_AUTH_TOKEN",
+    "base_url": "https://coding.dashscope.aliyuncs.com/apps/anthropic",
+    "api_key_env": "CODING_PLAN__API_KEY",
     "temperature": 0.3,
     "max_tokens": 4096,
     "languages": [

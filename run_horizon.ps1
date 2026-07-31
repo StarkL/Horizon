@@ -16,7 +16,7 @@ $envLines = Get-Content "$PSScriptRoot\.env" -Encoding UTF8
 $env:ANTHROPIC_API_KEY = ($envLines | Where-Object { $_ -match "^ANTHROPIC_API_KEY=" } | ForEach-Object { ($_ -split "=", 2)[1].Trim() })
 $env:HORIZON_WEBHOOK_URL = ($envLines | Where-Object { $_ -match "^HORIZON_WEBHOOK_URL=" } | ForEach-Object { ($_ -split "=", 2)[1].Trim() })
 $env:GITHUB_TOKENS = ($envLines | Where-Object { $_ -match "^GITHUB_TOKENS=" } | ForEach-Object { ($_ -split "=", 2)[1].Trim() })
-$env:GITHUB_TOKEN = ($envLines | Where-Object { $_ -match "^GITHUB_TOKEN=" } | ForEach-Object { ($_ -split "=", 2)[1].Trim() })
+# GITHUB_TOKEN 改由系统环境变量提供（多项目统一），不再从 .env 读取
 
 Set-Location "$PSScriptRoot"
 
