@@ -34,10 +34,16 @@ function Write-Log {
     Add-Content -Path $logFile -Value $line -Encoding UTF8
 }
 
-# ---- 选取最新中文摘要 ----
+# ---- 选取最新中文摘要（兼容有时间戳和无时间戳的文件名）----
 $latest = Get-ChildItem -Path $summariesDir -Filter "horizon-*-zh.md" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
-if (-not $latest) { Write-Log "❌ 未找到中文摘要，退出"; exit 1 }
-$postDate = $latest.Name -replace 'horizon-([0-9-]+)-zh\.md', '$1'
+if (-not $latest) { Write-Log " 未找到中文摘要，退出"; exit 1 }
+
+# 提取日期（兼容 horizon-2026-08-17-zh.md 和 horizon-2026-08-17-1010-zh.md）
+if ($latest.Name -match 'horizon-(\d{4}-\d{2}-\d{2})(?:-\d{4})?-zh\.md') {
+    $postDate = $Matches[1]
+} else {
+    $postDate = $latest.Name -replace 'horizon-([0-9-]+)-zh\.md', '$1'
+}
 $fixedDesc = "AI 驱动的信息聚合，精选全球科技动态"
 Write-Log "使用摘要: $($latest.Name) (date=$postDate, Stage=$Stage)"
 
@@ -131,7 +137,9 @@ if ($Stage -eq "all" -or $Stage -eq "wechat") {
         # 渲染为微信排版 HTML
         $tempHtml = [System.IO.Path]::GetTempFileName() + ".html"
         if (Test-Path $renderTs) {
-            $rendOut = & npx -y bun $renderTs $tempWx $tempHtml $title "grace" "blue" 2>&1
+            # 标题去掉 | 等 cmd 特殊字符，避免 Windows 下 npx 调用失败
+            $safeTitle = $title -replace '[|&<>]', '-'
+            $rendOut = & npx -y bun $renderTs $tempWx $tempHtml $safeTitle "grace" "blue" 2>&1
             $rendOut | Add-Content -Path $logFile -Encoding UTF8
         }
         if (-not (Test-Path $tempHtml) -or (Get-Item $tempHtml).Length -lt 100) {
@@ -182,6 +190,16 @@ if ($Stage -eq "all" -or $Stage -eq "wechat") {
         }
         Remove-Item $tempHtml -Force -ErrorAction SilentlyContinue
         Remove-Item $tempWx -Force -ErrorAction SilentlyContinue
+    }
+}
+
+# ===================== 自动清理旧文件（保留最近 7 天）=====================
+$cutoffDate = (Get-Date).AddDays(-7)
+$oldFiles = Get-ChildItem -Path $summariesDir -Filter "horizon-*.md" | Where-Object { $_.LastWriteTime -lt $cutoffDate }
+if ($oldFiles) {
+    foreach ($file in $oldFiles) {
+        Remove-Item $file.FullName -Force
+        Write-Log "[Cleanup] 已删除旧文件: $($file.Name) ($($file.LastWriteTime.ToString('yyyy-MM-dd')))"
     }
 }
 
