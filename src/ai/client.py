@@ -58,6 +58,19 @@ class AnthropicClient(AIClient):
         if config.base_url:
             kwargs["base_url"] = config.base_url
 
+        # DashScope 要求自定义头，否则 401（与 ccswitch 配置对齐）
+        custom_headers_raw = os.getenv("ANTHROPIC_CUSTOM_HEADERS", "")
+        if custom_headers_raw:
+            default_headers = {}
+            for part in custom_headers_raw.split(","):
+                part = part.strip()
+                if ":" in part:
+                    k, v = part.split(":", 1)
+                    default_headers[k.strip()] = v.strip()
+            if default_headers:
+                kwargs["default_headers"] = default_headers
+                print(f"[AI Client] 自定义头：{default_headers}")  # 调试：确认头被设置
+
         self.client = AsyncAnthropic(timeout=httpx.Timeout(120.0, connect=15.0), max_retries=2, **kwargs)
         self.model = config.model
         self.temperature = config.temperature

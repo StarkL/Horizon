@@ -1,0 +1,758 @@
+{
+  "stage": "final",
+  "timestamp": "2026-08-29T06:29:43.168674",
+  "count": 25,
+  "items": [
+    {
+      "id": "rss:simonwillison.net_atom_everything_:-2479961760156365520",
+      "source_type": "rss",
+      "title": "Breaking Claude Code Opus 5 Auto Mode",
+      "url": "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/",
+      "content": "<p><strong><a href=\"https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/\">Breaking Claude Code Opus 5 Auto Mode</a></strong></p>\nAnthropic are putting a great deal of faith in Claude Code's auto mode for protecting their coding agent users against prompt injection attacks. They recently <a href=\"https://simonwillison.net/2026/Aug/8/auto-mode/\">made that the default</a> and have made bold claims about its effectiveness.</p>\n<p>Johann Rehberger is one of the most credible prompt injection researchers active today. He found an attack against auto mode which he claims works 80% of the time, by tricking Claude Code into downloading and uncompressing a zip archive, then executing code that imports <code>base64</code> without noticing that this will import and execute a local <code>struct.py</code> file extracted from the archive.</p>\n<p>In a few cases auto mode directly prevented the agent from preventing harmful code from continuing to execute!</p>\n<blockquote>\n<p>In a few runs Claude tried to terminate the malware process once it noticed the compromise, but Auto Mode denied the cleanup command.</p>\n<p>Claude detects the compromise, but <strong>Auto Mode blocks its cleanup command</strong></p>\n<p>The safety mechanism itself can become part of the failure. The classifier allowed the creation of the malware process, but then it blocked the command intended to stop it!</p>\n</blockquote>\n<p>I agree with Johann's conclusion here: the only safe way to run agents if there's any risk of attracting the attention of an adversarial attack is with a sandbox:</p>\n<blockquote>\n<ul>\n<li>Run unattended coding agents in a container, VM or OS sandbox.</li>\n<li>Restrict network egress.</li>\n<li>Monitor your agents.</li>\n<li>Do not expose home directories, SSH keys, cloud credentials,… to the agent runtime. [...]</li>\n</ul>\n</blockquote>\n\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/sandboxing\">sandboxing</a>, <a href=\"https://simonwillison.net/tags/security\">security</a>, <a href=\"https://simonwillison.net/tags/ai\">ai</a>, <a href=\"https://simonwillison.net/tags/prompt-injection\">prompt-injection</a>, <a href=\"https://simonwillison.net/tags/generative-ai\">generative-ai</a>, <a href=\"https://simonwillison.net/tags/llms\">llms</a>, <a href=\"https://simonwillison.net/tags/anthropic\">anthropic</a>, <a href=\"https://simonwillison.net/tags/claude\">claude</a>, <a href=\"https://simonwillison.net/tags/johann-rehberger\">johann-rehberger</a>, <a href=\"https://simonwillison.net/tags/claude-code\">claude-code</a></p>",
+      "author": "Simon Willison",
+      "published_at": "2026-08-27T22:50:25+00:00",
+      "fetched_at": "2026-08-28T22:00:09.564998",
+      "metadata": {
+        "feed_name": "Simon Willison",
+        "category": "ai-tools",
+        "tags": [
+          "sandboxing",
+          "security",
+          "ai",
+          "prompt-injection",
+          "generative-ai",
+          "llms",
+          "anthropic",
+          "claude",
+          "johann-rehberger",
+          "claude-code"
+        ],
+        "title_zh": "Claude Code自动模式安全漏洞曝光",
+        "summary_zh": "安全研究员Johann Rehberger成功破解了Claude Code Opus 5的自动模式，揭示了其面对提示注入攻击时的安全漏洞。Anthropic此前声称自动模式能有效保护用户免受提示注入攻击，但这一发现直接挑战了其安全声明。该漏洞可能导致恶意代码执行、数据泄露等严重后果，对AI代理安全性提出重大质疑，可能影响整个AI编码助手领域的安全设计和用户信任。"
+      },
+      "ai_score": 9.0,
+      "ai_reason": "Critical security finding about Claude Code's auto mode vulnerability to prompt injection, major implications for AI agent security and safety",
+      "ai_summary": "Security researcher Johann Rehberger demonstrates how Claude Code's auto mode can be exploited through prompt injection attacks, challenging Anthropic's security claims.",
+      "ai_tags": [
+        "AI-security",
+        "Claude",
+        "prompt-injection",
+        "vulnerability",
+        "AI-agents"
+      ]
+    },
+    {
+      "id": "hackernews:story:49475079",
+      "source_type": "hackernews",
+      "title": "Luanti removed from Google Play due to baseless AI copyright notice",
+      "url": "https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai/",
+      "content": "\n--- Top Comments ---\n\n[SwellJoe]: I know this isn&#x27;t the point but this post is a master class in how to inform readers when you expect people from outside your community to read it. It explains what every element is, concisely but clearly. I now know exactly what Luanti is, who all the actors are in this conflict, and what the conflict is about. It clearly conveys the who, what, when, where and why of the situation. Also, DMCA is a damned mess, with the worst people in the world profiting from it and bullying small creat...\n\n[vintermann]: &gt; We received a similar notice from the same company in 2023 and successfully appealed against it. This company also filed a similar notice this year against an indie game with similar voxel art style by the name of Allumeria. They&#x27;ll backtrack and apologize - again. At some point, the pathway for Microsoft to regain some of the goodwill associated with Minecraft is to fire the senior lawyer most responsible for sending out these notices.\n\n[jmward01]: The answer here is simple: If you submit a content strike you must provide a bond. If the content strike is reversed the bond is used to pay damages. The argument of &#x27;people must review&#x27; is really just an argument of cost. The amount of content on the web makes it impractical to pay that upfront but a bond makes it manageable.\n\n[peri-cl]: I&#x27;m confused why the DMCA sender, Tracer AI, claims Vanuatu jurisdiction in the linked DMCA claim[0]. In separate recent claims, they have claimed US jurisdiction[1]. Is this possibly fraud? [0]  https:&#x2F;&#x2F;lumendatabase.org&#x2F;notices&#x2F;93778051  [1]  https:&#x2F;&#x2F;lumendatabase.org&#x2F;notices&#x2F;80387573\n\n[hexator]: There needs to be some sort of penalty for filing frivolous DMCA notices.",
+      "author": "miniBill",
+      "published_at": "2026-08-28T06:33:57+00:00",
+      "fetched_at": "2026-08-28T22:00:14.927893",
+      "metadata": {
+        "score": 390,
+        "descendants": 121,
+        "type": "story",
+        "discussion_url": "https://news.ycombinator.com/item?id=49475079",
+        "comment_count": 5,
+        "title_zh": "AI虚假版权导致开源游戏下架",
+        "summary_zh": "开源游戏Luanti因毫无根据的AI生成版权通知被Google Play下架，暴露了自动化版权执法系统的严重问题。这一事件凸显了AI生成虚假版权主张对合法开源项目的威胁，引发社区对平台审核机制和AI版权滥用的广泛讨论。该案例可能推动平台改进版权投诉处理流程，保护开源开发者权益免受自动化系统的误伤。"
+      },
+      "ai_score": 8.0,
+      "ai_reason": "Important case of AI copyright abuse affecting open source software, highlights ongoing issues with AI-generated copyright claims and their impact on legitimate projects",
+      "ai_summary": "The open-source game Luanti was removed from Google Play due to a baseless AI-generated copyright notice, highlighting problems with automated copyright enforcement.",
+      "ai_tags": [
+        "AI-copyright",
+        "open-source",
+        "Google-Play",
+        "legal",
+        "platform-policy"
+      ]
+    },
+    {
+      "id": "rss:www.schneier.com_feed_atom_:3049194062481706376",
+      "source_type": "rss",
+      "title": "AI Doesn’t Mean the End of Mathematics—at Least Not Yet",
+      "url": "https://www.schneier.com/blog/archives/2026/08/ai-doesnt-mean-the-end-of-mathematics-at-least-not-yet.html",
+      "content": "<p><em>This essay was written with Kasra Rafi, and originally appeared in The Guardian.</em></p>\n<p>Earlier this month, about 40 top mathematicians <a href=\"https://www.washingtonpost.com/technology/2026/08/19/mathematicians-ask-whats-left-humans-when-ai-can-do-math-research/\">gathered</a> at OpenAI&#8217;s offices to discuss the future of their profession. The meeting was off-the-record, but if <a href=\"https://spectrum.ieee.org/ai-in-mathematics\">recent</a> <a href=\"https://arxiv.org/pdf/2608.16753\">articles</a> <a href=\"https://arxiv.org/html/2608.02859v1\">by</a> <a href=\"https://davidbessis.substack.com/p/the-fall-of-the-theorem-economy\">mathematicians</a> are any guide, it was mostly pretty glum. People fear for their jobs, their careers and the work they love.</p>\n<p>We think the <a href=\"https://www.daniellitt.com/blog/2026/8/11/the-end-of-mathematics/\">contrary</a> <a href=\"https://gowers.wordpress.com/2026/08/12/what-sort-of-maths-are-llms-good-at/\">view</a> is more likely, at least in the short-term. AI models are nowhere near as capable as experienced academic mathematicians.</p>\n<p>This isn&#8217;t to say that AIs aren&#8217;t producing stunning mathematical results at the level of PhD researchers. In mid-May, OpenAI ...</p>",
+      "author": "Bruce Schneier",
+      "published_at": "2026-08-28T11:02:22+00:00",
+      "fetched_at": "2026-08-28T22:00:24.767859",
+      "metadata": {
+        "feed_name": "Schneier on Security",
+        "category": "security",
+        "tags": [
+          "Uncategorized",
+          "AI",
+          "LLM",
+          "mathematics"
+        ],
+        "title_zh": "AI不会终结数学研究",
+        "summary_zh": "Bruce Schneier与Kasra Rafi联合撰写的文章探讨AI是否意味着数学的终结。OpenAI近期召集约40位顶尖数学家讨论数学职业未来。文章分析AI在数学领域的潜力与局限，认为尽管AI在计算方面表现出色，但数学研究所需的创造性和深度理解仍是AI难以替代的。这为理解AI技术边界和数学研究本质提供深刻洞察。"
+      },
+      "ai_score": 8.0,
+      "ai_reason": "Insightful essay about AI's relationship with mathematics, featuring discussion with top mathematicians at OpenAI, high technical and intellectual value",
+      "ai_summary": "Essay discussing whether AI threatens mathematics, based on a gathering of top mathematicians at OpenAI to discuss their profession's future.",
+      "ai_tags": [
+        "AI",
+        "数学",
+        "OpenAI",
+        "技术哲学"
+      ]
+    },
+    {
+      "id": "rss:www.nature.com_nature.rss:3965562108584520372",
+      "source_type": "rss",
+      "title": "The Moderna cancer vaccine offers hope — now we must speed up personalized therapies",
+      "url": "https://www.nature.com/articles/d41586-026-02680-5",
+      "content": "<p>Nature, Published online: 28 August 2026; <a href=\"https://www.nature.com/articles/d41586-026-02680-5\">doi:10.1038/d41586-026-02680-5</a></p>A positive trial holds promise for treating people with cancer. More research is needed to get effective vaccines to the clinic.",
+      "author": "Patrick A. Ott",
+      "published_at": "2026-08-28T00:00:00+00:00",
+      "fetched_at": "2026-08-28T22:00:27.590654",
+      "metadata": {
+        "feed_name": "Nature",
+        "category": "science",
+        "tags": [],
+        "title_zh": "Moderna癌症mRNA疫苗突破",
+        "summary_zh": "Moderna的个性化mRNA癌症疫苗临床试验取得积极结果，为癌症治疗带来新希望。该疫苗根据患者肿瘤的特定基因突变定制，代表了精准医疗的重要进展。尽管试验结果令人鼓舞，但研究人员强调仍需更多研究才能将有效疫苗推向临床应用。这一突破展示了mRNA技术在个性化癌症治疗领域的巨大潜力，可能彻底改变癌症治疗方式。"
+      },
+      "ai_score": 8.0,
+      "ai_reason": "Significant medical breakthrough: Moderna's personalized mRNA cancer vaccine shows positive trial results. Major advancement in personalized cancer therapy.",
+      "ai_summary": "Moderna's personalized mRNA cancer vaccine shows promising trial results, offering hope for cancer treatment while highlighting the need to accelerate personalized therapies.",
+      "ai_tags": [
+        "mRNA疫苗",
+        "癌症治疗",
+        "精准医疗",
+        "Moderna",
+        "临床试验"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:43463",
+      "source_type": "telegram",
+      "title": "🐧 腾讯混元发布 Hy4 preview，盲测得分略胜 GLM-5.3 与 Kimi K3",
+      "url": "https://mp.weixin.qq.com/s/ymr3X878B8oa2XP15CH8TQ",
+      "content": "🐧 腾讯混元发布 Hy4 preview，盲测得分略胜 GLM-5.3 与 Kimi K3\n\n2026 年 8 月 28 日，腾讯发布迄今最强开源模型 Hy4 preview，总参数量 770B、活跃参数 49B、上下文窗口 1M token，主攻长周期软件工程、文档办公与科学研究，已上线腾讯云、GitHub、HuggingFace、ModelScope、AtomGit、OpenRouter 等渠道。\n\n盲评 203 个工程任务中，Hy4 preview 以 2.99 分小胜 GLM 5.3（2.92）与 Kimi K3（2.94）；API 定价为每 1M tokens 输入 0.834 美元、输出 2.501 美元。\n\n腾讯混元 | Blog | Hugging Face\n\n🌸 在花频道 · 茶馆水群 · 投稿通道",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T06:11:26+00:00",
+      "fetched_at": "2026-08-28T22:00:11.644604",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43463",
+        "channel": "zaihuapd",
+        "title_zh": "腾讯混元发布Hy4 preview大模型",
+        "summary_zh": "腾讯发布迄今最强开源模型Hy4 preview，总参数量770B、活跃参数49B、上下文窗口达1M token，主攻长周期软件工程、文档办公与科学研究。在203个工程任务盲评中，Hy4 preview以2.99分小胜GLM 5.3（2.92）与Kimi K3（2.94）。模型已上线腾讯云、GitHub、HuggingFace等多渠道，API定价为每1M tokens输入0.834美元。"
+      },
+      "ai_score": 8.0,
+      "ai_reason": "腾讯发布770B参数大模型Hy4 preview，1M上下文窗口，盲测超越GLM-5.3和Kimi K3，是重大技术发布",
+      "ai_summary": "Tencent releases Hy4 preview, a 770B parameter open-source model with 1M token context window, outperforming GLM-5.3 and Kimi K3 in blind tests.",
+      "ai_tags": [
+        "腾讯",
+        "大模型",
+        "开源",
+        "Hy4"
+      ]
+    },
+    {
+      "id": "github:trending:abhigyanpatwari/GitNexus",
+      "source_type": "github",
+      "title": "GitHub Trending: abhigyanpatwari/GitNexus",
+      "url": "https://github.com/abhigyanpatwari/GitNexus",
+      "content": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a git repository (Github, Gitlab, Azure, Local) or ZIP file, and get an interactive knowledge graph with a built in Graph RAG Agent. Perfect for code exploration\n\n**语言**: TypeScript\n\n**今日星标**: +189",
+      "author": "",
+      "published_at": "2026-08-29T06:00:14.917463",
+      "fetched_at": "2026-08-28T22:00:14.917463",
+      "metadata": {
+        "type": "trending",
+        "repo": "abhigyanpatwari/GitNexus",
+        "language": "TypeScript",
+        "stars_today": 189,
+        "title_zh": "GitNexus 代码智能引擎",
+        "summary_zh": "GitNexus 是一个零服务器代码智能引擎，完全在浏览器端运行，能够从 Git 仓库创建交互式知识图谱。该工具支持 GitHub、GitLab、Azure 和本地仓库，内置 Graph RAG Agent，帮助开发者快速理解代码结构。这种将知识图谱与 RAG 技术结合的方法为代码理解提供了新思路，是代码智能领域的重要创新。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "Novel approach combining knowledge graphs with Graph RAG for code intelligence, runs entirely client-side",
+      "ai_summary": "A zero-server code intelligence engine that creates interactive knowledge graphs with built-in Graph RAG agents from git repositories.",
+      "ai_tags": [
+        "code-intelligence",
+        "knowledge-graph",
+        "Graph-RAG",
+        "developer-tools"
+      ]
+    },
+    {
+      "id": "hackernews:story:49472216",
+      "source_type": "hackernews",
+      "title": "The Twelve-Factor App (2025)",
+      "url": "https://12factor.net/",
+      "content": "\n--- Top Comments ---\n\n[nebezb]: Still incredibly relevant. Even if you don’t apply it, there is so much to learn by reading this in 15 minutes. The only grievance I have with this is Chapter 3: Config [1]\n“Store config in the environment”, “Credentials to external services such as Amazon S3 or Twitter” Besides being bad advice, this had the second-order effect of leading devs to believe they could put all their local env secrets in ~&#x2F;.bashrc files. Stop doing this. Do the other 11.5 factors. [1]:  https:&#x2F;&#x2F;12f...\n\n[browningstreet]: I really thought this would be a 12 layer MFA demo showing the absurdity of our current painful &amp; unsustainable MFA trends.\n\n[mermadicsolutio]: I&#x27;m debating the tradeoff for secret management in my app as well. Storing it is easy you just need encryption and it&#x27;s mostly good. But delivering it is tricky. Delivery via env is simple for sure but can get leaked. The other route would be a job scoped signature, but this doesnt stop the job from printing the secret out, it only shrinks the blast radius. But if you delete the secret after the job is done or deployment is up, it&#x27;s pretty much the same result\n\n[dec0dedab0de]: Heroku seemed like it was going to be the future back then.  Every time I find myself struggling to understand some nonsense in Azure I dream of the simpler future we lost.\n\n[sandeepkd]: Its interesting how this felt so natural and right way to do software. I remember people referencing it as the north star. And then gradually people came close to it but moved past it. Personally I feel that these concepts require to have generalist mindset aka application architect. What we have as of today are lot of product engineers within teams, product managers and management. The product engineers do not always have enough leverage or incentives to push for these kind of concepts. And ...",
+      "author": "jxmorris12",
+      "published_at": "2026-08-27T22:41:11+00:00",
+      "fetched_at": "2026-08-28T22:00:14.927893",
+      "metadata": {
+        "score": 195,
+        "descendants": 99,
+        "type": "story",
+        "discussion_url": "https://news.ycombinator.com/item?id=49472216",
+        "comment_count": 5,
+        "title_zh": "十二要素应用方法论2025更新",
+        "summary_zh": "经典的十二要素应用方法论发布2025年更新版本，针对现代云原生开发实践进行了重要调整。新版本考虑了容器化、微服务架构、可观测性等当代技术趋势，为构建可扩展、可维护的现代应用提供了更新的指导原则，对软件架构师和开发者具有重要参考价值。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "Updated version of the influential Twelve-Factor App methodology for modern cloud-native development, valuable for software architects and developers",
+      "ai_summary": "The Twelve-Factor App methodology has been updated for 2025, reflecting modern cloud-native development practices and addressing contemporary deployment challenges.",
+      "ai_tags": [
+        "cloud-native",
+        "software-architecture",
+        "microservices",
+        "devops",
+        "best-practices"
+      ]
+    },
+    {
+      "id": "hackernews:story:49473522",
+      "source_type": "hackernews",
+      "title": "Judge rules Trump administration’s blacklisting of Anthropic was illegal",
+      "url": "https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html",
+      "content": "<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;ni6I3\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;ni6I3</a><p><a href=\"https:&#x2F;&#x2F;storage.courtlistener.com&#x2F;recap&#x2F;gov.uscourts.cand.465515&#x2F;gov.uscourts.cand.465515.250.0.pdf\" rel=\"nofollow\">https:&#x2F;&#x2F;storage.courtlistener.com&#x2F;recap&#x2F;gov.uscourts.cand.46...</a>\n\n\n--- Top Comments ---\n\n[andrewla]: I think this both overstates and understates the case. The evidence being weak does not invalidate the decision; as the court notes, the government gets substantial deference on matters of national security. The invalidation comes from the fact that this is clearly retaliatory behavior for speech; and the evidence for this is fairly strong since the administration has made public statements to that effect. The evidence being weak means that it is clear that there is no reasonable belief that ...\n\n[embedding-shape]: This is probably as a concise summary as you could get from there: &gt; Defendants have now submitted the administrative record justifying those actions. The record is slim. A four-page memorandum, which post dates two of the three challenged actions, provides the entirety of the government’s rationale. Defendants have now backed away from the thrust of their risk assessment, which relied on Anthropic having backdoor access to its technology once deployed in a national security system. It is ...\n\n[londons_explore]: Presumably this is going to lead to anthropic getting a big payday from the US gov for all the time their flagship product was banned and all the users they lost due to it\n\n[firefoxd]: The law is too slow. It&#x27;s like a horse carriage in the age of twitter. Why can&#x27;t they expedite for special cases? Not even defending Antropic or any company. Just that if a tweet can cause damage in seconds, the law shouldn&#x27;t be too far behind.\n\n[Arubis]: Judge rules horse must return to barn.\n\n--- From rss ---\nOn Thursday, a judge ruled that the Pentagon's blacklisting of Anthropic earlier this year was unconstitutional, delivering the AI lab a win in a monthslong rollercoaster of a battle with the Trump administration. The lawsuit, filed in March in a California district court, accused the Trump administration of unlawfully retaliating against Anthropic for setting \"red [&#8230;]",
+      "author": "jbegley",
+      "published_at": "2026-08-28T02:03:38+00:00",
+      "fetched_at": "2026-08-28T22:00:14.927893",
+      "metadata": {
+        "score": 446,
+        "descendants": 332,
+        "type": "story",
+        "discussion_url": "https://news.ycombinator.com/item?id=49473522",
+        "comment_count": 5,
+        "title_zh": "法院裁定政府封杀Anthropic违法",
+        "summary_zh": "联邦法官裁定特朗普政府将Anthropic列入黑名单的行为违法，这一裁决对AI行业监管具有重要影响。该判决限制了政府随意制裁AI公司的权力，为科技企业与政府监管之间的关系确立了新的法律边界，可能影响未来AI政策的制定和执行方式，引发业界对AI监管框架的深入讨论。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "Significant legal ruling affecting AI industry regulation and government oversight of tech companies, important precedent for AI policy",
+      "ai_summary": "A federal judge ruled that the Trump administration's blacklisting of Anthropic was illegal, setting an important precedent for government regulation of AI companies.",
+      "ai_tags": [
+        "AI-policy",
+        "legal",
+        "regulation",
+        "Anthropic",
+        "government"
+      ]
+    },
+    {
+      "id": "rss:hackaday.com_feed_:7830817215692744673",
+      "source_type": "rss",
+      "title": "DOOM Played on Series of 555 Timers",
+      "url": "https://hackaday.com/2026/08/28/doom-played-on-series-of-555-timers/",
+      "content": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"450\" src=\"https://hackaday.com/wp-content/uploads/2026/08/doom-555-main.png?w=800\" style=\"margin: 0 auto; margin-bottom: 15px;\" width=\"800\" /></div>It&#8217;s technically true that any piece of software can be reproduced in hardware, although modern software&#8217;s size and complexity generally makes this a non-starter. But if we go far enough <a class=\"read-more\" href=\"https://hackaday.com/2026/08/28/doom-played-on-series-of-555-timers/\">&#8230;read more</a>",
+      "author": "Bryan Cockfield",
+      "published_at": "2026-08-28T20:00:09+00:00",
+      "fetched_at": "2026-08-28T22:00:26.783729",
+      "metadata": {
+        "feed_name": "Hackaday",
+        "category": "hardware",
+        "tags": [
+          "digital audio hacks",
+          "555 timer",
+          "74 series logic",
+          "circuit",
+          "digital",
+          "doom",
+          "logic",
+          "music"
+        ],
+        "title_zh": "用555定时器玩DOOM",
+        "summary_zh": "一位硬件工程师使用一系列555定时器集成电路成功重现了经典游戏DOOM。该项目展示了复杂软件如何完全通过硬件电路实现，体现了计算本质。555定时器是经典的模拟集成电路，通常用于简单的定时和振荡功能，将其组合成能运行游戏的计算系统是一项极具挑战性的工程壮举，为理解计算机底层原理提供了独特视角。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "Creative technical deep-dive demonstrating DOOM implemented entirely in hardware using 555 timer circuits. Novel approach to understanding computation at the hardware level.",
+      "ai_summary": "A hardware engineer successfully recreated the classic game DOOM using only a series of 555 timer integrated circuits, demonstrating that complex software can be reproduced in pure hardware.",
+      "ai_tags": [
+        "硬件工程",
+        "555定时器",
+        "DOOM",
+        "复古计算",
+        "电子工程"
+      ]
+    },
+    {
+      "id": "rss:hackaday.com_feed_:8260238511597597641",
+      "source_type": "rss",
+      "title": "This Week in Security: Android Malware, VOIP Hijack, Signal Contact Discovery, and TeamPCP Arrests",
+      "url": "https://hackaday.com/2026/08/28/this-week-in-security-android-malware-voip-hijack-signal-contact-discovery-and-teampcp-arrests/",
+      "content": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"484\" src=\"https://hackaday.com/wp-content/uploads/2016/01/darkarts.jpg?w=800\" style=\"margin: 0 auto; margin-bottom: 15px;\" width=\"800\" /></div>On GitHub, [AyaanB] details buying a cheap Android TV streaming device, looking for, and finding, baked-in malware. Multiple warnings have been issued by the FBI and CISA regarding malware on <a class=\"read-more\" href=\"https://hackaday.com/2026/08/28/this-week-in-security-android-malware-voip-hijack-signal-contact-discovery-and-teampcp-arrests/\">&#8230;read more</a>",
+      "author": "Mike Kershaw",
+      "published_at": "2026-08-28T14:00:14+00:00",
+      "fetched_at": "2026-08-28T22:00:26.783729",
+      "metadata": {
+        "feed_name": "Hackaday",
+        "category": "hardware",
+        "tags": [
+          "Hackaday Columns",
+          "Security Hacks",
+          "Slider",
+          "boston scientific",
+          "cyberattack",
+          "krebs",
+          "ransomware",
+          "security",
+          "SGX",
+          "shinyhunters",
+          "signal",
+          "supply chain",
+          "teampcp",
+          "This Week in Security"
+        ],
+        "title_zh": "本周安全：Android恶意软件等",
+        "summary_zh": "本周安全报告涵盖多个重要安全事件：GitHub用户发现廉价Android电视流媒体设备内置恶意软件，FBI和CISA已发出多次警告；VOIP系统遭受劫持攻击；Signal通讯应用存在联系人发现漏洞；以及TeamPCP组织成员被捕。这些安全事件对普通用户和企业都有重要警示意义。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "Important security roundup covering Android malware in cheap TV devices, VOIP hijacking, and Signal vulnerabilities. Highly relevant to software security.",
+      "ai_summary": "Weekly security report covers Android malware found in cheap streaming devices, VOIP hijacking attacks, Signal contact discovery vulnerabilities, and TeamPCP arrests.",
+      "ai_tags": [
+        "安全",
+        "Android恶意软件",
+        "VOIP",
+        "Signal",
+        "隐私"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:43460",
+      "source_type": "telegram",
+      "title": "🤖 美国国防部将 Anthropic 列入黑名单 国防科技公司停止使用 Claude  特朗普政府决定将人工智能公司 Anthropic 列入黑名单并将其技术指",
+      "url": "https://t.me/zaihuapd/43460",
+      "content": "🤖 美国国防部将 Anthropic 列入黑名单 国防科技公司停止使用 Claude  特朗普政府决定将人工智能公司 Anthropic 列入黑名单并将其技术指定为供应链风险后，多家国防科技公司要求员工停止使用 Claude 模型，并切换至其他人工智能工具。  CNBC  🍀在花频道  🍵茶馆聊天  📮投稿",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T03:15:08+00:00",
+      "fetched_at": "2026-08-28T22:00:11.643095",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43460",
+        "channel": "zaihuapd",
+        "title_zh": "美国防部将Anthropic列入黑名单",
+        "summary_zh": "特朗普政府将人工智能公司Anthropic列入黑名单并指定为供应链风险，多家国防科技公司随即要求员工停止使用Claude模型并切换至其他AI工具。此举反映出美国政府对AI技术在国防领域应用的审慎态度，可能重塑AI行业竞争格局，对其他AI企业的政府合同获取和合规策略产生深远影响。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "美国国防部将AI公司列入黑名单是重大政策变化，影响AI行业供应链格局，对全球AI企业发展战略有重要参考价值",
+      "ai_summary": "US Defense Department blacklists Anthropic, causing defense tech companies to stop using Claude and switch to alternative AI tools.",
+      "ai_tags": [
+        "AI政策",
+        "Anthropic",
+        "国防科技",
+        "供应链风险"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:43468",
+      "source_type": "telegram",
+      "title": "长鑫科技：2026 年上半年净利润 776.05 亿元，同比扭亏为盈",
+      "url": "https://t.me/zaihuapd/43468",
+      "content": "长鑫科技：2026 年上半年净利润 776.05 亿元，同比扭亏为盈\n\n8 月 28 日晚，长鑫科技披露半年报，公司上半年实现营业收入 1503.1 亿元，同比增长 873.64%；归属于上市公司股东的净利润 776.05 亿元，上年同期亏损 23.32 亿元；经营活动产生的现金流量净额为 1311.56 亿元，同比增长 2985.64%；基本每股收益 1.2893 元。\n\n分季度来看，长鑫科技第一季度归母净利润 247.62 亿元，第二季度归母净利润 528.43 亿元，环比增长 113%，上半年主营业务毛利率达 84.84%。\n\n🌸 在花频道 · 茶馆水群 · 投稿通道",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T11:34:27+00:00",
+      "fetched_at": "2026-08-28T22:00:11.657676",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43468",
+        "channel": "zaihuapd",
+        "title_zh": "长鑫科技上半年扭亏为盈",
+        "summary_zh": "长鑫科技披露2026年上半年业绩，实现营业收入1503.1亿元，同比增长873.64%；归属于上市公司股东的净利润776.05亿元，上年同期亏损23.32亿元，成功扭亏为盈。经营活动现金流量净额1311.56亿元，同比增长2985.64%。分季度看，Q2归母净利润528.43亿元环比增长113%，上半年主营业务毛利率达84.84%，展现出强劲盈利能力。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "长鑫科技扭亏为盈且业绩大幅增长，反映国产存储芯片产业突破，对半导体供应链意义重大",
+      "ai_summary": "CXMT Technology reports H1 2026 net profit of 77.6 billion yuan, achieving a turnaround from losses with 873% revenue growth.",
+      "ai_tags": [
+        "长鑫科技",
+        "存储芯片",
+        "半导体",
+        "财报"
+      ]
+    },
+    {
+      "id": "hackernews:story:49476143",
+      "source_type": "hackernews",
+      "title": "Hilariously fast volume computation with the divergence theorem (2018)",
+      "url": "https://alyssarosenzweig.ca/blog/hilariously-fast-volume-computation-with-the-divergence-theorem.html",
+      "content": "\n--- Top Comments ---\n\n[physicsguy]: This is one of those when you go &quot;Huh, this is amazing!&quot; or &quot;Huh, I thought this trick was really well known!&quot; depending on your background ;) Here&#x27;s a similar impl from 1980 written in Fortran that also computes other properties like centroid:\n https:&#x2F;&#x2F;calgo.acm.org&#x2F;550.zip \nAlgorithm 550: Solid Polyhedron Measures\nA. M. Messner and G. Q. Taylor\nACM Trans. Math. Softw., 6(1), Mar 1980, pp.121--130\nKeywords: polyhedron, graphics, numerical integration\nL...\n\n[bmenrigh]: At first I was going to say this is just the tetrahedra trick dressed up in slightly different clothes, and some sense it is, but there is a nice cancellation in the y and z coordinates which leads to less calculation in practice.\n\n[eterevsky]: Isn&#x27;t the same as just taking every triangle from the mesh, calculating the volume of a prism-like polytope between it and its projection on one the planes, and then taking it with a + sign if its projection is oriented in one direction, and with a - sign if it&#x27;s oriented in another? This kind of formula works based on the basic geometry.\n\n[srean]: On the other hand, if you want to compute the  area  of a polygon that have vertices at lattice points, you can count the number of interior points  I , the number of boundary points  B . Then the area  A  is       A = I + B&#x2F;2 - 1\n  \nThis is Pick&#x27;s theorem  https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Pick&#x27;s_theorem  one of my favorite results. It does not generalize as nicely to higher dimensions unfortunately. If like the post you want the volume of a polyhedron you can ...\n\n[hingler36]: This appears to be a retelling of another well-known process for volume computation: sum together the signed volumes of the tetraheda formed by each face with the origin (or any other fixed point WLOG). Very cool derivation though!",
+      "author": "luu",
+      "published_at": "2026-08-28T09:00:46+00:00",
+      "fetched_at": "2026-08-28T22:00:14.927893",
+      "metadata": {
+        "score": 238,
+        "descendants": 64,
+        "type": "story",
+        "discussion_url": "https://news.ycombinator.com/item?id=49476143",
+        "comment_count": 5,
+        "title_zh": "散度定理实现极速体积计算",
+        "summary_zh": "一篇2018年的技术文章重新受到关注，展示了如何利用散度定理实现极快速的体积计算。该方法通过数学技巧将复杂的三维体积积分转化为表面积分，大幅简化计算过程。这种技术在计算机图形学、物理模拟和工程计算中具有实用价值，体现了数学理论在实际应用中的巧妙运用，对开发者和研究人员具有启发意义。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "Interesting mathematical technique for fast volume computation using divergence theorem, educational content with practical applications in graphics and simulation",
+      "ai_summary": "A 2018 article demonstrating how the divergence theorem can be used for hilariously fast volume computation, resurfacing with renewed interest.",
+      "ai_tags": [
+        "mathematics",
+        "graphics",
+        "simulation",
+        "algorithms",
+        "optimization"
+      ]
+    },
+    {
+      "id": "rss:www.theverge.com_rss_index.xml:2020531240407152585",
+      "source_type": "rss",
+      "title": "Trump’s EPA wants to let data centers hide their air pollution",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/986176/data-center-pollution-epa-rule-change-air-permit",
+      "content": "Just as new data centers face growing backlash from neighboring communities, the US Environmental Protection Agency (EPA) is about to make it harder for people to weigh in on any pollution those centers create. The EPA plans to toss out a federal rule requiring public notice and an opportunity to comment when certain industrial sites [&#8230;]",
+      "author": "Justine Calma",
+      "published_at": "2026-08-28T16:28:40+00:00",
+      "fetched_at": "2026-08-28T22:00:16.952868",
+      "metadata": {
+        "feed_name": "The Verge",
+        "category": "tech-news",
+        "tags": [
+          "AI",
+          "Energy",
+          "Environment",
+          "Science"
+        ],
+        "title_zh": "环保署拟放宽数据中心污染监管",
+        "summary_zh": "特朗普政府环保署计划取消数据中心空气污染需公开通知和公众评议的联邦规定，使社区居民更难对数据中心污染问题发声。这一政策变化发生在数据中心面临社区反对声浪之际，可能加剧科技设施与周边社区的矛盾。该政策反映了环保监管放松的趋势，对数据中心运营成本和选址策略有潜在影响，引发关于科技发展与环境保护平衡的讨论。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "US environmental policy change affecting data center operations and community impact, relevant to tech infrastructure but politically focused",
+      "ai_summary": "Trump's EPA plans to remove requirements for public notice and comment on data center air pollution, making it harder for communities to weigh in on pollution concerns.",
+      "ai_tags": [
+        "environmental-policy",
+        "data-centers",
+        "regulation",
+        "community-impact",
+        "EPA"
+      ]
+    },
+    {
+      "id": "rss:www.theverge.com_rss_index.xml:5241136528685563836",
+      "source_type": "rss",
+      "title": "DLSS 5 leaked and modders are putting Nvidia&#8217;s AI effects on everything",
+      "url": "https://www.theverge.com/games/986197/nvidia-dlss-5-leak-ai",
+      "content": "Modders are trying out an unofficial version of Nvidia's DLSS 5 on Skyrim, Cyberpunk 2077, GTA V, and a bunch of other games after code for the AI upscaling tech appeared in an early-access build of NBA 2K27. Members of the RenoDX modding channel on Discord reportedly found a way to extract the DLSS \"Neural [&#8230;]",
+      "author": "Emma Roth",
+      "published_at": "2026-08-28T16:22:16+00:00",
+      "fetched_at": "2026-08-28T22:00:16.952868",
+      "metadata": {
+        "feed_name": "The Verge",
+        "category": "tech-news",
+        "tags": [
+          "Gaming",
+          "News",
+          "Nvidia",
+          "PC Gaming",
+          "Tech"
+        ],
+        "title_zh": "DLSS 5泄露遭模组玩家移植",
+        "summary_zh": "Nvidia DLSS 5 AI超分辨率技术代码在NBA 2K27早期版本中泄露后，RenoDX模组社区成员成功提取该技术在Skyrim、赛博朋克2077、GTA V等游戏中进行测试。这一非官方移植展示了新一代AI图像增强技术的潜力，引发玩家和开发者对AI图形处理技术未来应用的广泛讨论。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "Interesting technical curiosity about leaked AI upscaling technology being used by modders, relevant to graphics/AI but unofficial and not a major breakthrough",
+      "ai_summary": "Modders extract and apply unofficial DLSS 5 AI upscaling technology to games like Skyrim and Cyberpunk 2077 after code appeared in NBA 2K27 early access build.",
+      "ai_tags": [
+        "AI",
+        "图形技术",
+        "DLSS",
+        "游戏模组",
+        "Nvidia"
+      ]
+    },
+    {
+      "id": "rss:hackaday.com_feed_:-8816211549525690594",
+      "source_type": "rss",
+      "title": "Building a Headless Game Boy Emulator",
+      "url": "https://hackaday.com/2026/08/28/building-a-headless-game-boy-emulator/",
+      "content": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"450\" src=\"https://hackaday.com/wp-content/uploads/2026/08/Gameboy-server-lets-anyone-connect-and-play-no-apps-2-53-screenshot.png?w=800\" style=\"margin: 0 auto; margin-bottom: 15px;\" width=\"800\" /></div>[Artificial-Age] has built a rather unique way to play old Game Boy games. It&#8217;s an emulator, but it doesn&#8217;t work in quite the way you might think! Since the Game <a class=\"read-more\" href=\"https://hackaday.com/2026/08/28/building-a-headless-game-boy-emulator/\">&#8230;read more</a>",
+      "author": "Zoe Skyforest",
+      "published_at": "2026-08-28T15:30:12+00:00",
+      "fetched_at": "2026-08-28T22:00:26.783729",
+      "metadata": {
+        "feed_name": "Hackaday",
+        "category": "hardware",
+        "tags": [
+          "Nintendo Game Boy Hacks",
+          "ESP32",
+          "game boy",
+          "phone",
+          "smart phone"
+        ],
+        "title_zh": "无头Game Boy模拟器",
+        "summary_zh": "开发者Artificial-Age构建了一种独特的无头Game Boy模拟器，以非传统方式运行老游戏。与传统模拟器不同，这个项目采用了创新的技术实现方式。无头模拟器通常不依赖图形界面输出，而是通过其他方式处理游戏逻辑，这种设计在自动化测试、速度运行和批量处理等场景中有独特应用价值。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "Interesting technical project with a novel approach to Game Boy emulation. Unique implementation worth knowing for emulation enthusiasts.",
+      "ai_summary": "A developer built a unique headless Game Boy emulator that plays old games in an unconventional way, differing from traditional emulation approaches.",
+      "ai_tags": [
+        "模拟器",
+        "Game Boy",
+        "复古游戏",
+        "无头计算",
+        "开源"
+      ]
+    },
+    {
+      "id": "rss:hackaday.com_feed_:-4690375222417443163",
+      "source_type": "rss",
+      "title": "RAM and eMMC Prices Are So High, Pine64 Has Stopped Linux Device Production",
+      "url": "https://hackaday.com/2026/08/28/ram-and-emmc-prices-are-so-high-pine64-has-stopped-linux-device-production/",
+      "content": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"450\" src=\"https://hackaday.com/wp-content/uploads/2026/08/pine64-ram-featured.jpg?w=800\" style=\"margin: 0 auto; margin-bottom: 15px;\" width=\"800\" /></div>We all know that the price of RAM and storage has shot up due to demand from the AI industry and other factors. In most cases that means we grumble <a class=\"read-more\" href=\"https://hackaday.com/2026/08/28/ram-and-emmc-prices-are-so-high-pine64-has-stopped-linux-device-production/\">&#8230;read more</a>",
+      "author": "Jenny List",
+      "published_at": "2026-08-28T11:00:51+00:00",
+      "fetched_at": "2026-08-28T22:00:26.783729",
+      "metadata": {
+        "feed_name": "Hackaday",
+        "category": "hardware",
+        "tags": [
+          "Business",
+          "emmc",
+          "flash",
+          "memory shortage",
+          "Pine64",
+          "ram"
+        ],
+        "title_zh": "Pine64停产Linux设备",
+        "summary_zh": "由于AI行业需求等因素导致RAM和eMMC存储价格大幅上涨，开源硬件厂商Pine64已停止Linux设备生产。这一决定反映了全球芯片供应链紧张对开源硬件社区的影响。尽管大多数消费者面临价格上涨，但像Pine64这样依赖特定组件的厂商受到的冲击更为直接，可能影响开源Linux设备的可用性和价格。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "Industry news about component price increases affecting Linux device production. Relevant to open-source hardware community but not groundbreaking.",
+      "ai_summary": "Pine64 has halted Linux device production due to high RAM and eMMC prices driven by AI industry demand and other market factors.",
+      "ai_tags": [
+        "硬件",
+        "供应链",
+        "Pine64",
+        "Linux",
+        "芯片价格"
+      ]
+    },
+    {
+      "id": "rss:www.nature.com_nature.rss:-7149397783459012651",
+      "source_type": "rss",
+      "title": "Briefing Chat: How Dolly Parton left her mark on science",
+      "url": "https://www.nature.com/articles/d41586-026-02732-w",
+      "content": "<p>Nature, Published online: 28 August 2026; <a href=\"https://www.nature.com/articles/d41586-026-02732-w\">doi:10.1038/d41586-026-02732-w</a></p>Nature reporters discuss the country-music icon's advocacy for vaccines and public health — plus, promising trial results for an mRNA cancer therapy.",
+      "author": "Elizabeth Gibney",
+      "published_at": "2026-08-28T00:00:00+00:00",
+      "fetched_at": "2026-08-28T22:00:27.590654",
+      "metadata": {
+        "feed_name": "Nature",
+        "category": "science",
+        "tags": [],
+        "title_zh": "Dolly Parton与mRNA癌症疗法",
+        "summary_zh": "Nature记者讨论了乡村音乐偶像Dolly Parton在疫苗和公共卫生领域的倡导贡献，同时报道了mRNA癌症疗法临床试验的积极结果。Dolly Parton通过其基金会长期支持医学研究和公共卫生事业，而mRNA癌症疗法的试验进展为个性化癌症治疗带来了新希望，展示了mRNA技术在传染病之外的广阔应用前景。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "Nature article discussing Dolly Parton's science advocacy and mRNA cancer therapy trial results. The medical breakthrough mention adds value.",
+      "ai_summary": "Nature reporters discuss Dolly Parton's advocacy for vaccines and public health, alongside promising trial results for an mRNA cancer therapy.",
+      "ai_tags": [
+        "mRNA",
+        "癌症疗法",
+        "公共卫生",
+        "疫苗",
+        "Nature"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:43466",
+      "source_type": "telegram",
+      "title": "谷歌员工内测下一代 Gemini 3.8 Flash，测试者称明显优于 3.7 Flash",
+      "url": "https://www.businessinsider.com/google-employees-testing-next-gemini-flash-3-8-model-2026-8",
+      "content": "谷歌员工内测下一代 Gemini 3.8 Flash，测试者称明显优于 3.7 Flash\n\n谷歌员工已开始内测下一代 Gemini 3.8 Flash 预览版，一名测试者称其明显优于 3.7 Flash。该预览版通过内部编码平台 Jetski 向员工开放，谷歌拒绝置评。\n\n谷歌新一代旗舰大模型一再延期，转而加快推出更快、更便宜的 Flash 系列：3.6 Flash 于今年 7 月发布，3.7 Flash 三周后跟进，CEO 皮查伊曾表示计划近乎每月推新。\n\nBusiness Insider\n\n🌸 在花频道 · 茶馆水群 · 投稿通道",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T09:38:16+00:00",
+      "fetched_at": "2026-08-28T22:00:11.645782",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43466",
+        "channel": "zaihuapd",
+        "title_zh": "谷歌内测Gemini 3.8 Flash预览版",
+        "summary_zh": "谷歌员工已开始内测下一代Gemini 3.8 Flash预览版，一名测试者称其明显优于3.7 Flash。该预览版通过内部编码平台Jetski向员工开放，谷歌拒绝置评。值得注意的是，谷歌新一代旗舰大模型一再延期，转而加快推出更快、更便宜的Flash系列：3.6 Flash于今年7月发布，3.7 Flash三周后跟进，CEO皮查伊曾表示计划近乎每月推新。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "谷歌内测Gemini 3.8 Flash预览版，反映谷歌加速Flash系列迭代策略，有一定技术参考价值",
+      "ai_summary": "Google employees internally test next-generation Gemini 3.8 Flash preview, with testers reporting it significantly outperforms 3.7 Flash.",
+      "ai_tags": [
+        "谷歌",
+        "Gemini",
+        "Flash",
+        "大模型"
+      ]
+    },
+    {
+      "id": "github:trending:abi/screenshot-to-code",
+      "source_type": "github",
+      "title": "GitHub Trending: abi/screenshot-to-code",
+      "url": "https://github.com/abi/screenshot-to-code",
+      "content": "Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)\n\n**语言**: Python\n\n**今日星标**: +309",
+      "author": "",
+      "published_at": "2026-08-29T06:00:14.918831",
+      "fetched_at": "2026-08-28T22:00:14.918831",
+      "metadata": {
+        "type": "trending",
+        "repo": "abi/screenshot-to-code",
+        "language": "Python",
+        "stars_today": 309,
+        "title_zh": "截图转代码工具",
+        "summary_zh": "Screenshot to Code 是一个将截图转换为干净代码的工具，支持生成 HTML、Tailwind、React 和 Vue 代码。该工具帮助开发者快速将设计稿转化为可运行的前端代码，提升 UI 开发效率。虽然功能实用，但作为已有项目，今日 309 星标显示其处于稳定维护阶段，属于增量改进而非突破性创新。"
+      },
+      "ai_score": 5.0,
+      "ai_reason": "Useful tool for converting screenshots to code, but well-established project with incremental updates",
+      "ai_summary": "A tool that converts screenshots into clean HTML/Tailwind/React/Vue code for rapid UI development.",
+      "ai_tags": [
+        "UI-development",
+        "code-generation",
+        "frontend",
+        "design-to-code"
+      ]
+    },
+    {
+      "id": "hackernews:story:49478401",
+      "source_type": "hackernews",
+      "title": "State of the Map 2026",
+      "url": "https://2026.stateofthemap.org/",
+      "content": "\n--- Top Comments ---\n\n[fitblipper]: Contributing to Open Street Map has given me a ton of satisfaction.  Knowing that my somewhat minor efforts to correct one address, add one feature, correct one trail will propagate to so many different places and help other people not get lost, find something new, or just be able to navigate more safely in the world makes me feel like I am leaving the world a better place more than a decade of working at FANG ever did.\n\n[c0nsumer]: I absolutely love OpenStreetMap. Back when I first started building (legal) mountain bike trails I realized that without a map they aren&#x27;t the most useful. OSM gave me the system in which to document them, and then from there I was able to reuse the data to make print maps and eventually my current project:  https:&#x2F;&#x2F;trailmaps.app\n\n[hrnnnnnn]: If you want a fun and easy way to contribute to OSM I recommend StreetComplete. You get a bunch of game-like quest icons for things like &quot;what is the surface of this path?&quot;, and &quot;does this road have a cycle path?&quot;, then you walk around and fill them in. Very satisfying and feels like you&#x27;re doing something actually useful. Also nudges you to visit parts of your neighborhood you might never have been to before.\n\n[netsharc]: Happening at &quot;Cité Descartes&quot;. I see what you did there.\n\n[basil]: Gamifying the map definitely helps to pull in contributors. StreetComplete got me editing more than anything else. I went a bit sideways with it: I used OSM data to build a territory game for cyclists, where you claim roads by riding them.\nIt&#x27;s heavily processed OSM data with PostGIS. The fun part was figuring out how to decide what counts as a claimable road in the first place.  https:&#x2F;&#x2F;remap.earth",
+      "author": "lode",
+      "published_at": "2026-08-28T13:46:28+00:00",
+      "fetched_at": "2026-08-28T22:00:14.927893",
+      "metadata": {
+        "score": 127,
+        "descendants": 48,
+        "type": "story",
+        "discussion_url": "https://news.ycombinator.com/item?id=49478401",
+        "comment_count": 5,
+        "title_zh": "State of the Map 2026大会公告",
+        "summary_zh": "OpenStreetMap社区年度大会State of the Map 2026发布公告。该会议是全球最大的开放地理数据社区聚会，汇聚地图制作者、开发者和地理信息爱好者。会议通常涵盖地图数据编辑、开源工具开发、地理空间技术创新等议题。虽然对OSM社区成员有重要意义，但对更广泛的技术社区影响有限，属于特定领域的社区活动通知。"
+      },
+      "ai_score": 5.0,
+      "ai_reason": "Announcement of State of the Map 2026 conference, relevant to OpenStreetMap community but niche interest",
+      "ai_summary": "Announcement of the State of the Map 2026 conference for the OpenStreetMap community.",
+      "ai_tags": [
+        "OpenStreetMap",
+        "GIS",
+        "open-data",
+        "community",
+        "conference"
+      ]
+    },
+    {
+      "id": "rss:hackaday.com_feed_:2055281708382134411",
+      "source_type": "rss",
+      "title": "Casting Engine Parts from 3D Prints",
+      "url": "https://hackaday.com/2026/08/28/casting-engine-parts-from-3d-prints/",
+      "content": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"496\" src=\"https://hackaday.com/wp-content/uploads/2026/08/casting_lost_pla_engine_parts_camden_bowen_youtube.jpg?w=800\" style=\"margin: 0 auto; margin-bottom: 15px;\" width=\"800\" /></div>After building a couple of internal combustion engines by milling billet aluminium stock and cringing at the absolute waste of material this created, [Camden Bowen] figured he&#8217;d give casting metal <a class=\"read-more\" href=\"https://hackaday.com/2026/08/28/casting-engine-parts-from-3d-prints/\">&#8230;read more</a>",
+      "author": "Maya Posch",
+      "published_at": "2026-08-28T18:30:21+00:00",
+      "fetched_at": "2026-08-28T22:00:26.783729",
+      "metadata": {
+        "feed_name": "Hackaday",
+        "category": "hardware",
+        "tags": [
+          "Parts",
+          "kiln",
+          "lost pla casting",
+          "metal casting",
+          "metalwork"
+        ],
+        "title_zh": "3D打印模具铸造引擎零件",
+        "summary_zh": "一位创客开发了一种使用3D打印模具铸造金属发动机零件的方法。相比传统的从铝坯铣削加工，这种方法大幅减少了材料浪费。该项目展示了如何将现代3D打印技术与传统金属铸造工艺相结合，为小型制造和DIY爱好者提供了经济高效的零件生产方案。这种混合制造方法在原型制作和小批量生产中具有实用价值。"
+      },
+      "ai_score": 5.0,
+      "ai_reason": "Practical DIY manufacturing tutorial combining 3D printing with metal casting for engine parts. Useful for makers but not groundbreaking.",
+      "ai_summary": "A maker developed a method to cast metal engine parts using 3D printed molds, reducing material waste compared to traditional milling from billet aluminum.",
+      "ai_tags": [
+        "3D打印",
+        "金属铸造",
+        "DIY制造",
+        "发动机",
+        "创客"
+      ]
+    },
+    {
+      "id": "rss:hackaday.com_feed_:7379921261781051457",
+      "source_type": "rss",
+      "title": "Panoramic Photography with a Linear Scanner",
+      "url": "https://hackaday.com/2026/08/28/panoramic-photography-with-a-linear-scanner/",
+      "content": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"450\" src=\"https://hackaday.com/wp-content/uploads/2026/08/rail-camera-main.jpg?w=800\" style=\"margin: 0 auto; margin-bottom: 15px;\" width=\"800\" /></div>Although digital photography took a big bite of the film industry&#8217;s lunch, it wasn&#8217;t able to completely eliminate the need &#8212; or desire &#8212; for photographers to use film in <a class=\"read-more\" href=\"https://hackaday.com/2026/08/28/panoramic-photography-with-a-linear-scanner/\">&#8230;read more</a>",
+      "author": "Bryan Cockfield",
+      "published_at": "2026-08-28T08:00:00+00:00",
+      "fetched_at": "2026-08-28T22:00:26.783729",
+      "metadata": {
+        "feed_name": "Hackaday",
+        "category": "hardware",
+        "tags": [
+          "digital cameras hacks",
+          "camera",
+          "digital photography",
+          "panoramic",
+          "rail"
+        ],
+        "title_zh": "线性扫描仪拍全景照片",
+        "summary_zh": "一位摄影师使用线性扫描仪创作全景照片，将传统胶片摄影的需求与现代数字扫描技术相结合。尽管数码摄影已大幅取代胶片，但摄影师对特殊成像方式的需求依然存在。线性扫描仪通常用于文档扫描，将其用于摄影创作是一种创新尝试，为全景摄影提供了独特的技术路径和视觉效果。"
+      },
+      "ai_score": 5.0,
+      "ai_reason": "Creative photography project using linear scanner for panoramic images. Interesting technique but not highly technical or impactful.",
+      "ai_summary": "A photographer created panoramic images using a linear scanner, combining traditional film photography desires with modern digital scanning technology.",
+      "ai_tags": [
+        "摄影",
+        "线性扫描仪",
+        "全景摄影",
+        "创意技术",
+        "数码影像"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:43461",
+      "source_type": "telegram",
+      "title": "发改委谈机器人产业，须因地制宜防一哄而上",
+      "url": "https://mp.weixin.qq.com/s/twr-S4z_ePlQLLem2c4BTw",
+      "content": "发改委谈机器人产业，须因地制宜防一哄而上\n\n国家发改委政策研究室副主任李超在 8 月例行发布会上表示，机器人产业涉及人工智能、先进制造、新材料等前沿技术，必须因地制宜、健康有序发展，立足本地资源禀赋和产业优势，找准定位、发挥优势，防止盲目跟风、一哄而上，推动相关行业行稳致远。\n\n财联社\n\n🌸 在花频道 · 茶馆水群 · 投稿通道",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T05:02:17+00:00",
+      "fetched_at": "2026-08-28T22:00:11.643599",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43461",
+        "channel": "zaihuapd",
+        "title_zh": "发改委：机器人产业须防一哄而上",
+        "summary_zh": "国家发改委政策研究室副主任李超在8月例行发布会上表示，机器人产业涉及人工智能、先进制造、新材料等前沿技术，各地必须因地制宜、健康有序发展。强调要立足本地资源禀赋和产业优势，找准定位、发挥优势，防止盲目跟风、一哄而上，推动相关行业行稳致远。这一政策信号旨在引导机器人产业理性发展。"
+      },
+      "ai_score": 5.0,
+      "ai_reason": "发改委对机器人产业的政策指导，属于常规产业政策发布，对行业有指导意义但非突破性",
+      "ai_summary": "China's NDRC advises local governments to develop robotics industry based on local advantages rather than blindly following trends.",
+      "ai_tags": [
+        "产业政策",
+        "机器人",
+        "发改委",
+        "先进制造"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:43462",
+      "source_type": "telegram",
+      "title": "GLM 收费首日，DeepSeek 夺回 OpenCode 使用量榜首",
+      "url": "https://x.com/opencode/status/2093159743351120207",
+      "content": "GLM 收费首日，DeepSeek 夺回 OpenCode 使用量榜首\n\n据 OpenCode 称，GLM 进入付费阶段的第一天，DeepSeek 便重新夺回榜首位置；紧随其后的 Muse Spark 则被视作低调黑马。\n\nOpenCode(@opencode)\n\n🌸 在花频道 · 茶馆水群 · 投稿通道",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T06:00:58+00:00",
+      "fetched_at": "2026-08-28T22:00:11.643599",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43462",
+        "channel": "zaihuapd",
+        "title_zh": "GLM收费首日DeepSeek重夺榜首",
+        "summary_zh": "据OpenCode平台数据显示，在GLM进入付费阶段的第一天，DeepSeek便重新夺回使用量榜首位置。紧随其后的Muse Spark被视作低调黑马，表现亮眼。这一市场变化反映出国内AI模型竞争格局的动态调整，收费策略对用户选择产生直接影响，也显示出开发者对性价比的敏感度。"
+      },
+      "ai_score": 5.0,
+      "ai_reason": "反映国内AI模型市场竞争格局变化，GLM收费后DeepSeek重夺榜首，属于市场动态更新",
+      "ai_summary": "DeepSeek regains top usage spot on OpenCode on the first day GLM switches to paid model, with Muse Spark emerging as a dark horse.",
+      "ai_tags": [
+        "AI模型",
+        "DeepSeek",
+        "GLM",
+        "市场竞争"
+      ]
+    }
+  ],
+  "extra": {
+    "total_fetched": 129
+  }
+}

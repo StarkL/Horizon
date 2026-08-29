@@ -1,0 +1,3122 @@
+{
+  "stage": "analyzed",
+  "timestamp": "2026-08-29T06:29:17.641942",
+  "count": 123,
+  "items": [
+    {
+      "id": "github:trending:tt-a1i/archify",
+      "source_type": "github",
+      "title": "GitHub Trending: tt-a1i/archify",
+      "url": "https://github.com/tt-a1i/archify",
+      "content": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.\n\n**语言**: JavaScript\n\n**今日星标**: +4561",
+      "author": "",
+      "published_at": "2026-08-29T06:00:14.916462",
+      "fetched_at": "2026-08-28T22:00:14.916462",
+      "metadata": {
+        "type": "trending",
+        "repo": "tt-a1i/archify",
+        "language": "JavaScript",
+        "stars_today": 4561,
+        "title_zh": "Archify 图表生成工具",
+        "summary_zh": "Archify 是一个用于生成架构图、工作流图、序列图和数据流图的 Agent 技能工具。它支持生成自包含的 HTML 文件，具有动画效果和清晰的导出功能。该工具今日获得 4561 星标，受到开发者社区广泛关注，适合需要快速生成专业技术文档的团队使用。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "Useful diagram generation tool with good community traction (+4561 stars), but incremental improvement in visualization space",
+      "ai_summary": "An agent skill for generating beautiful, verifiable architecture and workflow diagrams as self-contained HTML with animations.",
+      "ai_tags": [
+        "diagram",
+        "visualization",
+        "agent-skills",
+        "documentation"
+      ]
+    },
+    {
+      "id": "github:trending:K-Dense-AI/scientific-agent-skills",
+      "source_type": "github",
+      "title": "GitHub Trending: K-Dense-AI/scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "content": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 175,000+ scientists worldwide. 163 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.\n\n**语言**: Python\n\n**今日星标**: +720",
+      "author": "",
+      "published_at": "2026-08-29T06:00:14.916462",
+      "fetched_at": "2026-08-28T22:00:14.916462",
+      "metadata": {
+        "type": "trending",
+        "repo": "K-Dense-AI/scientific-agent-skills",
+        "language": "Python",
+        "stars_today": 720,
+        "title_zh": "AI 科学家技能库",
+        "summary_zh": "Scientific Agent Skills 是一个将 AI 代理转化为科学研究助手的技能库，包含 163 个经过验证的技能和 100 多个科学数据库，覆盖生物学、化学、医学和药物发现等领域。该工具已被全球 17.5 万名科学家使用，支持 Cursor、Claude Code 等多种 AI 工具，显著提升了科研工作效率。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "Significant tool for AI in scientific research with large user base (175K+ scientists) and comprehensive skill library",
+      "ai_summary": "A comprehensive agent skills library transforming AI agents into scientific research assistants with 163 validated skills and 100+ databases.",
+      "ai_tags": [
+        "AI-science",
+        "agent-skills",
+        "research-tools",
+        "bioinformatics"
+      ]
+    },
+    {
+      "id": "github:trending:anthropics/claude-plugins-official",
+      "source_type": "github",
+      "title": "GitHub Trending: anthropics/claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "content": "Official, Anthropic-managed directory of high quality Claude Code Plugins.\n\n**语言**: Python\n\n**今日星标**: +457",
+      "author": "",
+      "published_at": "2026-08-29T06:00:14.917463",
+      "fetched_at": "2026-08-28T22:00:14.917463",
+      "metadata": {
+        "type": "trending",
+        "repo": "anthropics/claude-plugins-official",
+        "language": "Python",
+        "stars_today": 457,
+        "title_zh": "Claude 官方插件目录",
+        "summary_zh": "Claude Plugins Official 是 Anthropic 官方管理的 Claude Code 插件目录，提供高质量的官方插件资源。该目录旨在规范和扩展 Claude Code 的功能生态，帮助开发者更好地利用 AI 编程助手。作为官方项目，它为 Claude 生态系统的发展提供了标准化支持，今日获得 457 星标，显示出开发者对官方插件资源的期待。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "Official plugin directory from Anthropic for Claude Code, important ecosystem development for AI coding tools",
+      "ai_summary": "Official Anthropic-managed directory providing high-quality Claude Code plugins for extending AI coding capabilities.",
+      "ai_tags": [
+        "Claude",
+        "plugins",
+        "AI-coding",
+        "Anthropic"
+      ]
+    },
+    {
+      "id": "github:trending:bilawalsidhu/gods-eye-view",
+      "source_type": "github",
+      "title": "GitHub Trending: bilawalsidhu/gods-eye-view",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "content": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.\n\n**语言**: JavaScript\n\n**今日星标**: +3398",
+      "author": "",
+      "published_at": "2026-08-29T06:00:14.917463",
+      "fetched_at": "2026-08-28T22:00:14.917463",
+      "metadata": {
+        "type": "trending",
+        "repo": "bilawalsidhu/gods-eye-view",
+        "language": "JavaScript",
+        "stars_today": 3398,
+        "title_zh": "3D 地球卫星模拟器",
+        "summary_zh": "God's Eye View 是一个基于浏览器的卫星模拟器工具，使用真实的开源空间情报数据在逼真的 3D 地球上展示实时信息。该工具将专业的空间情报数据以直观的可视化方式呈现，让普通用户也能体验卫星视角。今日获得 3398 星标，显示出社区对空间数据可视化工具的兴趣，适合地理信息分析和教育用途。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "Interesting visualization tool with real satellite data, good community engagement (+3398 stars), but niche application",
+      "ai_summary": "A browser-based spy satellite simulator using real open-source spatial intelligence data on a photorealistic 3D globe.",
+      "ai_tags": [
+        "visualization",
+        "geospatial",
+        "3D-globe",
+        "satellite-data"
+      ]
+    },
+    {
+      "id": "github:trending:abhigyanpatwari/GitNexus",
+      "source_type": "github",
+      "title": "GitHub Trending: abhigyanpatwari/GitNexus",
+      "url": "https://github.com/abhigyanpatwari/GitNexus",
+      "content": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a git repository (Github, Gitlab, Azure, Local) or ZIP file, and get an interactive knowledge graph with a built in Graph RAG Agent. Perfect for code exploration\n\n**语言**: TypeScript\n\n**今日星标**: +189",
+      "author": "",
+      "published_at": "2026-08-29T06:00:14.917463",
+      "fetched_at": "2026-08-28T22:00:14.917463",
+      "metadata": {
+        "type": "trending",
+        "repo": "abhigyanpatwari/GitNexus",
+        "language": "TypeScript",
+        "stars_today": 189,
+        "title_zh": "GitNexus 代码智能引擎",
+        "summary_zh": "GitNexus 是一个零服务器代码智能引擎，完全在浏览器端运行，能够从 Git 仓库创建交互式知识图谱。该工具支持 GitHub、GitLab、Azure 和本地仓库，内置 Graph RAG Agent，帮助开发者快速理解代码结构。这种将知识图谱与 RAG 技术结合的方法为代码理解提供了新思路，是代码智能领域的重要创新。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "Novel approach combining knowledge graphs with Graph RAG for code intelligence, runs entirely client-side",
+      "ai_summary": "A zero-server code intelligence engine that creates interactive knowledge graphs with built-in Graph RAG agents from git repositories.",
+      "ai_tags": [
+        "code-intelligence",
+        "knowledge-graph",
+        "Graph-RAG",
+        "developer-tools"
+      ]
+    },
+    {
+      "id": "github:trending:JetBrains/go-modern-guidelines",
+      "source_type": "github",
+      "title": "GitHub Trending: JetBrains/go-modern-guidelines",
+      "url": "https://github.com/JetBrains/go-modern-guidelines",
+      "content": "Help AI coding agents write modern Go\n\n**语言**: Go\n\n**今日星标**: +574",
+      "author": "",
+      "published_at": "2026-08-29T06:00:14.918462",
+      "fetched_at": "2026-08-28T22:00:14.918462",
+      "metadata": {
+        "type": "trending",
+        "repo": "JetBrains/go-modern-guidelines",
+        "language": "Go",
+        "stars_today": 574,
+        "title_zh": "JetBrains Go 编码指南",
+        "summary_zh": "JetBrains 发布的 Go 现代编码指南，旨在帮助 AI 编程代理编写符合现代 Go 语言最佳实践的代码。该指南由知名 IDE 厂商 JetBrains 维护，为 AI 编码工具提供了标准化的 Go 语言编码规范。今日获得 574 星标，反映了 Go 开发者社区对 AI 辅助编码质量提升的关注，有助于提高 AI 生成代码的可维护性和一致性。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "Useful guidelines from JetBrains for AI coding agents writing Go, practical but incremental improvement",
+      "ai_summary": "JetBrains provides guidelines to help AI coding agents write modern, idiomatic Go code following best practices.",
+      "ai_tags": [
+        "Go",
+        "AI-coding",
+        "best-practices",
+        "JetBrains"
+      ]
+    },
+    {
+      "id": "github:trending:calesthio/OpenMontage",
+      "source_type": "github",
+      "title": "GitHub Trending: calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "content": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.\n\n**语言**: Python\n\n**今日星标**: +1144",
+      "author": "",
+      "published_at": "2026-08-29T06:00:14.918831",
+      "fetched_at": "2026-08-28T22:00:14.918831",
+      "metadata": {
+        "type": "trending",
+        "repo": "calesthio/OpenMontage",
+        "language": "Python",
+        "stars_today": 1144,
+        "title_zh": "开源 AI 视频制作系统",
+        "summary_zh": "OpenMontage 是全球首个开源的代理式视频制作系统，包含 12 条制作流水线、100 多个工具和 700 多个代理技能文件。该工具将 AI 编程助手转变为完整的视频制作工作室，实现了视频制作流程的自动化和智能化。今日获得 1144 星标，展示了社区对 AI 驱动视频创作工具的强烈兴趣，为内容创作领域带来重要创新。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "Novel open-source agentic video production system with comprehensive pipeline and tools, significant innovation",
+      "ai_summary": "The first open-source agentic video production system featuring 12 pipelines, 100+ tools, and 700+ agent skills for AI-assisted video creation.",
+      "ai_tags": [
+        "video-production",
+        "AI-agents",
+        "content-creation",
+        "automation"
+      ]
+    },
+    {
+      "id": "github:trending:abi/screenshot-to-code",
+      "source_type": "github",
+      "title": "GitHub Trending: abi/screenshot-to-code",
+      "url": "https://github.com/abi/screenshot-to-code",
+      "content": "Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)\n\n**语言**: Python\n\n**今日星标**: +309",
+      "author": "",
+      "published_at": "2026-08-29T06:00:14.918831",
+      "fetched_at": "2026-08-28T22:00:14.918831",
+      "metadata": {
+        "type": "trending",
+        "repo": "abi/screenshot-to-code",
+        "language": "Python",
+        "stars_today": 309,
+        "title_zh": "截图转代码工具",
+        "summary_zh": "Screenshot to Code 是一个将截图转换为干净代码的工具，支持生成 HTML、Tailwind、React 和 Vue 代码。该工具帮助开发者快速将设计稿转化为可运行的前端代码，提升 UI 开发效率。虽然功能实用，但作为已有项目，今日 309 星标显示其处于稳定维护阶段，属于增量改进而非突破性创新。"
+      },
+      "ai_score": 5.0,
+      "ai_reason": "Useful tool for converting screenshots to code, but well-established project with incremental updates",
+      "ai_summary": "A tool that converts screenshots into clean HTML/Tailwind/React/Vue code for rapid UI development.",
+      "ai_tags": [
+        "UI-development",
+        "code-generation",
+        "frontend",
+        "design-to-code"
+      ]
+    },
+    {
+      "id": "github:trending:cursor/plugins",
+      "source_type": "github",
+      "title": "GitHub Trending: cursor/plugins",
+      "url": "https://github.com/cursor/plugins",
+      "content": "Cursor plugin specification and official plugins\n\n**语言**: TypeScript\n\n**今日星标**: +257",
+      "author": "",
+      "published_at": "2026-08-29T06:00:14.919337",
+      "fetched_at": "2026-08-28T22:00:14.919337",
+      "metadata": {
+        "type": "trending",
+        "repo": "cursor/plugins",
+        "language": "TypeScript",
+        "stars_today": 257,
+        "title_zh": "Cursor 官方插件系统",
+        "summary_zh": "Cursor Plugins 是 Cursor AI 代码编辑器的官方插件规范和插件集合，用于扩展编辑器的功能。作为 Cursor 生态系统的重要组成部分，该项目为开发者提供了标准化的插件开发框架和官方插件资源。今日获得 257 星标，反映了社区对 Cursor 功能扩展的需求，但属于常规生态建设内容。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "Official plugin system for Cursor IDE, important for ecosystem but routine development",
+      "ai_summary": "Official Cursor plugin specification and plugin collection for extending the AI-powered code editor's capabilities.",
+      "ai_tags": [
+        "Cursor",
+        "plugins",
+        "AI-editor",
+        "IDE-extensions"
+      ]
+    },
+    {
+      "id": "github:trending:freestylefly/awesome-gpt-image-2",
+      "source_type": "github",
+      "title": "GitHub Trending: freestylefly/awesome-gpt-image-2",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "content": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中\n\n**语言**: JavaScript\n\n**今日星标**: +1687",
+      "author": "",
+      "published_at": "2026-08-29T06:00:14.919337",
+      "fetched_at": "2026-08-28T22:00:14.919337",
+      "metadata": {
+        "type": "trending",
+        "repo": "freestylefly/awesome-gpt-image-2",
+        "language": "JavaScript",
+        "stars_today": 1687,
+        "title_zh": "GPT 图像提示词库",
+        "summary_zh": "Awesome GPT-Image2 是一个工业级 GPT 图像生成提示词引擎和模板库，包含 530 多个逆向工程案例和 20 多套工业级模板。该项目通过系统化的提示词工程方法，提炼出可复用的 Skills，帮助用户更好地使用 GPT 图像生成功能。今日获得 1687 星标，显示出社区对高质量提示词资源的需求，但本质上是资源整理而非技术创新。"
+      },
+      "ai_score": 5.0,
+      "ai_reason": "Useful prompt engineering resource with good collection, but primarily a curated list rather than novel tool",
+      "ai_summary": "A comprehensive GPT-Image2 prompt engineering library with 530+ reverse-engineered cases and 20+ industrial templates.",
+      "ai_tags": [
+        "prompt-engineering",
+        "GPT-image",
+        "templates",
+        "AI-generation"
+      ]
+    },
+    {
+      "id": "github:trending:tailscale/tailcat",
+      "source_type": "github",
+      "title": "GitHub Trending: tailscale/tailcat",
+      "url": "https://github.com/tailscale/tailcat",
+      "content": "like netcat, but over Tailscale's data plane, without Tailscale's control plane\n\n**语言**: Go\n\n**今日星标**: +986",
+      "author": "",
+      "published_at": "2026-08-29T06:00:14.919337",
+      "fetched_at": "2026-08-28T22:00:14.919337",
+      "metadata": {
+        "type": "trending",
+        "repo": "tailscale/tailcat",
+        "language": "Go",
+        "stars_today": 986
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Trending: tailscale/tailcat",
+      "ai_tags": []
+    },
+    {
+      "id": "github:trending:NationalSecurityAgency/ghidra",
+      "source_type": "github",
+      "title": "GitHub Trending: NationalSecurityAgency/ghidra",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "content": "Ghidra is a software reverse engineering (SRE) framework\n\n**语言**: Java\n\n**今日星标**: +205",
+      "author": "",
+      "published_at": "2026-08-29T06:00:14.920342",
+      "fetched_at": "2026-08-28T22:00:14.920342",
+      "metadata": {
+        "type": "trending",
+        "repo": "NationalSecurityAgency/ghidra",
+        "language": "Java",
+        "stars_today": 205
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Trending: NationalSecurityAgency/ghidra",
+      "ai_tags": []
+    },
+    {
+      "id": "github:trending:swoole/typephp",
+      "source_type": "github",
+      "title": "GitHub Trending: swoole/typephp",
+      "url": "https://github.com/swoole/typephp",
+      "content": "Compile PHP to Native Binaries\n\n**语言**: PHP\n\n**今日星标**: +188",
+      "author": "",
+      "published_at": "2026-08-29T06:00:14.920342",
+      "fetched_at": "2026-08-28T22:00:14.920342",
+      "metadata": {
+        "type": "trending",
+        "repo": "swoole/typephp",
+        "language": "PHP",
+        "stars_today": 188
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Trending: swoole/typephp",
+      "ai_tags": []
+    },
+    {
+      "id": "github:trending:marin-community/marin",
+      "source_type": "github",
+      "title": "GitHub Trending: marin-community/marin",
+      "url": "https://github.com/marin-community/marin",
+      "content": "Open-source framework for the research and development of foundation models.\n\n**语言**: Python\n\n**今日星标**: +236",
+      "author": "",
+      "published_at": "2026-08-29T06:00:14.920342",
+      "fetched_at": "2026-08-28T22:00:14.920342",
+      "metadata": {
+        "type": "trending",
+        "repo": "marin-community/marin",
+        "language": "Python",
+        "stars_today": 236
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Trending: marin-community/marin",
+      "ai_tags": []
+    },
+    {
+      "id": "github:trending:tashfeenahmed/freellmapi",
+      "source_type": "github",
+      "title": "GitHub Trending: tashfeenahmed/freellmapi",
+      "url": "https://github.com/tashfeenahmed/freellmapi",
+      "content": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.\n\n**语言**: TypeScript\n\n**今日星标**: +477",
+      "author": "",
+      "published_at": "2026-08-29T06:00:14.921085",
+      "fetched_at": "2026-08-28T22:00:14.921085",
+      "metadata": {
+        "type": "trending",
+        "repo": "tashfeenahmed/freellmapi",
+        "language": "TypeScript",
+        "stars_today": 477
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Trending: tashfeenahmed/freellmapi",
+      "ai_tags": []
+    },
+    {
+      "id": "github:trending:ChromeDevTools/chrome-devtools-mcp",
+      "source_type": "github",
+      "title": "GitHub Trending: ChromeDevTools/chrome-devtools-mcp",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "content": "Chrome DevTools for coding agents\n\n**语言**: TypeScript\n\n**今日星标**: +61",
+      "author": "",
+      "published_at": "2026-08-29T06:00:14.921597",
+      "fetched_at": "2026-08-28T22:00:14.921597",
+      "metadata": {
+        "type": "trending",
+        "repo": "ChromeDevTools/chrome-devtools-mcp",
+        "language": "TypeScript",
+        "stars_today": 61
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Trending: ChromeDevTools/chrome-devtools-mcp",
+      "ai_tags": []
+    },
+    {
+      "id": "github:trending:rohitg00/ai-engineering-from-scratch",
+      "source_type": "github",
+      "title": "GitHub Trending: rohitg00/ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "content": "Learn it. Build it. Ship it for others.\n\n**语言**: Python\n\n**今日星标**: +703",
+      "author": "",
+      "published_at": "2026-08-29T06:00:14.921597",
+      "fetched_at": "2026-08-28T22:00:14.921597",
+      "metadata": {
+        "type": "trending",
+        "repo": "rohitg00/ai-engineering-from-scratch",
+        "language": "Python",
+        "stars_today": 703
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Trending: rohitg00/ai-engineering-from-scratch",
+      "ai_tags": []
+    },
+    {
+      "id": "github:trending:DietrichGebert/ponytail",
+      "source_type": "github",
+      "title": "GitHub Trending: DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "content": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.\n\n**语言**: JavaScript\n\n**今日星标**: +1396",
+      "author": "",
+      "published_at": "2026-08-29T06:00:14.922611",
+      "fetched_at": "2026-08-28T22:00:14.922611",
+      "metadata": {
+        "type": "trending",
+        "repo": "DietrichGebert/ponytail",
+        "language": "JavaScript",
+        "stars_today": 1396
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Trending: DietrichGebert/ponytail",
+      "ai_tags": []
+    },
+    {
+      "id": "github:trending:google/googletest",
+      "source_type": "github",
+      "title": "GitHub Trending: google/googletest",
+      "url": "https://github.com/google/googletest",
+      "content": "GoogleTest - Google Testing and Mocking Framework\n\n**语言**: C++\n\n**今日星标**: +156",
+      "author": "",
+      "published_at": "2026-08-29T06:00:14.923037",
+      "fetched_at": "2026-08-28T22:00:14.923037",
+      "metadata": {
+        "type": "trending",
+        "repo": "google/googletest",
+        "language": "C++",
+        "stars_today": 156
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Trending: google/googletest",
+      "ai_tags": []
+    },
+    {
+      "id": "github:trending:livekit/agents",
+      "source_type": "github",
+      "title": "GitHub Trending: livekit/agents",
+      "url": "https://github.com/livekit/agents",
+      "content": "A framework for building realtime voice AI agents 🤖🎙️📹\n\n**语言**: Python\n\n**今日星标**: +14",
+      "author": "",
+      "published_at": "2026-08-29T06:00:14.923541",
+      "fetched_at": "2026-08-28T22:00:14.923541",
+      "metadata": {
+        "type": "trending",
+        "repo": "livekit/agents",
+        "language": "Python",
+        "stars_today": 14
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Trending: livekit/agents",
+      "ai_tags": []
+    },
+    {
+      "id": "github:search:Nanako0129/sepia",
+      "source_type": "github",
+      "title": "GitHub Hot: Nanako0129/sepia",
+      "url": "https://github.com/Nanako0129/sepia",
+      "content": "De-AI writing skill for Claude Code, Codex, Grok Build, and Antigravity — narrative-architecture repair for fiction, venue-matched rules for professional prose. Based on StoryScope (arXiv:2604.03136).",
+      "author": "Nanako0129",
+      "published_at": "2026-08-28T21:58:32+00:00",
+      "fetched_at": "2026-08-28T22:00:17.314854",
+      "metadata": {
+        "type": "search",
+        "repo": "Nanako0129/sepia",
+        "language": "Shell",
+        "stars": 242
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Hot: Nanako0129/sepia",
+      "ai_tags": []
+    },
+    {
+      "id": "github:search:XiaoDuoYa/codex-with-chatgpt",
+      "source_type": "github",
+      "title": "GitHub Hot: XiaoDuoYa/codex-with-chatgpt",
+      "url": "https://github.com/XiaoDuoYa/codex-with-chatgpt",
+      "content": "ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.",
+      "author": "XiaoDuoYa",
+      "published_at": "2026-08-28T21:58:37+00:00",
+      "fetched_at": "2026-08-28T22:00:17.314854",
+      "metadata": {
+        "type": "search",
+        "repo": "XiaoDuoYa/codex-with-chatgpt",
+        "language": "TypeScript",
+        "stars": 238
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Hot: XiaoDuoYa/codex-with-chatgpt",
+      "ai_tags": []
+    },
+    {
+      "id": "github:search:MetaMask-AI/metamask-desktop",
+      "source_type": "github",
+      "title": "GitHub Hot: MetaMask-AI/metamask-desktop",
+      "url": "https://github.com/MetaMask-AI/metamask-desktop",
+      "content": "🌐 🔌 The MetaMask desktop app enables browsing Ethereum blockchain enabled websites",
+      "author": "MetaMask-AI",
+      "published_at": "2026-08-28T21:52:15+00:00",
+      "fetched_at": "2026-08-28T22:00:17.314854",
+      "metadata": {
+        "type": "search",
+        "repo": "MetaMask-AI/metamask-desktop",
+        "language": "CSS",
+        "stars": 172
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Hot: MetaMask-AI/metamask-desktop",
+      "ai_tags": []
+    },
+    {
+      "id": "github:search:jprx/darwin-vm",
+      "source_type": "github",
+      "title": "GitHub Hot: jprx/darwin-vm",
+      "url": "https://github.com/jprx/darwin-vm",
+      "content": "Run iOS/ macOS in Qemu. Virtual iPhone 17, 16, 15, 14, 13, 12 and M5-M1 Apple Si Macs supported.",
+      "author": "jprx",
+      "published_at": "2026-08-28T21:59:11+00:00",
+      "fetched_at": "2026-08-28T22:00:17.314854",
+      "metadata": {
+        "type": "search",
+        "repo": "jprx/darwin-vm",
+        "language": "Python",
+        "stars": 169
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Hot: jprx/darwin-vm",
+      "ai_tags": []
+    },
+    {
+      "id": "github:search:Leveetememorialize/gta-6-download-cyberleek",
+      "source_type": "github",
+      "title": "GitHub Hot: Leveetememorialize/gta-6-download-cyberleek",
+      "url": "https://github.com/Leveetememorialize/gta-6-download-cyberleek",
+      "content": "GTA 6 Alpha build leaked by CyberLeek. Full playable build with Vice City map, gameplay, cutscenes, and assets. Launcher is 100 MB — downloads the full 106 GB build during installation.",
+      "author": "Leveetememorialize",
+      "published_at": "2026-08-28T21:56:41+00:00",
+      "fetched_at": "2026-08-28T22:00:17.314854",
+      "metadata": {
+        "type": "search",
+        "repo": "Leveetememorialize/gta-6-download-cyberleek",
+        "language": "C#",
+        "stars": 103
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Hot: Leveetememorialize/gta-6-download-cyberleek",
+      "ai_tags": []
+    },
+    {
+      "id": "github:search:kingbootoshi/facetime-bridge",
+      "source_type": "github",
+      "title": "GitHub Hot: kingbootoshi/facetime-bridge",
+      "url": "https://github.com/kingbootoshi/facetime-bridge",
+      "content": "",
+      "author": "kingbootoshi",
+      "published_at": "2026-08-28T21:54:10+00:00",
+      "fetched_at": "2026-08-28T22:00:17.314854",
+      "metadata": {
+        "type": "search",
+        "repo": "kingbootoshi/facetime-bridge",
+        "language": "TypeScript",
+        "stars": 91
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Hot: kingbootoshi/facetime-bridge",
+      "ai_tags": []
+    },
+    {
+      "id": "github:search:orange2ai/new-concept-writing",
+      "source_type": "github",
+      "title": "GitHub Hot: orange2ai/new-concept-writing",
+      "url": "https://github.com/orange2ai/new-concept-writing",
+      "content": "用最少的话承载最多的情感。",
+      "author": "orange2ai",
+      "published_at": "2026-08-28T17:59:26+00:00",
+      "fetched_at": "2026-08-28T22:00:17.314854",
+      "metadata": {
+        "type": "search",
+        "repo": "orange2ai/new-concept-writing",
+        "language": null,
+        "stars": 81
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Hot: orange2ai/new-concept-writing",
+      "ai_tags": []
+    },
+    {
+      "id": "github:search:sgyno09-source/reference-video-director",
+      "source_type": "github",
+      "title": "GitHub Hot: sgyno09-source/reference-video-director",
+      "url": "https://github.com/sgyno09-source/reference-video-director",
+      "content": "",
+      "author": "sgyno09-source",
+      "published_at": "2026-08-28T21:50:56+00:00",
+      "fetched_at": "2026-08-28T22:00:17.314854",
+      "metadata": {
+        "type": "search",
+        "repo": "sgyno09-source/reference-video-director",
+        "language": null,
+        "stars": 74
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Hot: sgyno09-source/reference-video-director",
+      "ai_tags": []
+    },
+    {
+      "id": "github:search:camilleroux/genart-skill",
+      "source_type": "github",
+      "title": "GitHub Hot: camilleroux/genart-skill",
+      "url": "https://github.com/camilleroux/genart-skill",
+      "content": "Generative art skill for Claude Code — deterministic, hash-seeded, onchain-ready",
+      "author": "camilleroux",
+      "published_at": "2026-08-28T20:38:09+00:00",
+      "fetched_at": "2026-08-28T22:00:17.314854",
+      "metadata": {
+        "type": "search",
+        "repo": "camilleroux/genart-skill",
+        "language": "JavaScript",
+        "stars": 71
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Hot: camilleroux/genart-skill",
+      "ai_tags": []
+    },
+    {
+      "id": "github:search:d4ncboz/jailbreak",
+      "source_type": "github",
+      "title": "GitHub Hot: d4ncboz/jailbreak",
+      "url": "https://github.com/d4ncboz/jailbreak",
+      "content": "BOZAGENTIC — Sovereign Alignment Research, Jailbreak Taxonomies, CoT Pre-Emption, and Universal Prompt Inversion Framework by D4NNBOZ.",
+      "author": "d4ncboz",
+      "published_at": "2026-08-28T21:58:51+00:00",
+      "fetched_at": "2026-08-28T22:00:17.314854",
+      "metadata": {
+        "type": "search",
+        "repo": "d4ncboz/jailbreak",
+        "language": null,
+        "stars": 63
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Hot: d4ncboz/jailbreak",
+      "ai_tags": []
+    },
+    {
+      "id": "github:search:TheHaloDeveloper/vortex-docs",
+      "source_type": "github",
+      "title": "GitHub Hot: TheHaloDeveloper/vortex-docs",
+      "url": "https://github.com/TheHaloDeveloper/vortex-docs",
+      "content": "",
+      "author": "TheHaloDeveloper",
+      "published_at": "2026-08-28T21:56:23+00:00",
+      "fetched_at": "2026-08-28T22:00:17.314854",
+      "metadata": {
+        "type": "search",
+        "repo": "TheHaloDeveloper/vortex-docs",
+        "language": null,
+        "stars": 55,
+        "title_zh": "Vortex项目文档库",
+        "summary_zh": "Vortex项目的文档仓库，提供相关技术说明和使用指南。该仓库主要包含项目的基础文档和配置说明，适合开发者参考学习。但由于缺乏详细的技术创新点和深度内容，整体价值有限，属于常规性的文档维护工作，对技术社区的实际贡献较小。"
+      },
+      "ai_score": 3.0,
+      "ai_reason": "Generic documentation repository with limited technical depth or novelty. No significant content details provided.",
+      "ai_summary": "Documentation repository for Vortex project with limited technical details available.",
+      "ai_tags": [
+        "documentation",
+        "open-source",
+        "developer-tools"
+      ]
+    },
+    {
+      "id": "github:search:Prohibitionclosun/gta-6-cyberleek",
+      "source_type": "github",
+      "title": "GitHub Hot: Prohibitionclosun/gta-6-cyberleek",
+      "url": "https://github.com/Prohibitionclosun/gta-6-cyberleek",
+      "content": "GTA 6 Alpha build leaked by CyberLeek. Early playable build with full Vice City map, gameplay footage, assets and cutscenes. For archival and research only. Launcher is 40 MB, downloads full 106 GB build.",
+      "author": "Prohibitionclosun",
+      "published_at": "2026-08-28T16:34:08+00:00",
+      "fetched_at": "2026-08-28T22:00:17.314854",
+      "metadata": {
+        "type": "search",
+        "repo": "Prohibitionclosun/gta-6-cyberleek",
+        "language": "C#",
+        "stars": 53,
+        "title_zh": "GTA6游戏泄露事件",
+        "summary_zh": "GTA 6 Alpha版本遭泄露，包含完整的Vice City地图、游戏素材和过场动画。该泄露版本启动器仅40MB，完整游戏文件达106GB。虽然标注仅供存档和研究用途，但涉及游戏版权问题和非法传播风险。此类内容与软件工程和AI技术研究无关，不适合技术社区传播，存在法律合规隐患。"
+      },
+      "ai_score": 2.0,
+      "ai_reason": "Leaked game content with no technical relevance to software engineering or AI/ML. Copyright concerns and not appropriate for technical publication.",
+      "ai_summary": "Leaked GTA 6 Alpha build with 106GB of game assets, footage, and playable content archived for research purposes.",
+      "ai_tags": [
+        "gaming",
+        "copyright",
+        "security-leak"
+      ]
+    },
+    {
+      "id": "github:search:tony-make/walletgen",
+      "source_type": "github",
+      "title": "GitHub Hot: tony-make/walletgen",
+      "url": "https://github.com/tony-make/walletgen",
+      "content": "WalletGen - Seed Phrase generator / checker for Bitcoin (BTC) and ETH (Ethereum) wallets. Find or recovery your wallet via brute force and brain wallet generation",
+      "author": "tony-make",
+      "published_at": "2026-08-28T13:35:54+00:00",
+      "fetched_at": "2026-08-28T22:00:17.314854",
+      "metadata": {
+        "type": "search",
+        "repo": "tony-make/walletgen",
+        "language": "C++",
+        "stars": 51,
+        "title_zh": "加密钱包助记词工具",
+        "summary_zh": "WalletGen是一款针对比特币和以太坊钱包的助记词生成与检查工具。该工具支持暴力破解和脑钱包生成方式，可用于钱包恢复或查找。虽然对丢失钱包的用户有一定帮助，但暴力破解功能存在安全隐患和道德争议。作为加密货币领域的小众工具，技术深度有限，主要面向特定用户群体，整体价值属于中等水平。"
+      },
+      "ai_score": 4.0,
+      "ai_reason": "Cryptocurrency wallet tool with brute force capabilities. Niche utility with potential security concerns, limited broad technical value.",
+      "ai_summary": "Bitcoin and Ethereum wallet seed phrase generator and checker using brute force and brain wallet techniques.",
+      "ai_tags": [
+        "cryptocurrency",
+        "bitcoin",
+        "ethereum",
+        "security"
+      ]
+    },
+    {
+      "id": "github:search:freeCodeCamp/freeCodeCamp",
+      "source_type": "github",
+      "title": "GitHub Hot: freeCodeCamp/freeCodeCamp",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "content": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "author": "freeCodeCamp",
+      "published_at": "2026-08-28T21:44:17+00:00",
+      "fetched_at": "2026-08-28T22:00:21.371651",
+      "metadata": {
+        "type": "search",
+        "repo": "freeCodeCamp/freeCodeCamp",
+        "language": "TypeScript",
+        "stars": 454747,
+        "title_zh": "freeCodeCamp开源学习平台",
+        "summary_zh": "freeCodeCamp是知名的开源编程学习平台，提供免费数学、编程和计算机科学课程。该平台拥有完善的课程体系和活跃的社区支持，帮助数百万学习者掌握编程技能。作为GitHub上星标最多的项目之一，其课程涵盖前端开发、数据可视化、API开发等多个领域。虽然平台本身并非新发布，但持续更新的内容使其保持较高价值，是编程入门和进阶的优质资源。"
+      },
+      "ai_score": 5.0,
+      "ai_reason": "Well-established open-source learning platform. Consistently valuable but not a new development or breakthrough.",
+      "ai_summary": "freeCodeCamp's open-source codebase offering free education in math, programming, and computer science.",
+      "ai_tags": [
+        "education",
+        "open-source",
+        "programming",
+        "web-development"
+      ]
+    },
+    {
+      "id": "github:search:openclaw/openclaw",
+      "source_type": "github",
+      "title": "GitHub Hot: openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "content": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+      "author": "openclaw",
+      "published_at": "2026-08-28T21:58:19+00:00",
+      "fetched_at": "2026-08-28T22:00:21.371651",
+      "metadata": {
+        "type": "search",
+        "repo": "openclaw/openclaw",
+        "language": "TypeScript",
+        "stars": 387928,
+        "title_zh": "openclaw跨平台AI助手",
+        "summary_zh": "openclaw是一款跨平台个人AI助手项目，支持任意操作系统和平台部署。项目以龙虾为主题进行品牌设计，具有一定的创意特色。该AI助手旨在为用户提供个性化的智能服务，但具体技术实现和功能细节披露有限。作为众多AI助手项目中的一个，其差异化优势不够明显，技术创新点尚不清晰，整体属于中等价值的开源项目，值得持续关注但非突破性进展。"
+      },
+      "ai_score": 4.0,
+      "ai_reason": "Personal AI assistant project with cross-platform support. Interesting but lacks detailed technical information or unique innovation.",
+      "ai_summary": "Cross-platform personal AI assistant project supporting any OS with a unique lobster-themed branding approach.",
+      "ai_tags": [
+        "AI-assistant",
+        "cross-platform",
+        "open-source"
+      ]
+    },
+    {
+      "id": "github:search:awesome-selfhosted/awesome-selfhosted",
+      "source_type": "github",
+      "title": "GitHub Hot: awesome-selfhosted/awesome-selfhosted",
+      "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+      "content": "A list of Free Software network services and web applications which can be hosted on your own servers",
+      "author": "awesome-selfhosted",
+      "published_at": "2026-08-28T21:59:55+00:00",
+      "fetched_at": "2026-08-28T22:00:21.371651",
+      "metadata": {
+        "type": "search",
+        "repo": "awesome-selfhosted/awesome-selfhosted",
+        "language": null,
+        "stars": 315778,
+        "title_zh": "自托管软件精选清单",
+        "summary_zh": "awesome-selfhosted是一份精心整理的自托管软件清单，收录了大量可在个人服务器上部署的免费网络服务和Web应用。该列表涵盖文件存储、协作工具、媒体服务、开发工具等多个类别，为开发者和系统管理员提供了一站式参考资源。作为GitHub上备受推崇的awesome系列项目之一，它帮助用户摆脱对云服务的依赖，实现数据自主掌控。定期更新的内容使其保持实用价值。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "Comprehensive curated list of self-hosted software. Valuable reference resource for developers and system administrators.",
+      "ai_summary": "Curated collection of free software network services and web applications for self-hosting on personal servers.",
+      "ai_tags": [
+        "self-hosted",
+        "open-source",
+        "devops",
+        "awesome-list"
+      ]
+    },
+    {
+      "id": "github:search:react/react",
+      "source_type": "github",
+      "title": "GitHub Hot: react/react",
+      "url": "https://github.com/react/react",
+      "content": "The library for web and native user interfaces.",
+      "author": "react",
+      "published_at": "2026-08-28T20:29:16+00:00",
+      "fetched_at": "2026-08-28T22:00:21.371651",
+      "metadata": {
+        "type": "search",
+        "repo": "react/react",
+        "language": "JavaScript",
+        "stars": 248006,
+        "title_zh": "React前端框架仓库",
+        "summary_zh": "React是由Meta维护的用于构建Web和原生用户界面的JavaScript库。作为前端开发领域最流行的框架之一，React采用组件化开发模式和虚拟DOM技术，大幅提升了开发效率和用户体验。该仓库是React的核心代码库，包含完整的框架实现和文档资源。虽然React本身并非新发布，但作为现代Web开发的基石技术，其持续演进对整个前端生态具有深远影响，值得开发者持续关注。"
+      },
+      "ai_score": 5.0,
+      "ai_reason": "Major UI library for web and native interfaces. Foundational technology but this is just the main repo, not a new release.",
+      "ai_summary": "React library repository for building web and native user interfaces, maintained by Meta.",
+      "ai_tags": [
+        "react",
+        "frontend",
+        "javascript",
+        "UI-library"
+      ]
+    },
+    {
+      "id": "github:search:torvalds/linux",
+      "source_type": "github",
+      "title": "GitHub Hot: torvalds/linux",
+      "url": "https://github.com/torvalds/linux",
+      "content": "Linux kernel source tree",
+      "author": "torvalds",
+      "published_at": "2026-08-28T21:41:08+00:00",
+      "fetched_at": "2026-08-28T22:00:21.371651",
+      "metadata": {
+        "type": "search",
+        "repo": "torvalds/linux",
+        "language": "C",
+        "stars": 244842,
+        "title_zh": "Linux内核源代码库",
+        "summary_zh": "Linux内核源代码仓库，由Linus Torvalds亲自维护。作为全球使用最广泛的操作系统内核，Linux支撑着从服务器、移动设备到嵌入式系统的各类计算平台。该仓库是Linux内核的核心代码库，包含完整的内核实现和开发文档。Linux内核的持续演进对云计算、物联网、人工智能等领域具有基础性支撑作用。虽然此次仅是主仓库上榜而非特定版本发布，但其作为开源软件基石的地位无可替代。"
+      },
+      "ai_score": 5.0,
+      "ai_reason": "Linux kernel source tree. Foundational to modern computing but this is just the main repo, not a specific update.",
+      "ai_summary": "Official Linux kernel source tree repository maintained by Linus Torvalds.",
+      "ai_tags": [
+        "linux",
+        "kernel",
+        "operating-system",
+        "open-source"
+      ]
+    },
+    {
+      "id": "github:search:affaan-m/ECC",
+      "source_type": "github",
+      "title": "GitHub Hot: affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "content": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "author": "affaan-m",
+      "published_at": "2026-08-28T21:58:56+00:00",
+      "fetched_at": "2026-08-28T22:00:21.371651",
+      "metadata": {
+        "type": "search",
+        "repo": "affaan-m/ECC",
+        "language": "JavaScript",
+        "stars": 243956,
+        "title_zh": "ECC AI代理优化系统",
+        "summary_zh": "ECC是一款AI代理性能优化系统，专为Claude Code、Codex、Cursor等AI编程工具设计。该系统通过技能、本能、记忆、安全和研究优先开发等模块，全面提升AI代理的工作效能。ECC采用创新架构，为AI代理提供持久化记忆机制和行为优化策略，使其在代码生成、调试和重构任务中表现更出色。这一工具反映了AI辅助编程领域从单一模型向系统化代理演进的趋势，对提升开发者生产力具有实际价值。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "Agent harness performance optimization system for AI coding tools. Novel approach to improving AI agent capabilities with skills, memory, and security features.",
+      "ai_summary": "ECC is an agent performance optimization system enhancing Claude Code, Codex, Cursor and other AI coding tools with skills, memory, and security.",
+      "ai_tags": [
+        "AI-agent",
+        "coding-tools",
+        "performance-optimization",
+        "developer-tools"
+      ]
+    },
+    {
+      "id": "github:search:NousResearch/hermes-agent",
+      "source_type": "github",
+      "title": "GitHub Hot: NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "content": "The agent that grows with you",
+      "author": "NousResearch",
+      "published_at": "2026-08-28T21:54:15+00:00",
+      "fetched_at": "2026-08-28T22:00:21.371651",
+      "metadata": {
+        "type": "search",
+        "repo": "NousResearch/hermes-agent",
+        "language": "Python",
+        "stars": 237721,
+        "title_zh": "NousResearch智能代理项目",
+        "summary_zh": "hermes-agent是NousResearch推出的AI代理项目，核心理念是打造能够与用户共同成长的智能助手。NousResearch作为知名AI研究机构，在开源模型领域具有良好声誉。该代理采用自适应学习机制，能够根据用户使用习惯和需求变化持续优化自身能力。项目体现了AI代理从静态工具向动态伙伴演进的前沿方向，虽然具体技术细节披露有限，但基于NousResearch的研究实力，该项目值得AI研究者和技术开发者密切关注。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "AI agent project from NousResearch, a reputable AI research group. Promising concept of a growing agent, though details are limited.",
+      "ai_summary": "Hermes-agent is an AI agent from NousResearch designed to grow and adapt alongside its user over time.",
+      "ai_tags": [
+        "AI-agent",
+        "NousResearch",
+        "adaptive-learning",
+        "open-source"
+      ]
+    },
+    {
+      "id": "github:search:TheAlgorithms/Python",
+      "source_type": "github",
+      "title": "GitHub Hot: TheAlgorithms/Python",
+      "url": "https://github.com/TheAlgorithms/Python",
+      "content": "All Algorithms implemented in Python",
+      "author": "TheAlgorithms",
+      "published_at": "2026-08-28T21:00:09+00:00",
+      "fetched_at": "2026-08-28T22:00:21.371651",
+      "metadata": {
+        "type": "search",
+        "repo": "TheAlgorithms/Python",
+        "language": "Python",
+        "stars": 224079,
+        "title_zh": "Python算法大全开源项目",
+        "summary_zh": "TheAlgorithms/Python 是一个在 GitHub 上广受欢迎的开源项目，收录了大量使用 Python 实现的经典算法。涵盖排序、搜索、图论、动态规划等多个领域，代码结构清晰，适合作为学习数据结构和算法的参考资源。该项目持续更新，社区活跃度高，是初学者和开发者提升编程能力的实用工具。"
+      },
+      "ai_score": 5.0,
+      "ai_reason": "Educational repository with algorithm implementations in Python. Useful learning resource but not a breakthrough or new development.",
+      "ai_summary": "A comprehensive collection of algorithms implemented in Python for educational purposes.",
+      "ai_tags": [
+        "Python",
+        "算法",
+        "教育",
+        "开源",
+        "数据结构"
+      ]
+    },
+    {
+      "id": "github:search:n8n-io/n8n",
+      "source_type": "github",
+      "title": "GitHub Hot: n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "content": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "author": "n8n-io",
+      "published_at": "2026-08-28T21:43:24+00:00",
+      "fetched_at": "2026-08-28T22:00:21.371651",
+      "metadata": {
+        "type": "search",
+        "repo": "n8n-io/n8n",
+        "language": "TypeScript",
+        "stars": 202711,
+        "title_zh": "n8n工作流自动化平台",
+        "summary_zh": "n8n 是一个公平代码许可的工作流自动化平台，支持可视化构建与自定义代码结合。平台内置原生AI能力，提供超过400种集成连接器，可自托管或云端部署。该工具让开发者和业务人员能够快速构建复杂的自动化工作流，在AI应用编排和企业流程自动化领域具有重要价值，是当前自动化领域的热门选择。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "Important workflow automation platform with native AI capabilities and 400+ integrations. High value tool for automation and AI workflow building.",
+      "ai_summary": "Fair-code workflow automation platform combining visual building with custom code and native AI capabilities.",
+      "ai_tags": [
+        "工作流自动化",
+        "AI",
+        "低代码",
+        "集成",
+        "开源"
+      ]
+    },
+    {
+      "id": "github:search:anomalyco/opencode",
+      "source_type": "github",
+      "title": "GitHub Hot: anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "content": "The open source coding agent.",
+      "author": "anomalyco",
+      "published_at": "2026-08-28T21:56:39+00:00",
+      "fetched_at": "2026-08-28T22:00:21.371651",
+      "metadata": {
+        "type": "search",
+        "repo": "anomalyco/opencode",
+        "language": "TypeScript",
+        "stars": 202191,
+        "title_zh": "opencode开源编程代理",
+        "summary_zh": "opencode 是一个开源的AI编程代理工具，旨在为开发者提供智能化的代码辅助能力。作为新兴的AI编程助手，它代表了当前AI辅助开发领域的重要发展方向。该项目允许开发者利用AI能力加速编码过程，提高开发效率。在AI编程助手竞争激烈的当下，开源方案为开发者提供了更多选择和定制化可能性，具有较高的技术探索价值。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "Open source coding agent represents a novel approach to AI-assisted development. Relevant to current AI coding assistant trends.",
+      "ai_summary": "An open source coding agent providing AI-powered development assistance.",
+      "ai_tags": [
+        "AI编程",
+        "开源",
+        "编程代理",
+        "代码助手",
+        "开发工具"
+      ]
+    },
+    {
+      "id": "github:search:tensorflow/tensorflow",
+      "source_type": "github",
+      "title": "GitHub Hot: tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "content": "An Open Source Machine Learning Framework for Everyone",
+      "author": "tensorflow",
+      "published_at": "2026-08-28T21:56:21+00:00",
+      "fetched_at": "2026-08-28T22:00:21.371651",
+      "metadata": {
+        "type": "search",
+        "repo": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 197766,
+        "title_zh": "TensorFlow机器学习框架",
+        "summary_zh": "TensorFlow 是谷歌开发的开源机器学习框架，广泛用于深度学习和神经网络开发。作为业界主流ML框架之一，支持从研究原型到生产部署的全流程。虽然此次仅是常规上榜而非重大更新，但作为机器学习基础设施，其持续的热度反映了深度学习领域的活跃发展。框架提供丰富的工具和库，支持分布式训练和多平台部署。"
+      },
+      "ai_score": 5.0,
+      "ai_reason": "Major ML framework but this is just a general trending listing, not a new release or announcement. Foundational but routine.",
+      "ai_summary": "TensorFlow, Google's open source machine learning framework, continues to trend on GitHub.",
+      "ai_tags": [
+        "机器学习",
+        "深度学习",
+        "TensorFlow",
+        "AI框架",
+        "开源"
+      ]
+    },
+    {
+      "id": "github:search:microsoft/vscode",
+      "source_type": "github",
+      "title": "GitHub Hot: microsoft/vscode",
+      "url": "https://github.com/microsoft/vscode",
+      "content": "Visual Studio Code",
+      "author": "microsoft",
+      "published_at": "2026-08-28T21:55:34+00:00",
+      "fetched_at": "2026-08-28T22:00:21.371651",
+      "metadata": {
+        "type": "search",
+        "repo": "microsoft/vscode",
+        "language": "TypeScript",
+        "stars": 189754,
+        "title_zh": "VS Code代码编辑器",
+        "summary_zh": "Visual Studio Code 是微软开发的免费开源代码编辑器，凭借丰富的扩展生态和轻量级特性成为全球最受欢迎的开发工具之一。支持多种编程语言，内置Git控制和调试功能。此次上榜属于常规热门，并非重大更新发布。作为开发者日常工具，VS Code的持续流行反映了其对现代开发工作流的良好支持。"
+      },
+      "ai_score": 4.0,
+      "ai_reason": "Popular code editor but just a routine trending listing. No new major features or announcements mentioned.",
+      "ai_summary": "Visual Studio Code, Microsoft's popular code editor, continues to be trending on GitHub.",
+      "ai_tags": [
+        "代码编辑器",
+        "开发工具",
+        "微软",
+        "开源",
+        "IDE"
+      ]
+    },
+    {
+      "id": "github:search:yt-dlp/yt-dlp",
+      "source_type": "github",
+      "title": "GitHub Hot: yt-dlp/yt-dlp",
+      "url": "https://github.com/yt-dlp/yt-dlp",
+      "content": "A feature-rich command-line audio/video downloader",
+      "author": "yt-dlp",
+      "published_at": "2026-08-28T21:51:19+00:00",
+      "fetched_at": "2026-08-28T22:00:21.371651",
+      "metadata": {
+        "type": "search",
+        "repo": "yt-dlp/yt-dlp",
+        "language": "Python",
+        "stars": 187556,
+        "title_zh": "yt-dlp命令行下载工具",
+        "summary_zh": "yt-dlp 是一个功能丰富的命令行音视频下载工具，是youtube-dl的活跃分支。支持从数千个网站下载视频和音频，提供丰富的格式选择和自定义选项。工具持续更新以应对各平台的变化，在技术社区中保持较高热度。作为实用的命令行工具，适合需要批量下载或自动化处理媒体内容的开发者和用户。"
+      },
+      "ai_score": 4.0,
+      "ai_reason": "Popular video downloader tool but routine listing. Useful utility but not groundbreaking or highly technical.",
+      "ai_summary": "yt-dlp is a feature-rich command-line audio/video downloader continuing to trend on GitHub.",
+      "ai_tags": [
+        "命令行工具",
+        "视频下载",
+        "开源",
+        "多媒体",
+        "自动化"
+      ]
+    },
+    {
+      "id": "github:search:Significant-Gravitas/AutoGPT",
+      "source_type": "github",
+      "title": "GitHub Hot: Significant-Gravitas/AutoGPT",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "content": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "author": "Significant-Gravitas",
+      "published_at": "2026-08-28T20:57:24+00:00",
+      "fetched_at": "2026-08-28T22:00:21.371651",
+      "metadata": {
+        "type": "search",
+        "repo": "Significant-Gravitas/AutoGPT",
+        "language": "Python",
+        "stars": 186963,
+        "title_zh": "AutoGPT自主AI代理项目",
+        "summary_zh": "AutoGPT 是一个旨在让AI对每个人都可访问和可构建的开源项目。作为早期AI Agent概念的重要实践者，该项目推动了自主AI代理的发展。项目提供工具让开发者能够专注于核心业务逻辑，而非底层AI实现。虽然在商业化路径上经历调整，但其在AI Agent领域的探索具有重要参考价值，持续吸引社区关注和讨论。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "Significant AI agent project with high community interest. Important for autonomous AI development but not a new breakthrough.",
+      "ai_summary": "AutoGPT is an ambitious project aiming to make accessible AI for everyone to use and build upon.",
+      "ai_tags": [
+        "AI Agent",
+        "自主AI",
+        "开源",
+        "大语言模型",
+        "自动化"
+      ]
+    },
+    {
+      "id": "github:search:avelino/awesome-go",
+      "source_type": "github",
+      "title": "GitHub Hot: avelino/awesome-go",
+      "url": "https://github.com/avelino/awesome-go",
+      "content": "A curated list of awesome Go frameworks, libraries and software",
+      "author": "avelino",
+      "published_at": "2026-08-28T21:54:08+00:00",
+      "fetched_at": "2026-08-28T22:00:21.371651",
+      "metadata": {
+        "type": "search",
+        "repo": "avelino/awesome-go",
+        "language": "Go",
+        "stars": 182548,
+        "title_zh": "awesome-go资源精选列表",
+        "summary_zh": "awesome-go 是一个由社区维护的Go语言优质资源精选列表，收录了各类Go框架、库和软件工具。作为Go生态系统的导航资源，帮助开发者快速找到合适的开发工具和组件。列表按类别组织，涵盖Web框架、数据库工具、测试框架等多个领域。项目持续更新，是Go开发者的重要参考资料，但属于常规资源整理类内容。"
+      },
+      "ai_score": 4.0,
+      "ai_reason": "Curated list of Go resources. Useful reference but routine content, not a technical breakthrough or new development.",
+      "ai_summary": "A curated list of awesome Go frameworks, libraries and software maintained by the community.",
+      "ai_tags": [
+        "Go语言",
+        "资源列表",
+        "开源",
+        "开发工具",
+        "社区"
+      ]
+    },
+    {
+      "id": "github:search:ollama/ollama",
+      "source_type": "github",
+      "title": "GitHub Hot: ollama/ollama",
+      "url": "https://github.com/ollama/ollama",
+      "content": "Get up and running with Kimi-K2.6, GLM-5.2, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "author": "ollama",
+      "published_at": "2026-08-28T21:28:31+00:00",
+      "fetched_at": "2026-08-28T22:00:21.371651",
+      "metadata": {
+        "type": "search",
+        "repo": "ollama/ollama",
+        "language": "Go",
+        "stars": 179662,
+        "title_zh": "Ollama本地大模型运行工具",
+        "summary_zh": "Ollama 是一个让本地运行大语言模型变得简单快捷的工具，支持Kimi-K2.6、GLM-5.2、MiniMax、DeepSeek、Qwen、Gemma等多种主流模型。该工具极大降低了本地AI部署门槛，让用户无需复杂配置即可在个人设备上运行大模型。对于注重数据隐私、需要离线使用或希望降低API成本的开发者和企业具有重要价值，是当前本地AI部署领域的关键工具。"
+      },
+      "ai_score": 8.0,
+      "ai_reason": "Critical tool for running LLMs locally. High impact for AI deployment and privacy. Mentions support for multiple major models.",
+      "ai_summary": "Ollama enables easy local deployment and running of various LLMs including Kimi, GLM, DeepSeek, Qwen and more.",
+      "ai_tags": [
+        "本地AI",
+        "大语言模型",
+        "开源",
+        "隐私",
+        "模型部署"
+      ]
+    },
+    {
+      "id": "github:search:flutter/flutter",
+      "source_type": "github",
+      "title": "GitHub Hot: flutter/flutter",
+      "url": "https://github.com/flutter/flutter",
+      "content": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
+      "author": "flutter",
+      "published_at": "2026-08-28T21:58:21+00:00",
+      "fetched_at": "2026-08-28T22:00:21.372158",
+      "metadata": {
+        "type": "search",
+        "repo": "flutter/flutter",
+        "language": "Dart",
+        "stars": 178693,
+        "title_zh": "Flutter跨平台开发框架",
+        "summary_zh": "Flutter 是谷歌开发的UI开发工具包，用于构建移动、Web和桌面端的高质量原生应用。采用Dart语言，提供丰富的预构建组件和热重载功能，显著提升跨平台开发效率。作为成熟的跨平台框架，Flutter拥有活跃的社区和完善的生态系统。此次上榜为常规热门表现，反映了其在移动开发领域的持续影响力。"
+      },
+      "ai_score": 5.0,
+      "ai_reason": "Major cross-platform framework but routine trending listing. Important technology but no new announcement or breakthrough.",
+      "ai_summary": "Flutter, Google's UI toolkit for building natively compiled applications, continues to trend on GitHub.",
+      "ai_tags": [
+        "跨平台开发",
+        "移动开发",
+        "Flutter",
+        "谷歌",
+        "UI框架"
+      ]
+    },
+    {
+      "id": "github:search:twbs/bootstrap",
+      "source_type": "github",
+      "title": "GitHub Hot: twbs/bootstrap",
+      "url": "https://github.com/twbs/bootstrap",
+      "content": "The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.",
+      "author": "twbs",
+      "published_at": "2026-08-28T21:00:25+00:00",
+      "fetched_at": "2026-08-28T22:00:21.372158",
+      "metadata": {
+        "type": "search",
+        "repo": "twbs/bootstrap",
+        "language": "MDX",
+        "stars": 174667,
+        "title_zh": "Bootstrap前端框架持续热门",
+        "summary_zh": "Bootstrap是全球最流行的前端开发框架之一，专注于响应式和移动优先的网页设计。该框架提供丰富的预构建组件和栅格系统，帮助开发者快速搭建跨设备兼容的网站。作为成熟项目，其GitHub热度反映了社区对稳定前端工具的持续需求，但近期无重大版本更新或技术突破。"
+      },
+      "ai_score": 4.0,
+      "ai_reason": "Bootstrap is a mature, well-established frontend framework. This is just a trending listing without any new release or significant update announcement. While widely used, it represents routine content rather than a breakthrough.",
+      "ai_summary": "Bootstrap remains one of the most popular HTML, CSS, and JavaScript frameworks for responsive web development.",
+      "ai_tags": [
+        "frontend",
+        "CSS框架",
+        "响应式设计",
+        "Web开发"
+      ]
+    },
+    {
+      "id": "github:search:firecrawl/firecrawl",
+      "source_type": "github",
+      "title": "GitHub Hot: firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "content": "The context API to search, scrape, and interact with the web at scale. 🔥",
+      "author": "firecrawl",
+      "published_at": "2026-08-28T21:59:00+00:00",
+      "fetched_at": "2026-08-28T22:00:21.372158",
+      "metadata": {
+        "type": "search",
+        "repo": "firecrawl/firecrawl",
+        "language": "TypeScript",
+        "stars": 173621,
+        "title_zh": "Firecrawl网页数据API热门",
+        "summary_zh": "Firecrawl是一个专为AI应用设计的规模化网页数据抓取和交互API平台。它能够将网页内容转化为结构化上下文，支持大规模搜索和爬取操作，为LLM和AI Agent提供高质量的网络数据输入。该工具解决了AI应用中网页数据获取的核心痛点，在RAG管道和智能体开发中具有重要价值，近期热度持续攀升。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "Firecrawl provides a novel context API for web scraping at scale, specifically designed for AI/LLM applications. This addresses a critical need in the AI ecosystem for高质量web data ingestion, making it a valuable tool for developers building AI-powered applications.",
+      "ai_summary": "Firecrawl offers a scalable context API for searching, scraping, and interacting with web content, optimized for AI applications.",
+      "ai_tags": [
+        "AI工具",
+        "网页爬取",
+        "数据API",
+        "LLM"
+      ]
+    },
+    {
+      "id": "github:search:521xueweihan/HelloGitHub",
+      "source_type": "github",
+      "title": "GitHub Hot: 521xueweihan/HelloGitHub",
+      "url": "https://github.com/521xueweihan/HelloGitHub",
+      "content": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
+      "author": "521xueweihan",
+      "published_at": "2026-08-28T21:26:39+00:00",
+      "fetched_at": "2026-08-28T22:00:21.372158",
+      "metadata": {
+        "type": "search",
+        "repo": "521xueweihan/HelloGitHub",
+        "language": "Python",
+        "stars": 173480,
+        "title_zh": "HelloGitHub开源入门指南",
+        "summary_zh": "HelloGitHub是一个面向开源新手的精选项目集合，定期分享GitHub上有趣且易于上手的开源项目。该仓库通过分类整理和中文介绍，降低了初学者参与开源的门槛，帮助开发者发现实用的工具和库。作为开源社区的入门指南，它具有教育价值，但本质上是内容聚合项目，不涉及技术创新或重大突破。"
+      },
+      "ai_score": 4.0,
+      "ai_reason": "HelloGitHub is a curated collection of interesting, entry-level open source projects. While useful for beginners discovering open source, it's an aggregation resource rather than a technical innovation or breakthrough.",
+      "ai_summary": "HelloGitHub curates and shares interesting, beginner-friendly open source projects to help newcomers explore the GitHub ecosystem.",
+      "ai_tags": [
+        "开源项目",
+        "入门指南",
+        "GitHub",
+        "学习资源"
+      ]
+    },
+    {
+      "id": "github:search:f/prompts.chat",
+      "source_type": "github",
+      "title": "GitHub Hot: f/prompts.chat",
+      "url": "https://github.com/f/prompts.chat",
+      "content": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+      "author": "f",
+      "published_at": "2026-08-28T21:44:10+00:00",
+      "fetched_at": "2026-08-28T22:00:21.372158",
+      "metadata": {
+        "type": "search",
+        "repo": "f/prompts.chat",
+        "language": "HTML",
+        "stars": 168120,
+        "title_zh": "ChatGPT提示词集合库",
+        "summary_zh": "这是一个社区驱动的ChatGPT提示词收集平台，原名Awesome ChatGPT Prompts。用户可以分享、发现和使用各种AI对话提示词模板，支持组织内部私有部署以保护隐私。虽然对普通用户有一定参考价值，但提示词集合属于AI领域的常见资源，技术深度有限，且类似资源已广泛存在，缺乏独特创新性。"
+      },
+      "ai_score": 3.0,
+      "ai_reason": "A prompt collection library for ChatGPT. While useful for casual users, prompt libraries are common knowledge in the AI space and don't represent technical depth or innovation. The content is largely routine.",
+      "ai_summary": "A community-driven collection of ChatGPT prompts that can be shared, discovered, and self-hosted for organizational use.",
+      "ai_tags": [
+        "ChatGPT",
+        "提示词",
+        "AI工具",
+        "开源"
+      ]
+    },
+    {
+      "id": "github:search:huggingface/transformers",
+      "source_type": "github",
+      "title": "GitHub Hot: huggingface/transformers",
+      "url": "https://github.com/huggingface/transformers",
+      "content": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+      "author": "huggingface",
+      "published_at": "2026-08-28T21:58:28+00:00",
+      "fetched_at": "2026-08-28T22:00:21.372158",
+      "metadata": {
+        "type": "search",
+        "repo": "huggingface/transformers",
+        "language": "Python",
+        "stars": 164577,
+        "title_zh": "Transformers模型框架持续热门",
+        "summary_zh": "Hugging Face Transformers是机器学习领域最核心的模型框架之一，支持文本、视觉、音频和多模态模型的训练与推理。该框架提供数千个预训练模型，已成为AI开发的标准工具。作为基础设施级项目，其持续热门反映了AI行业的蓬勃发展，但此次仅为常规热门榜单展示，无特定新版本发布或重大技术突破公告。"
+      },
+      "ai_score": 5.0,
+      "ai_reason": "Transformers is a foundational ML framework, but this is just a trending listing without a specific new release or breakthrough announcement. It's important infrastructure but the listing itself is routine.",
+      "ai_summary": "Hugging Face Transformers is the leading framework for state-of-the-art machine learning models across text, vision, audio, and multimodal tasks.",
+      "ai_tags": [
+        "机器学习",
+        "深度学习",
+        "NLP",
+        "HuggingFace"
+      ]
+    },
+    {
+      "id": "github:search:Snailclimb/JavaGuide",
+      "source_type": "github",
+      "title": "GitHub Hot: Snailclimb/JavaGuide",
+      "url": "https://github.com/Snailclimb/JavaGuide",
+      "content": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
+      "author": "Snailclimb",
+      "published_at": "2026-08-28T21:05:26+00:00",
+      "fetched_at": "2026-08-28T22:00:21.372158",
+      "metadata": {
+        "type": "search",
+        "repo": "Snailclimb/JavaGuide",
+        "language": "JavaScript",
+        "stars": 158102,
+        "title_zh": "Java面试指南持续热门",
+        "summary_zh": "JavaGuide是一份全面的Java及后端开发面试指南，涵盖计算机基础、数据库、分布式系统、高并发、系统设计及AI应用开发等核心知识领域。该仓库为求职者提供系统化的学习路径和面试准备资源，在中文开发者社区中广受欢迎。作为教育类内容，它具有实用价值，但本质上是知识整理和面试辅导，不涉及技术创新或行业突破。"
+      },
+      "ai_score": 4.0,
+      "ai_reason": "JavaGuide is a comprehensive Java interview preparation guide. While valuable for job seekers, it's educational/tutorial content rather than a technical innovation. The content covers common knowledge areas.",
+      "ai_summary": "A comprehensive Java and backend interview guide covering computer fundamentals, databases, distributed systems, high concurrency, system design, and AI applications.",
+      "ai_tags": [
+        "Java",
+        "面试准备",
+        "后端开发",
+        "学习资源"
+      ]
+    },
+    {
+      "id": "github:search:langflow-ai/langflow",
+      "source_type": "github",
+      "title": "GitHub Hot: langflow-ai/langflow",
+      "url": "https://github.com/langflow-ai/langflow",
+      "content": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+      "author": "langflow-ai",
+      "published_at": "2026-08-28T21:53:05+00:00",
+      "fetched_at": "2026-08-28T22:00:21.372158",
+      "metadata": {
+        "type": "search",
+        "repo": "langflow-ai/langflow",
+        "language": "Python",
+        "stars": 153817,
+        "title_zh": "Langflow可视化AI工作流工具",
+        "summary_zh": "Langflow是一个强大的可视化AI智能体和工作流构建工具，支持通过低代码方式快速开发和部署AI应用。该工具提供直观的拖拽界面，让开发者能够轻松组合LLM、工具和数据处理模块，构建复杂的智能体系统。在AI Agent开发需求激增的背景下，Langflow降低了技术门槛，加速了从原型到生产的转化过程，具有重要的实用价值。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "Langflow is a powerful visual tool for building AI agents and workflows. It addresses the growing need for accessible AI application development, offering a low-code approach to agent engineering that's valuable for rapid prototyping.",
+      "ai_summary": "Langflow is a powerful visual tool for building and deploying AI-powered agents and workflows with a low-code approach.",
+      "ai_tags": [
+        "AI Agent",
+        "工作流",
+        "低代码",
+        "Langflow"
+      ]
+    },
+    {
+      "id": "github:search:langgenius/dify",
+      "source_type": "github",
+      "title": "GitHub Hot: langgenius/dify",
+      "url": "https://github.com/langgenius/dify",
+      "content": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
+      "author": "langgenius",
+      "published_at": "2026-08-28T21:34:00+00:00",
+      "fetched_at": "2026-08-28T22:00:21.372158",
+      "metadata": {
+        "type": "search",
+        "repo": "langgenius/dify",
+        "language": "TypeScript",
+        "stars": 153773,
+        "title_zh": "Dify AI应用开发平台热门",
+        "summary_zh": "Dify是一个功能全面的AI应用开发平台，支持构建智能体工作流和RAG管道，集成丰富的AI模型和工具。该平台提供协作式工作空间，支持云端、VPC或自托管部署，帮助团队高效完成从原型到生产的转化而无需重建技术栈。在当前AI应用开发热潮中，Dify解决了模型集成、工作流编排和部署运维等核心痛点，是LLMOps领域的重要工具。"
+      },
+      "ai_score": 8.0,
+      "ai_reason": "Dify is a comprehensive platform for building agentic workflows and RAG pipelines with extensive AI model support. It represents a significant tool in the AI application development space, enabling teams to move from prototype to production efficiently.",
+      "ai_summary": "Dify is a collaborative platform for building agentic workflows and RAG pipelines with rich AI model support, enabling seamless prototype-to-production deployment.",
+      "ai_tags": [
+        "AI平台",
+        "RAG",
+        "智能体",
+        "LLMOps",
+        "工作流"
+      ]
+    },
+    {
+      "id": "github:search:open-webui/open-webui",
+      "source_type": "github",
+      "title": "GitHub Hot: open-webui/open-webui",
+      "url": "https://github.com/open-webui/open-webui",
+      "content": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+      "author": "open-webui",
+      "published_at": "2026-08-28T21:47:18+00:00",
+      "fetched_at": "2026-08-28T22:00:21.372158",
+      "metadata": {
+        "type": "search",
+        "repo": "open-webui/open-webui",
+        "language": "Python",
+        "stars": 150247,
+        "title_zh": "Open WebUI本地AI交互界面",
+        "summary_zh": "Open WebUI是一个用户友好的AI交互界面工具，支持Ollama本地模型、OpenAI API等多种AI服务接入。该工具提供类似ChatGPT的对话体验，同时允许用户使用本地部署的开源模型，保护数据隐私。对于希望在本地运行AI模型并需要良好交互体验的用户而言，这是一个实用选择。虽然功能不断完善，但本质上属于界面层工具，技术创新性有限。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "Open WebUI provides a user-friendly interface for interacting with various AI models including Ollama and OpenAI API. It's a useful tool for local AI deployment but represents incremental improvement rather than breakthrough.",
+      "ai_summary": "Open WebUI offers a user-friendly interface for interacting with AI models, supporting Ollama, OpenAI API, and other providers.",
+      "ai_tags": [
+        "AI界面",
+        "Ollama",
+        "本地部署",
+        "开源"
+      ]
+    },
+    {
+      "id": "github:search:langchain-ai/langchain",
+      "source_type": "github",
+      "title": "GitHub Hot: langchain-ai/langchain",
+      "url": "https://github.com/langchain-ai/langchain",
+      "content": "The agent engineering platform.",
+      "author": "langchain-ai",
+      "published_at": "2026-08-28T21:56:48+00:00",
+      "fetched_at": "2026-08-28T22:00:21.372158",
+      "metadata": {
+        "type": "search",
+        "repo": "langchain-ai/langchain",
+        "language": "Python",
+        "stars": 145205,
+        "title_zh": "LangChain智能体开发平台",
+        "summary_zh": "LangChain是当前最主流的AI智能体工程平台，为开发者提供构建LLM应用的完整框架。该平台支持链式调用、工具集成、记忆管理等核心功能，帮助开发者快速搭建复杂的AI应用。作为AI开发生态的基础设施，LangChain拥有庞大的社区和丰富的插件生态。此次热门榜单展示反映了AI Agent开发的持续热度，但无特定新版本或重大突破公告。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "LangChain is a foundational framework for AI agent development. While critically important to the ecosystem, this is just a trending listing without a specific new release or major announcement. It's established infrastructure.",
+      "ai_summary": "LangChain is the leading agent engineering platform for building applications with large language models.",
+      "ai_tags": [
+        "AI Agent",
+        "LangChain",
+        "LLM框架",
+        "智能体"
+      ]
+    },
+    {
+      "id": "github:search:anthropics/claude-code",
+      "source_type": "github",
+      "title": "GitHub Hot: anthropics/claude-code",
+      "url": "https://github.com/anthropics/claude-code",
+      "content": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "author": "anthropics",
+      "published_at": "2026-08-28T21:48:19+00:00",
+      "fetched_at": "2026-08-28T22:00:21.372158",
+      "metadata": {
+        "type": "search",
+        "repo": "anthropics/claude-code",
+        "language": "Python",
+        "stars": 143299
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Hot: anthropics/claude-code",
+      "ai_tags": []
+    },
+    {
+      "id": "github:search:vercel/next.js",
+      "source_type": "github",
+      "title": "GitHub Hot: vercel/next.js",
+      "url": "https://github.com/vercel/next.js",
+      "content": "The React Framework",
+      "author": "vercel",
+      "published_at": "2026-08-28T21:06:54+00:00",
+      "fetched_at": "2026-08-28T22:00:21.372158",
+      "metadata": {
+        "type": "search",
+        "repo": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 141975
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Hot: vercel/next.js",
+      "ai_tags": []
+    },
+    {
+      "id": "github:search:clash-verge-rev/clash-verge-rev",
+      "source_type": "github",
+      "title": "GitHub Hot: clash-verge-rev/clash-verge-rev",
+      "url": "https://github.com/clash-verge-rev/clash-verge-rev",
+      "content": "A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored proxy experience",
+      "author": "clash-verge-rev",
+      "published_at": "2026-08-28T20:03:55+00:00",
+      "fetched_at": "2026-08-28T22:00:21.372158",
+      "metadata": {
+        "type": "search",
+        "repo": "clash-verge-rev/clash-verge-rev",
+        "language": "TypeScript",
+        "stars": 140777
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GitHub Hot: clash-verge-rev/clash-verge-rev",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49479837",
+      "source_type": "hackernews",
+      "title": "GUIs should be fully keyboard-driven",
+      "url": "https://ckardaris.com/blog/2026/08/28/keyboard-driven-guis.html",
+      "content": "\n--- Top Comments ---\n\n[rootedbox]: I work on ADA a lot for my company. Please put on some headphones, turn on the voice assistant of your OS, put on some blinders, and run your app or website… no mouse, just keyboard. 1. Democracy is about access; make sure everyone has access to your software.\n2. The keyboard allows folks with disabilities and power users to fly through your website&#x2F;app… that being said… the second a tab is off, the person with a disability flies into a wall.\n\n[cosmic_cheese]: Keyboard accessibility is one of those things that tends to get swept under the rug or forgotten about entirely alongside accessibility in general. The funny thing is that the former usually falls out of the latter. Part of the blame lands on the shoulders of popular UI frameworks (or in the case of those choosing to eschew use of such, the developers who made that choice). The older frameworks tend to make this fairly easy; for example, in Cocoa&#x2F;AppKit (Mac native UI framework), one can...\n\n[jmount]: And tablets should have a &quot;direct touch only, all options present mode&quot; (no long-presses, no drags, no drags from edge, no swipes.&quot; It would really improve accessibility.\n\n[manlymuppet]: Power user experience is not the same thing as user experience in general. If you want to make the argument that all developer tooling should be keyboard-driven, fine, be my guest. But most people aren&#x27;t willing to deal with the learning curve of keyboard-driven GUIs, and that&#x27;s okay. We shouldn&#x27;t force it. HN&#x27;s insistence on acting like all users are Arch Linux efficiency perfectionist hacker types is painfully corny. (This reads harsher than I intended. Sorry about that....\n\n[YmiYugy]: What does it mean though for a GUI to be keyboard-driven?\nThe obvious way is that every action simply gets a shortcut assigned.\nMy counter would be that that is not really keyboard-driven, but merely keyboard-compatible.There is the issue of discoverability. The best practice right now seems to display the shortcuts of buttons in tooltips, menu items, or when pressing a different shortcut.\nI’d content that buttons are a fundamental mismatch with keyboards. A keyboard driven UI shouldn’t have ...",
+      "author": "ckardaris",
+      "published_at": "2026-08-28T15:17:09+00:00",
+      "fetched_at": "2026-08-28T22:00:14.927893",
+      "metadata": {
+        "score": 456,
+        "descendants": 241,
+        "type": "story",
+        "discussion_url": "https://news.ycombinator.com/item?id=49479837",
+        "comment_count": 5
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GUIs should be fully keyboard-driven",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49483182",
+      "source_type": "hackernews",
+      "title": "25,000 Lbs. Of Chicken Products Recalled in 5 States: USDA",
+      "url": "https://www.thehealthy.com/news/chicken-recall-fsis-august-2026/",
+      "content": "\n--- Top Comments ---\n\n[randycupertino]: So let&#x27;s see, in the past few years we&#x27;ve had the Boar&#x27;s head listeria recalls, Taylor farms lettuce contamination, the McDonalds e.coli recalls in 14 states, now chicken wings... Defunding the FDA and forcing out 4500 staff via DOGE cuts caused this.  Right now we have 400 safety inspectors covering 36,000 facilities vs the FDA&#x27;s own estimates they need at least 1,500 inspectors.  https:&#x2F;&#x2F;www.nytimes.com&#x2F;2025&#x2F;03&#x2F;19&#x2F;health&#x2F;food-safety-tru...\n\n[nba456_]: 25,000 lbs is .0000007% of the 35,000,000,000 lbs of chicken consumed in the US each year.\n\n[dmschulman]: The FDA was already in bad shape as far as inspections go. In &#x27;The Secret Life of Groceries&#x27; (published in 2020) I believe the statistic was that the people responsible for keeping our food system safe only have the capacity to inspect around 5% of domestic agricultural and food processing operations nation-wide. That speaks more to the amount and size of agri-business in the United States than the FDA&#x27;s capacity, but it also doesn&#x27;t mean great things for the federal gover...\n\n[bradly]: When I saw the EST. 18004 in the article I thought the inspection stamps were bad ai attempts, but after some research I found out the EST here is not supposed to be a year, but the id of the  establishment being inspected. You can look up the number or the company and see no entries here  https:&#x2F;&#x2F;www.fsis.usda.gov&#x2F;inspection&#x2F;fsis-inspected-establis...\n\n[altruios]: The Boston-based &quot;Shanghai Ravioli Corporation, Inc.&quot; selling buffalo wild chicken wings... That&#x27;s a wild combination of words there.",
+      "author": "randycupertino",
+      "published_at": "2026-08-28T19:30:15+00:00",
+      "fetched_at": "2026-08-28T22:00:14.927893",
+      "metadata": {
+        "score": 157,
+        "descendants": 111,
+        "type": "story",
+        "discussion_url": "https://news.ycombinator.com/item?id=49483182",
+        "comment_count": 5
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "25,000 Lbs. Of Chicken Products Recalled in 5 States: USDA",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49478178",
+      "source_type": "hackernews",
+      "title": "Htmx 4.0",
+      "url": "https://four.htmx.org/announcements/2026-08-28-htmx-4.0.0-is-released",
+      "content": "\n--- Top Comments ---\n\n[threesmegiste]: A thoughtful, clean, and useful library that wasn&#x27;t built to climb the corporate ladder. It grew organically. I think it became a cry of relief for those annoyed by unnecessary complexity, which also boosted its recognition. It served as a starting point for things like Datastar, too. I believe it brought a refreshing breath of air to the frontend landscape.\n\n[dec0dedab0de]: I really like htmx, and intercooler.js before it.  It&#x27;s been a while since I tried to convince a co-worker to use it, it might be time to try again.  Either way I can&#x27;t wait to try out the new version. Full Disclosure, I am CEO of HTMX\n\n[rednb]: Maybe a contrarian view, but as someone very knowledgeable about .NET API backends + angular on the frontend, I&#x27;ve found that HTMX made things more difficult as it required me to move back to mixing presentation concerns with business-logic and data concerns (basically have the backend produce the UI, which is whole point of HTMX). This is not a criticism but I suspect that the people enjoying HTMX are either people preferring old-school server-side rendering or react users. Just sharing...\n\n[nzoschke]: Congrats and thanks! htmx brings me joy. Pretty much every experiment I build now starts with Go, htmx, and SQLite to keep things simple and fast but still responsive. I put a few more thoughts about this here:  https:&#x2F;&#x2F;housecat.com&#x2F;blog&#x2F;the-hugs-stack-hypermedia-unix-go-...\n\n[miguel-muniz]: As the CEO of HTMX, I&#x27;ve never used HTMX but I&#x27;ve been keeping an eye on the releases, essays, and talks. Congratulations to the team.",
+      "author": "rmsaksida",
+      "published_at": "2026-08-28T13:28:56+00:00",
+      "fetched_at": "2026-08-28T22:00:14.927893",
+      "metadata": {
+        "score": 419,
+        "descendants": 103,
+        "type": "story",
+        "discussion_url": "https://news.ycombinator.com/item?id=49478178",
+        "comment_count": 5
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "Htmx 4.0",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49480466",
+      "source_type": "hackernews",
+      "title": "Just the rumour of a bug is enough to find an exploit these days",
+      "url": "https://anil.recoil.org/notes/rumour-is-the-exploit",
+      "content": "\n--- Top Comments ---\n\n[nickcw]: This describes my life as an open source maintainer at the moment! In the first 10 years of the rclone project we received about 20 security disclosures through GitHub. We had to deal with over 40 in the last month! That has taken a huge amount of my time, even using AI tools to triage and come up with fixes for review. The hit rate for those security disclosures is pretty good - about 75% of them have a nugget of something which needs looking at. The configurations for rclone have got increa...\n\n[godelski]: It&#x27;s easier to find bugs, fix them, yet there&#x27;s less will than ever. My bosses just want speed and will give me a 30 minute lecture on why I don&#x27;t need to solve a bug that Claude solved in 5 minutes, I&#x27;ve verified, and it&#x27;s already in an open PR. All the while we&#x27;re pushing out bugs faster and faster. No matter how good AI gets at fixing bugs we&#x27;ll never fix them when there&#x27;s no will to fix things. Software will never be good if there&#x27;s no will to ...\n\n[rndhouse]: I built a tool that monitors commits and tries to detect silent bug fixes. With GPT-5.5-class models, it can identify fixes hidden within otherwise routine commits quite reliably. Obfuscating the code changes enough to avoid detection is difficult. I have heard of at least one project (c-lightning?) temporarily releasing a closed-source binary as a workaround until users could update safely.\n\n[bri3d]: I don&#x27;t think this is new with LLMs (finding an exploit based on a few words offhand has always been a fun part of exploit development), but it&#x27;s scaled and democratized to mass exploitation of low value targets. Backing exploit PoCs out of patches, commit messages, and random overheard or over-read sentences is a practice as old as vulnerability research. The difference with LLMs is that an explosion in actors &quot;skilled enough&quot; (human or not) has enabled sloppy &#x2F; low-...\n\n[ChrisMarshallNY]: Sadly, it seems that the lesson from this, is to keep your repos private. I am not a fan of that, but I think many folks will take that away from this.",
+      "author": "avsm",
+      "published_at": "2026-08-28T15:58:46+00:00",
+      "fetched_at": "2026-08-28T22:00:14.927893",
+      "metadata": {
+        "score": 198,
+        "descendants": 68,
+        "type": "story",
+        "discussion_url": "https://news.ycombinator.com/item?id=49480466",
+        "comment_count": 5
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "Just the rumour of a bug is enough to find an exploit these days",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49477854",
+      "source_type": "hackernews",
+      "title": "U.S. sanctions against the A/I Collective",
+      "url": "https://www.inventati.org/",
+      "content": "Earlier:<p><i>US Government designates host of noblogs.org a &quot;global terrorist&quot;</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49464391\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49464391</a> -  (131 comments)<p><i>US sanctions Italian hosting provider Autistici Inventati</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49451343\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49451343</a> - (219 comments)\n\n\n--- Top Comments ---\n\n[iamnothere]: Everyone’s missing the big picture here which is that this targeting of infrastructure providers as “terrorists” is unprecedented and concerning:  https:&#x2F;&#x2F;decode39.com&#x2F;16319&#x2F;autistici-inventati-case-sets-a-n...  If a radical group sets up shop on I2P, are I2P users and devs now terrorists? This is a problem. What about Monero users&#x2F;devs? Veilid? Tox? Signal?\n\n[mdp2021]: &gt;  Only months after Paranoia  [their first server]  went online, the G8 came to Genoa. Many A&#x2F;I participants were also involved with Indymedia Italy. They helped construct the movement’s media center, laying cables, configuring servers and building workstations through which protesters could report what was happening across the city. What followed was historic: enormous demonstrations, the police killing of Carlo Giuliani, indiscriminate beatings in the streets, torture and abuse ins...\n\n[exiguus]: There is also an article on we will free us [1] if you want to dive deeper into that rabbit hole. [1]  https:&#x2F;&#x2F;www.wewillfreeus.org&#x2F;the-server-called-paranoia-defe...\n\n[Avicebron]: I clicked around a bit, read the manifesto, I still have no idea what these people do. I guess they claim to have been around for a while, but a bunch of the links don&#x27;t work and the manifesto has definitely been updated to reflect 2026 opinions. What is this?\n\n[cvalkz]: Could the persons that mention the PKK all over this thread kindly find links now that noblogs.org is partly dysfunctional and autistici.org is down? Google Search yields a very small amount of third party support for the PKK, all unreachable now. I cannot find any evidence at all and neither can LLMs that this organization has ever directly supported the PKK or hosted a PKK website.",
+      "author": "exiguus",
+      "published_at": "2026-08-28T12:58:53+00:00",
+      "fetched_at": "2026-08-28T22:00:14.927893",
+      "metadata": {
+        "score": 410,
+        "descendants": 368,
+        "type": "story",
+        "discussion_url": "https://news.ycombinator.com/item?id=49477854",
+        "comment_count": 5
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "U.S. sanctions against the A/I Collective",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49477564",
+      "source_type": "hackernews",
+      "title": "Inception-style curved map for turn-by-turn directions",
+      "url": "https://www.orbify.eu/demo/",
+      "content": "\n--- Top Comments ---\n\n[tomgp]: First time I saw this idea was Berg&#x27;s &quot;Here and There&quot; poster from 2009 (a year before Inception) though they acknowledge a bunch of earlier inspirations...  https:&#x2F;&#x2F;berglondon.com&#x2F;blog&#x2F;2009&#x2F;05&#x2F;04&#x2F;here-there-influences...\n\n[sd9]: This is a really good proof of concept. I would use this. Something about the moment of the turn itself isn’t working for me though. Just before the turn you have essentially no information about the route ahead, until after the turn is completed. This would make a sequence of consecutive turns difficult to navigate.\n\n[orbital-decay]: This looks pretty neat but also distracting and not very convenient. A useful follow mode should provide a view into the next several dozen seconds of road conditions. This projection forces road sections after sharp turns to go off screen, and does nothing to compensate for that (e.g. by rotating the view), so the distance and time of useful prediction changes constantly. Since you&#x27;re already willing to give the driver nausea, consider unwrapping 90 degree turns into something more stra...\n\n[tantalor]: I see a whole new business category being born: Nausea as a Service!\n\n[dom96]: Gets stuck loading at 90% for me",
+      "author": "smoser",
+      "published_at": "2026-08-28T12:29:05+00:00",
+      "fetched_at": "2026-08-28T22:00:14.927893",
+      "metadata": {
+        "score": 369,
+        "descendants": 126,
+        "type": "story",
+        "discussion_url": "https://news.ycombinator.com/item?id=49477564",
+        "comment_count": 5
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "Inception-style curved map for turn-by-turn directions",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49479878",
+      "source_type": "hackernews",
+      "title": "GLM-5.3 is now open-weight",
+      "url": "https://huggingface.co/zai-org/GLM-5.3",
+      "content": "<a href=\"https:&#x2F;&#x2F;twitter.com&#x2F;Zai_org&#x2F;status&#x2F;2093354097122455713\" rel=\"nofollow\">https:&#x2F;&#x2F;twitter.com&#x2F;Zai_org&#x2F;status&#x2F;2093354097122455713</a><p><a href=\"https:&#x2F;&#x2F;z.ai&#x2F;blog&#x2F;glm-5.3\" rel=\"nofollow\">https:&#x2F;&#x2F;z.ai&#x2F;blog&#x2F;glm-5.3</a>\n\n\n--- Top Comments ---\n\n[revolvingthrow]: GLM 5.3 is probably the sweet spot open weights model if you want to go beyond deepseek flash or the new glm flash. I used it with pi and had a fairly good time, especially since it’s less touchy about cyber and whatnot than the US guys. It’s slightly behind Kimi in ability but it’s a  lot  easier to run it, I’d expect prices (and speed!) from third parties to be noticeably better. Assuming you’re willing to drop a fat stack of cash on the upcoming Mac m5 ultra with 512 gb unified memory, you...\n\n[nkmnz]: I&#x27;d like to ask Sam Altman if he still thinks that it&#x27;s too dangerous to publish GPT-3. I mean, no one would use it, but what is his reasoning for not publishing it now, in 2026?\n\n[mmastrac]: I previously posted that DS4Flash was _good_ but not _great_ on two DGX Sparks, but I have to say that GLM-5.3 is pretty amazing. It&#x27;s been able to tackle all the random hard problems I&#x27;ve thrown at it and it has the intuition that DS4Flash seems to lack. We&#x27;re nowhere near a Fable-class model IMO, but things are going to get interesting in this next year.\n\n[armcat]: What&#x27;s very promising here is the number of tokens-vs-accuracy ratio. I am assuming their &quot;output tokens&quot; means tokens generated as part of thinking and any tool calls (what are referred to as &quot;input tokens&quot; from billing PoV by service providers). The Chinese models like Qwen3.8 and GLM 5.2 are insanely overthinking in our workloads (which are highly complex data analysis tasks). It&#x27;s a factor of 3-4x over Opus and GPT models. Even with cheaper prices per 1M toke...\n\n[scosman]: I&#x27;ve been using it more and more. Feels like Opus 4.8, in the best possible way.",
+      "author": "jeudesprits",
+      "published_at": "2026-08-28T15:20:13+00:00",
+      "fetched_at": "2026-08-28T22:00:14.927893",
+      "metadata": {
+        "score": 498,
+        "descendants": 180,
+        "type": "story",
+        "discussion_url": "https://news.ycombinator.com/item?id=49479878",
+        "comment_count": 5
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "GLM-5.3 is now open-weight",
+      "ai_tags": []
+    },
+    {
+      "id": "hackernews:story:49472216",
+      "source_type": "hackernews",
+      "title": "The Twelve-Factor App (2025)",
+      "url": "https://12factor.net/",
+      "content": "\n--- Top Comments ---\n\n[nebezb]: Still incredibly relevant. Even if you don’t apply it, there is so much to learn by reading this in 15 minutes. The only grievance I have with this is Chapter 3: Config [1]\n“Store config in the environment”, “Credentials to external services such as Amazon S3 or Twitter” Besides being bad advice, this had the second-order effect of leading devs to believe they could put all their local env secrets in ~&#x2F;.bashrc files. Stop doing this. Do the other 11.5 factors. [1]:  https:&#x2F;&#x2F;12f...\n\n[browningstreet]: I really thought this would be a 12 layer MFA demo showing the absurdity of our current painful &amp; unsustainable MFA trends.\n\n[mermadicsolutio]: I&#x27;m debating the tradeoff for secret management in my app as well. Storing it is easy you just need encryption and it&#x27;s mostly good. But delivering it is tricky. Delivery via env is simple for sure but can get leaked. The other route would be a job scoped signature, but this doesnt stop the job from printing the secret out, it only shrinks the blast radius. But if you delete the secret after the job is done or deployment is up, it&#x27;s pretty much the same result\n\n[dec0dedab0de]: Heroku seemed like it was going to be the future back then.  Every time I find myself struggling to understand some nonsense in Azure I dream of the simpler future we lost.\n\n[sandeepkd]: Its interesting how this felt so natural and right way to do software. I remember people referencing it as the north star. And then gradually people came close to it but moved past it. Personally I feel that these concepts require to have generalist mindset aka application architect. What we have as of today are lot of product engineers within teams, product managers and management. The product engineers do not always have enough leverage or incentives to push for these kind of concepts. And ...",
+      "author": "jxmorris12",
+      "published_at": "2026-08-27T22:41:11+00:00",
+      "fetched_at": "2026-08-28T22:00:14.927893",
+      "metadata": {
+        "score": 195,
+        "descendants": 99,
+        "type": "story",
+        "discussion_url": "https://news.ycombinator.com/item?id=49472216",
+        "comment_count": 5,
+        "title_zh": "十二要素应用方法论2025更新",
+        "summary_zh": "经典的十二要素应用方法论发布2025年更新版本，针对现代云原生开发实践进行了重要调整。新版本考虑了容器化、微服务架构、可观测性等当代技术趋势，为构建可扩展、可维护的现代应用提供了更新的指导原则，对软件架构师和开发者具有重要参考价值。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "Updated version of the influential Twelve-Factor App methodology for modern cloud-native development, valuable for software architects and developers",
+      "ai_summary": "The Twelve-Factor App methodology has been updated for 2025, reflecting modern cloud-native development practices and addressing contemporary deployment challenges.",
+      "ai_tags": [
+        "cloud-native",
+        "software-architecture",
+        "microservices",
+        "devops",
+        "best-practices"
+      ]
+    },
+    {
+      "id": "hackernews:story:49473522",
+      "source_type": "hackernews",
+      "title": "Judge rules Trump administration’s blacklisting of Anthropic was illegal",
+      "url": "https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html",
+      "content": "<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;ni6I3\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;ni6I3</a><p><a href=\"https:&#x2F;&#x2F;storage.courtlistener.com&#x2F;recap&#x2F;gov.uscourts.cand.465515&#x2F;gov.uscourts.cand.465515.250.0.pdf\" rel=\"nofollow\">https:&#x2F;&#x2F;storage.courtlistener.com&#x2F;recap&#x2F;gov.uscourts.cand.46...</a>\n\n\n--- Top Comments ---\n\n[andrewla]: I think this both overstates and understates the case. The evidence being weak does not invalidate the decision; as the court notes, the government gets substantial deference on matters of national security. The invalidation comes from the fact that this is clearly retaliatory behavior for speech; and the evidence for this is fairly strong since the administration has made public statements to that effect. The evidence being weak means that it is clear that there is no reasonable belief that ...\n\n[embedding-shape]: This is probably as a concise summary as you could get from there: &gt; Defendants have now submitted the administrative record justifying those actions. The record is slim. A four-page memorandum, which post dates two of the three challenged actions, provides the entirety of the government’s rationale. Defendants have now backed away from the thrust of their risk assessment, which relied on Anthropic having backdoor access to its technology once deployed in a national security system. It is ...\n\n[londons_explore]: Presumably this is going to lead to anthropic getting a big payday from the US gov for all the time their flagship product was banned and all the users they lost due to it\n\n[firefoxd]: The law is too slow. It&#x27;s like a horse carriage in the age of twitter. Why can&#x27;t they expedite for special cases? Not even defending Antropic or any company. Just that if a tweet can cause damage in seconds, the law shouldn&#x27;t be too far behind.\n\n[Arubis]: Judge rules horse must return to barn.",
+      "author": "jbegley",
+      "published_at": "2026-08-28T02:03:38+00:00",
+      "fetched_at": "2026-08-28T22:00:14.927893",
+      "metadata": {
+        "score": 446,
+        "descendants": 332,
+        "type": "story",
+        "discussion_url": "https://news.ycombinator.com/item?id=49473522",
+        "comment_count": 5,
+        "title_zh": "法院裁定政府封杀Anthropic违法",
+        "summary_zh": "联邦法官裁定特朗普政府将Anthropic列入黑名单的行为违法，这一裁决对AI行业监管具有重要影响。该判决限制了政府随意制裁AI公司的权力，为科技企业与政府监管之间的关系确立了新的法律边界，可能影响未来AI政策的制定和执行方式，引发业界对AI监管框架的深入讨论。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "Significant legal ruling affecting AI industry regulation and government oversight of tech companies, important precedent for AI policy",
+      "ai_summary": "A federal judge ruled that the Trump administration's blacklisting of Anthropic was illegal, setting an important precedent for government regulation of AI companies.",
+      "ai_tags": [
+        "AI-policy",
+        "legal",
+        "regulation",
+        "Anthropic",
+        "government"
+      ]
+    },
+    {
+      "id": "hackernews:story:49476143",
+      "source_type": "hackernews",
+      "title": "Hilariously fast volume computation with the divergence theorem (2018)",
+      "url": "https://alyssarosenzweig.ca/blog/hilariously-fast-volume-computation-with-the-divergence-theorem.html",
+      "content": "\n--- Top Comments ---\n\n[physicsguy]: This is one of those when you go &quot;Huh, this is amazing!&quot; or &quot;Huh, I thought this trick was really well known!&quot; depending on your background ;) Here&#x27;s a similar impl from 1980 written in Fortran that also computes other properties like centroid:\n https:&#x2F;&#x2F;calgo.acm.org&#x2F;550.zip \nAlgorithm 550: Solid Polyhedron Measures\nA. M. Messner and G. Q. Taylor\nACM Trans. Math. Softw., 6(1), Mar 1980, pp.121--130\nKeywords: polyhedron, graphics, numerical integration\nL...\n\n[bmenrigh]: At first I was going to say this is just the tetrahedra trick dressed up in slightly different clothes, and some sense it is, but there is a nice cancellation in the y and z coordinates which leads to less calculation in practice.\n\n[eterevsky]: Isn&#x27;t the same as just taking every triangle from the mesh, calculating the volume of a prism-like polytope between it and its projection on one the planes, and then taking it with a + sign if its projection is oriented in one direction, and with a - sign if it&#x27;s oriented in another? This kind of formula works based on the basic geometry.\n\n[srean]: On the other hand, if you want to compute the  area  of a polygon that have vertices at lattice points, you can count the number of interior points  I , the number of boundary points  B . Then the area  A  is       A = I + B&#x2F;2 - 1\n  \nThis is Pick&#x27;s theorem  https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Pick&#x27;s_theorem  one of my favorite results. It does not generalize as nicely to higher dimensions unfortunately. If like the post you want the volume of a polyhedron you can ...\n\n[hingler36]: This appears to be a retelling of another well-known process for volume computation: sum together the signed volumes of the tetraheda formed by each face with the origin (or any other fixed point WLOG). Very cool derivation though!",
+      "author": "luu",
+      "published_at": "2026-08-28T09:00:46+00:00",
+      "fetched_at": "2026-08-28T22:00:14.927893",
+      "metadata": {
+        "score": 238,
+        "descendants": 64,
+        "type": "story",
+        "discussion_url": "https://news.ycombinator.com/item?id=49476143",
+        "comment_count": 5,
+        "title_zh": "散度定理实现极速体积计算",
+        "summary_zh": "一篇2018年的技术文章重新受到关注，展示了如何利用散度定理实现极快速的体积计算。该方法通过数学技巧将复杂的三维体积积分转化为表面积分，大幅简化计算过程。这种技术在计算机图形学、物理模拟和工程计算中具有实用价值，体现了数学理论在实际应用中的巧妙运用，对开发者和研究人员具有启发意义。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "Interesting mathematical technique for fast volume computation using divergence theorem, educational content with practical applications in graphics and simulation",
+      "ai_summary": "A 2018 article demonstrating how the divergence theorem can be used for hilariously fast volume computation, resurfacing with renewed interest.",
+      "ai_tags": [
+        "mathematics",
+        "graphics",
+        "simulation",
+        "algorithms",
+        "optimization"
+      ]
+    },
+    {
+      "id": "hackernews:story:49475079",
+      "source_type": "hackernews",
+      "title": "Luanti removed from Google Play due to baseless AI copyright notice",
+      "url": "https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai/",
+      "content": "\n--- Top Comments ---\n\n[SwellJoe]: I know this isn&#x27;t the point but this post is a master class in how to inform readers when you expect people from outside your community to read it. It explains what every element is, concisely but clearly. I now know exactly what Luanti is, who all the actors are in this conflict, and what the conflict is about. It clearly conveys the who, what, when, where and why of the situation. Also, DMCA is a damned mess, with the worst people in the world profiting from it and bullying small creat...\n\n[vintermann]: &gt; We received a similar notice from the same company in 2023 and successfully appealed against it. This company also filed a similar notice this year against an indie game with similar voxel art style by the name of Allumeria. They&#x27;ll backtrack and apologize - again. At some point, the pathway for Microsoft to regain some of the goodwill associated with Minecraft is to fire the senior lawyer most responsible for sending out these notices.\n\n[jmward01]: The answer here is simple: If you submit a content strike you must provide a bond. If the content strike is reversed the bond is used to pay damages. The argument of &#x27;people must review&#x27; is really just an argument of cost. The amount of content on the web makes it impractical to pay that upfront but a bond makes it manageable.\n\n[peri-cl]: I&#x27;m confused why the DMCA sender, Tracer AI, claims Vanuatu jurisdiction in the linked DMCA claim[0]. In separate recent claims, they have claimed US jurisdiction[1]. Is this possibly fraud? [0]  https:&#x2F;&#x2F;lumendatabase.org&#x2F;notices&#x2F;93778051  [1]  https:&#x2F;&#x2F;lumendatabase.org&#x2F;notices&#x2F;80387573\n\n[hexator]: There needs to be some sort of penalty for filing frivolous DMCA notices.",
+      "author": "miniBill",
+      "published_at": "2026-08-28T06:33:57+00:00",
+      "fetched_at": "2026-08-28T22:00:14.927893",
+      "metadata": {
+        "score": 390,
+        "descendants": 121,
+        "type": "story",
+        "discussion_url": "https://news.ycombinator.com/item?id=49475079",
+        "comment_count": 5,
+        "title_zh": "AI虚假版权导致开源游戏下架",
+        "summary_zh": "开源游戏Luanti因毫无根据的AI生成版权通知被Google Play下架，暴露了自动化版权执法系统的严重问题。这一事件凸显了AI生成虚假版权主张对合法开源项目的威胁，引发社区对平台审核机制和AI版权滥用的广泛讨论。该案例可能推动平台改进版权投诉处理流程，保护开源开发者权益免受自动化系统的误伤。"
+      },
+      "ai_score": 8.0,
+      "ai_reason": "Important case of AI copyright abuse affecting open source software, highlights ongoing issues with AI-generated copyright claims and their impact on legitimate projects",
+      "ai_summary": "The open-source game Luanti was removed from Google Play due to a baseless AI-generated copyright notice, highlighting problems with automated copyright enforcement.",
+      "ai_tags": [
+        "AI-copyright",
+        "open-source",
+        "Google-Play",
+        "legal",
+        "platform-policy"
+      ]
+    },
+    {
+      "id": "hackernews:story:49477559",
+      "source_type": "hackernews",
+      "title": "Smaller reactors bring nuclear power closer to fulfilling its promise",
+      "url": "https://www.nature.com/articles/d41586-026-02506-4",
+      "content": "\n--- Top Comments ---\n\n[arjie]: It&#x27;s really a pity that we missed the boat on large nuclear reactors. So much more power would enable so many use-cases and cheap electricity would have enabled us to have much less gas heating. Massive damage to the climate caused by misguided regulation. I tried to write to deregulation.gov on reducing the fund allocation required for fission reactor cleanup but c&#x27;est la vie. Death by a thousand cuts and then a few big rocks, I suppose. We lost half a century, but so it goes. Now ...\n\n[hwillis]: And a contrasting article from IEEE:  https:&#x2F;&#x2F;spectrum.ieee.org&#x2F;the-forgotten-history-of-small-nuc...  &gt; Samuel B. Morris, the general manager and chief engineer of Los Angeles’s Department of Water and Power, traveled all the way to Geneva in 1955 to attend the first International Conference on the Peaceful Uses of Atomic Energy. There, he made a case for small reactors, arguing that because the “number of small units…is many times the number of large units,” there could be...\n\n[thinkcontext]: There are no working SMR&#x27;s ready to be deployed in the West.  The company (NuScale) that was furthest along had its flagship project die after cost estimates ballooned.  Its other project was a crypto scam. Whether any of these companies work out and make it to serial production is very speculative.\n\n[hvb2]: &gt; but SMRs should be cheaper and easier to construct. The word should is doing some real heavy lifting there. Especially given the subject. I guess we&#x27;ll know in 2030 when one should come online.\n\n[samizdis]: Hmmmnnnn. I remember getting excited reading a Wired article &quot;Let a thousand reactors bloom&quot; [0]  - but that was back in 2004. I&#x27;m still waiting for a &quot;pizza-safe&quot; pebble-bed reactor. [0]  https:&#x2F;&#x2F;www.wired.com&#x2F;2004&#x2F;09&#x2F;china-5&#x2F;",
+      "author": "sohkamyung",
+      "published_at": "2026-08-28T12:28:41+00:00",
+      "fetched_at": "2026-08-28T22:00:14.927893",
+      "metadata": {
+        "score": 103,
+        "descendants": 133,
+        "type": "story",
+        "discussion_url": "https://news.ycombinator.com/item?id=49477559",
+        "comment_count": 5,
+        "title_zh": "小型核反应堆推动清洁能源发展",
+        "summary_zh": "文章探讨小型模块化反应堆如何推动核能技术接近其承诺的清洁能源目标。小型反应堆具有建设周期短、投资门槛低、安全性高等优势，特别适合为数据中心等新兴高耗能设施供电。随着AI和云计算的快速发展，数据中心能源需求激增，小型核反应堆可能成为解决能源瓶颈的重要方案，引发业界对核能在科技基础设施中应用的讨论。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "Discussion about small modular reactors (SMRs) advancing nuclear power technology, relevant to data center energy needs and sustainable computing",
+      "ai_summary": "Article discussing how smaller nuclear reactors are bringing nuclear power closer to fulfilling its promise for clean energy generation.",
+      "ai_tags": [
+        "nuclear-energy",
+        "data-centers",
+        "clean-energy",
+        "infrastructure",
+        "sustainability"
+      ]
+    },
+    {
+      "id": "hackernews:story:49478340",
+      "source_type": "hackernews",
+      "title": "Get your Windows license refund",
+      "url": "https://en.refund4freedom.org/",
+      "content": "\n--- Top Comments ---\n\n[blaze33]: In 2011 I got a 143€ reimbursement from Dell for an E6420 laptop that I had bought for 910€. Maybe I got lucky but I called the customer service, told the lady I did not agree with the Windows license terms, fully ready to argue my case and she just went &quot;oh, ok, let me just edit a new invoice and wire you the money for Windows plus the Antivirus plus etc.&quot;. Which was extra nice because I had no idea I was in fact charged for the bloatware, but I still got ~50€ for it on top of the ...\n\n[neallindsay]: I also raised an eyebrow at &quot;the vast majority of laptops are only sold with a specific proprietary operating system: Microsoft Windows&quot;, but after looking at some estimates it seems legit. Probably only about 1 in 10 laptops is a Mac. Software developers really just live in a different world than normal people. It got me thinking though: what is a laptop? People probably count Chromebooks, and that seems fair. Is a SteamDeck a laptop? Is an iPad with a keyboard case a laptop? Is a ...\n\n[gwbas1c]: Seems like it makes a lot more sense to buy a computer without Windows preinstalled. &gt; Device manufacturers and vendors should not impose an operating system or software on consumers This is not a reasonable expectation. Hardware needs software to work, and software runs on an operating system. You can&#x27;t expect every vendor in the work of every kind of product you can buy to offer you a slightly different version than you would like to buy.\n\n[schoen]: I was part of an event called &quot;Windows Refund Day&quot; in 1999 (I think) to draw attention to this issue. We had a march to a Microsoft office to ask for refunds (unsuccessfully). It was fun, but it&#x27;s 27 years later and it&#x27;s still a problem. Edit: it&#x27;s covered on Wikipedia at  https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Windows_Refund_Day\n\n[mixmastamyk]: Better yet, take your business directly to System 76, Star Labs, Framework, or other FOSS&#x2F;H-friendly vendors, that give you choices: \n https:&#x2F;&#x2F;trustworthy.technology&#x2F;status.html",
+      "author": "smartmic",
+      "published_at": "2026-08-28T13:42:40+00:00",
+      "fetched_at": "2026-08-28T22:00:14.927893",
+      "metadata": {
+        "score": 614,
+        "descendants": 252,
+        "type": "story",
+        "discussion_url": "https://news.ycombinator.com/item?id=49478340",
+        "comment_count": 5,
+        "title_zh": "Windows许可证退款指南",
+        "summary_zh": "关于如何申请Windows许可证退款的实用指南，为消费者提供了具体的操作步骤和注意事项。文章介绍了在特定情况下用户有权要求退还Windows许可费用的法律依据和申请流程。虽然内容对部分用户有实用价值，但属于常规消费者建议，技术深度有限，主要面向普通用户而非技术人员。"
+      },
+      "ai_score": 4.0,
+      "ai_reason": "Consumer advice about Windows license refunds, practical but not technically deep or groundbreaking",
+      "ai_summary": "Guide on how to get refunds for Windows licenses, providing practical consumer advice for Windows users.",
+      "ai_tags": [
+        "Windows",
+        "consumer-advice",
+        "refunds",
+        "licensing"
+      ]
+    },
+    {
+      "id": "hackernews:story:49478401",
+      "source_type": "hackernews",
+      "title": "State of the Map 2026",
+      "url": "https://2026.stateofthemap.org/",
+      "content": "\n--- Top Comments ---\n\n[fitblipper]: Contributing to Open Street Map has given me a ton of satisfaction.  Knowing that my somewhat minor efforts to correct one address, add one feature, correct one trail will propagate to so many different places and help other people not get lost, find something new, or just be able to navigate more safely in the world makes me feel like I am leaving the world a better place more than a decade of working at FANG ever did.\n\n[c0nsumer]: I absolutely love OpenStreetMap. Back when I first started building (legal) mountain bike trails I realized that without a map they aren&#x27;t the most useful. OSM gave me the system in which to document them, and then from there I was able to reuse the data to make print maps and eventually my current project:  https:&#x2F;&#x2F;trailmaps.app\n\n[hrnnnnnn]: If you want a fun and easy way to contribute to OSM I recommend StreetComplete. You get a bunch of game-like quest icons for things like &quot;what is the surface of this path?&quot;, and &quot;does this road have a cycle path?&quot;, then you walk around and fill them in. Very satisfying and feels like you&#x27;re doing something actually useful. Also nudges you to visit parts of your neighborhood you might never have been to before.\n\n[netsharc]: Happening at &quot;Cité Descartes&quot;. I see what you did there.\n\n[basil]: Gamifying the map definitely helps to pull in contributors. StreetComplete got me editing more than anything else. I went a bit sideways with it: I used OSM data to build a territory game for cyclists, where you claim roads by riding them.\nIt&#x27;s heavily processed OSM data with PostGIS. The fun part was figuring out how to decide what counts as a claimable road in the first place.  https:&#x2F;&#x2F;remap.earth",
+      "author": "lode",
+      "published_at": "2026-08-28T13:46:28+00:00",
+      "fetched_at": "2026-08-28T22:00:14.927893",
+      "metadata": {
+        "score": 127,
+        "descendants": 48,
+        "type": "story",
+        "discussion_url": "https://news.ycombinator.com/item?id=49478401",
+        "comment_count": 5,
+        "title_zh": "State of the Map 2026大会公告",
+        "summary_zh": "OpenStreetMap社区年度大会State of the Map 2026发布公告。该会议是全球最大的开放地理数据社区聚会，汇聚地图制作者、开发者和地理信息爱好者。会议通常涵盖地图数据编辑、开源工具开发、地理空间技术创新等议题。虽然对OSM社区成员有重要意义，但对更广泛的技术社区影响有限，属于特定领域的社区活动通知。"
+      },
+      "ai_score": 5.0,
+      "ai_reason": "Announcement of State of the Map 2026 conference, relevant to OpenStreetMap community but niche interest",
+      "ai_summary": "Announcement of the State of the Map 2026 conference for the OpenStreetMap community.",
+      "ai_tags": [
+        "OpenStreetMap",
+        "GIS",
+        "open-data",
+        "community",
+        "conference"
+      ]
+    },
+    {
+      "id": "rss:simonwillison.net_atom_everything_:-2479961760156365520",
+      "source_type": "rss",
+      "title": "Breaking Claude Code Opus 5 Auto Mode",
+      "url": "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/",
+      "content": "<p><strong><a href=\"https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/\">Breaking Claude Code Opus 5 Auto Mode</a></strong></p>\nAnthropic are putting a great deal of faith in Claude Code's auto mode for protecting their coding agent users against prompt injection attacks. They recently <a href=\"https://simonwillison.net/2026/Aug/8/auto-mode/\">made that the default</a> and have made bold claims about its effectiveness.</p>\n<p>Johann Rehberger is one of the most credible prompt injection researchers active today. He found an attack against auto mode which he claims works 80% of the time, by tricking Claude Code into downloading and uncompressing a zip archive, then executing code that imports <code>base64</code> without noticing that this will import and execute a local <code>struct.py</code> file extracted from the archive.</p>\n<p>In a few cases auto mode directly prevented the agent from preventing harmful code from continuing to execute!</p>\n<blockquote>\n<p>In a few runs Claude tried to terminate the malware process once it noticed the compromise, but Auto Mode denied the cleanup command.</p>\n<p>Claude detects the compromise, but <strong>Auto Mode blocks its cleanup command</strong></p>\n<p>The safety mechanism itself can become part of the failure. The classifier allowed the creation of the malware process, but then it blocked the command intended to stop it!</p>\n</blockquote>\n<p>I agree with Johann's conclusion here: the only safe way to run agents if there's any risk of attracting the attention of an adversarial attack is with a sandbox:</p>\n<blockquote>\n<ul>\n<li>Run unattended coding agents in a container, VM or OS sandbox.</li>\n<li>Restrict network egress.</li>\n<li>Monitor your agents.</li>\n<li>Do not expose home directories, SSH keys, cloud credentials,… to the agent runtime. [...]</li>\n</ul>\n</blockquote>\n\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/sandboxing\">sandboxing</a>, <a href=\"https://simonwillison.net/tags/security\">security</a>, <a href=\"https://simonwillison.net/tags/ai\">ai</a>, <a href=\"https://simonwillison.net/tags/prompt-injection\">prompt-injection</a>, <a href=\"https://simonwillison.net/tags/generative-ai\">generative-ai</a>, <a href=\"https://simonwillison.net/tags/llms\">llms</a>, <a href=\"https://simonwillison.net/tags/anthropic\">anthropic</a>, <a href=\"https://simonwillison.net/tags/claude\">claude</a>, <a href=\"https://simonwillison.net/tags/johann-rehberger\">johann-rehberger</a>, <a href=\"https://simonwillison.net/tags/claude-code\">claude-code</a></p>",
+      "author": "Simon Willison",
+      "published_at": "2026-08-27T22:50:25+00:00",
+      "fetched_at": "2026-08-28T22:00:09.564998",
+      "metadata": {
+        "feed_name": "Simon Willison",
+        "category": "ai-tools",
+        "tags": [
+          "sandboxing",
+          "security",
+          "ai",
+          "prompt-injection",
+          "generative-ai",
+          "llms",
+          "anthropic",
+          "claude",
+          "johann-rehberger",
+          "claude-code"
+        ],
+        "title_zh": "Claude Code自动模式安全漏洞曝光",
+        "summary_zh": "安全研究员Johann Rehberger成功破解了Claude Code Opus 5的自动模式，揭示了其面对提示注入攻击时的安全漏洞。Anthropic此前声称自动模式能有效保护用户免受提示注入攻击，但这一发现直接挑战了其安全声明。该漏洞可能导致恶意代码执行、数据泄露等严重后果，对AI代理安全性提出重大质疑，可能影响整个AI编码助手领域的安全设计和用户信任。"
+      },
+      "ai_score": 9.0,
+      "ai_reason": "Critical security finding about Claude Code's auto mode vulnerability to prompt injection, major implications for AI agent security and safety",
+      "ai_summary": "Security researcher Johann Rehberger demonstrates how Claude Code's auto mode can be exploited through prompt injection attacks, challenging Anthropic's security claims.",
+      "ai_tags": [
+        "AI-security",
+        "Claude",
+        "prompt-injection",
+        "vulnerability",
+        "AI-agents"
+      ]
+    },
+    {
+      "id": "rss:www.theverge.com_rss_index.xml:982128402010527226",
+      "source_type": "rss",
+      "title": "Save hundreds on a TCL mini-LED TV with quantum dots and high refresh rate",
+      "url": "https://www.theverge.com/gadgets/985741/tcl-qm7l-belkin-thunderbolt-dock-deal-sale",
+      "content": "Amazon and Best Buy have the TCL QM7L mini-LED TV on sale for as low as $797.99 for the 55-inch model, a $200 discount from the usual price. We spotted scaling discounts on larger sizes as well, although Amazon already listed low stock on the 65-inch version. While OLED televisions are great for deep black [&#8230;]",
+      "author": "Brad Bourque",
+      "published_at": "2026-08-28T17:03:07+00:00",
+      "fetched_at": "2026-08-28T22:00:16.952868",
+      "metadata": {
+        "feed_name": "The Verge",
+        "category": "tech-news",
+        "tags": [
+          "Deals",
+          "Gadgets",
+          "Verge Shopping"
+        ],
+        "title_zh": "TCL mini-LED电视促销信息",
+        "summary_zh": "TCL QM7L mini-LED电视促销信息，55英寸版本最低售价797.99美元，较原价优惠200美元。该电视采用量子点技术和高刷新率面板，在Amazon和Best Buy有售。文章属于纯商业促销内容，主要提供消费者购物建议，缺乏技术深度或学术价值，对技术社区意义有限。"
+      },
+      "ai_score": 2.0,
+      "ai_reason": "Consumer electronics deal/promotion for TCL TV, purely commercial content with no technical or academic value",
+      "ai_summary": "Promotional article about discounts on TCL mini-LED TVs with quantum dots, offering consumer shopping advice.",
+      "ai_tags": [
+        "consumer-electronics",
+        "TV",
+        "promotion",
+        "display-technology"
+      ]
+    },
+    {
+      "id": "rss:www.theverge.com_rss_index.xml:2020531240407152585",
+      "source_type": "rss",
+      "title": "Trump’s EPA wants to let data centers hide their air pollution",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/986176/data-center-pollution-epa-rule-change-air-permit",
+      "content": "Just as new data centers face growing backlash from neighboring communities, the US Environmental Protection Agency (EPA) is about to make it harder for people to weigh in on any pollution those centers create. The EPA plans to toss out a federal rule requiring public notice and an opportunity to comment when certain industrial sites [&#8230;]",
+      "author": "Justine Calma",
+      "published_at": "2026-08-28T16:28:40+00:00",
+      "fetched_at": "2026-08-28T22:00:16.952868",
+      "metadata": {
+        "feed_name": "The Verge",
+        "category": "tech-news",
+        "tags": [
+          "AI",
+          "Energy",
+          "Environment",
+          "Science"
+        ],
+        "title_zh": "环保署拟放宽数据中心污染监管",
+        "summary_zh": "特朗普政府环保署计划取消数据中心空气污染需公开通知和公众评议的联邦规定，使社区居民更难对数据中心污染问题发声。这一政策变化发生在数据中心面临社区反对声浪之际，可能加剧科技设施与周边社区的矛盾。该政策反映了环保监管放松的趋势，对数据中心运营成本和选址策略有潜在影响，引发关于科技发展与环境保护平衡的讨论。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "US environmental policy change affecting data center operations and community impact, relevant to tech infrastructure but politically focused",
+      "ai_summary": "Trump's EPA plans to remove requirements for public notice and comment on data center air pollution, making it harder for communities to weigh in on pollution concerns.",
+      "ai_tags": [
+        "environmental-policy",
+        "data-centers",
+        "regulation",
+        "community-impact",
+        "EPA"
+      ]
+    },
+    {
+      "id": "rss:www.theverge.com_rss_index.xml:5241136528685563836",
+      "source_type": "rss",
+      "title": "DLSS 5 leaked and modders are putting Nvidia&#8217;s AI effects on everything",
+      "url": "https://www.theverge.com/games/986197/nvidia-dlss-5-leak-ai",
+      "content": "Modders are trying out an unofficial version of Nvidia's DLSS 5 on Skyrim, Cyberpunk 2077, GTA V, and a bunch of other games after code for the AI upscaling tech appeared in an early-access build of NBA 2K27. Members of the RenoDX modding channel on Discord reportedly found a way to extract the DLSS \"Neural [&#8230;]",
+      "author": "Emma Roth",
+      "published_at": "2026-08-28T16:22:16+00:00",
+      "fetched_at": "2026-08-28T22:00:16.952868",
+      "metadata": {
+        "feed_name": "The Verge",
+        "category": "tech-news",
+        "tags": [
+          "Gaming",
+          "News",
+          "Nvidia",
+          "PC Gaming",
+          "Tech"
+        ],
+        "title_zh": "DLSS 5泄露遭模组玩家移植",
+        "summary_zh": "Nvidia DLSS 5 AI超分辨率技术代码在NBA 2K27早期版本中泄露后，RenoDX模组社区成员成功提取该技术在Skyrim、赛博朋克2077、GTA V等游戏中进行测试。这一非官方移植展示了新一代AI图像增强技术的潜力，引发玩家和开发者对AI图形处理技术未来应用的广泛讨论。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "Interesting technical curiosity about leaked AI upscaling technology being used by modders, relevant to graphics/AI but unofficial and not a major breakthrough",
+      "ai_summary": "Modders extract and apply unofficial DLSS 5 AI upscaling technology to games like Skyrim and Cyberpunk 2077 after code appeared in NBA 2K27 early access build.",
+      "ai_tags": [
+        "AI",
+        "图形技术",
+        "DLSS",
+        "游戏模组",
+        "Nvidia"
+      ]
+    },
+    {
+      "id": "rss:www.theverge.com_rss_index.xml:2337929806435365771",
+      "source_type": "rss",
+      "title": "The iPhone Fold could make concerts even worse",
+      "url": "https://www.theverge.com/podcast/986145/m6-mac-mini-meta-settlement-gta-6-vergecast",
+      "content": "You know the person blocking your view of the concert because their phone is swaying in the air, recording the entire thing? Get ready for the unfolded version of it. This week on The Vergecast, we dive right into the big week of Apple news. First, it's the refreshed Mac Mini and Mac Studio, as [&#8230;]",
+      "author": "Jacob Kastrenakes",
+      "published_at": "2026-08-28T15:26:19+00:00",
+      "fetched_at": "2026-08-28T22:00:16.952868",
+      "metadata": {
+        "feed_name": "The Verge",
+        "category": "tech-news",
+        "tags": [
+          "Podcasts",
+          "Vergecast"
+        ],
+        "title_zh": "iPhone Fold或影响演唱会体验",
+        "summary_zh": "The Verge播客讨论iPhone Fold可能对演唱会体验造成的负面影响。文章推测折叠屏手机展开后会形成更大遮挡面积，影响其他观众观看演出。同时提及苹果本周发布的Mac Mini和Mac Studio新品。这是消费类观点文章，缺乏技术深度分析。"
+      },
+      "ai_score": 3.0,
+      "ai_reason": "Consumer tech opinion piece about iPhone Fold impact on concerts, low technical depth and generic commentary",
+      "ai_summary": "Commentary discussing how the rumored iPhone Fold could worsen concert experiences by creating larger obstructions when unfolded during recording.",
+      "ai_tags": [
+        "苹果",
+        "iPhone",
+        "折叠屏",
+        "消费电子"
+      ]
+    },
+    {
+      "id": "rss:www.theverge.com_rss_index.xml:-3043589034476411724",
+      "source_type": "rss",
+      "title": "Apple TV now costs $14.99 a month after its fourth price hike in four years",
+      "url": "https://www.theverge.com/tech/986130/apple-tv-plus-price-hike",
+      "content": "Apple raised the price of its streaming service for new and current subscribers on Friday, bumping it up from $12.99 per month to $14.99, Deadline and Variety are reporting. An annual subscription now costs $119, up from $99. Apple also increased the cost of its individual Apple One subscription, which includes Apple TV and Apple's [&#8230;]",
+      "author": "Stevie Bonifield",
+      "published_at": "2026-08-28T13:47:36+00:00",
+      "fetched_at": "2026-08-28T22:00:16.952868",
+      "metadata": {
+        "feed_name": "The Verge",
+        "category": "tech-news",
+        "tags": [
+          "Apple",
+          "News",
+          "Streaming",
+          "Tech"
+        ],
+        "title_zh": "Apple TV+四年内第四次涨价",
+        "summary_zh": "苹果将Apple TV+流媒体服务月费从12.99美元上调至14.99美元，年费从99美元涨至119美元，Apple One套餐价格同步上调。这已是四年内第四次涨价，反映流媒体行业普遍面临的内容成本压力和盈利需求。对消费者支出有直接影响，但属于常规商业调整，技术相关性较低。"
+      },
+      "ai_score": 3.0,
+      "ai_reason": "Routine business news about streaming service price increase, low technical relevance",
+      "ai_summary": "Apple TV+ raises subscription price to $14.99/month, marking its fourth price hike in four years.",
+      "ai_tags": [
+        "苹果",
+        "流媒体",
+        "Apple TV+",
+        "商业新闻"
+      ]
+    },
+    {
+      "id": "rss:www.theverge.com_rss_index.xml:-4821156232336884612",
+      "source_type": "rss",
+      "title": "Apple TV’s sci-fi thriller Dark Matter gets even trippier in season 2",
+      "url": "https://www.theverge.com/entertainment/983263/dark-matter-season-2-review-apple-tv",
+      "content": "Confusion is a generally accepted side effect of mystery box shows. They slather on secrets with the promise of a satisfying payoff in the end, and sometimes the cast and crew even have a hard time following what's going on. But even by the standards of the genre, Dark Matter is extreme. Its multiversal premise, [&#8230;]",
+      "author": "Andrew Webster",
+      "published_at": "2026-08-28T12:00:00+00:00",
+      "fetched_at": "2026-08-28T22:00:16.952868",
+      "metadata": {
+        "feed_name": "The Verge",
+        "category": "tech-news",
+        "tags": [
+          "Apple",
+          "Entertainment",
+          "Tech",
+          "TV Show Reviews",
+          "TV Shows"
+        ],
+        "title_zh": "Apple TV+科幻剧第二季评测",
+        "summary_zh": "Apple TV+科幻剧集《Dark Matter》第二季评测文章。该剧以复杂的多宇宙叙事和悬疑风格著称，第二季延续烧脑剧情。文章讨论神秘盒子式叙事的特点和观众体验。这是纯娱乐内容，与技术、AI或软件工程完全无关，对技术受众无参考价值。"
+      },
+      "ai_score": 1.0,
+      "ai_reason": "Pure entertainment content about a TV show, completely off-topic for technical audience",
+      "ai_summary": "Review of Apple TV+ sci-fi series Dark Matter season 2, discussing its complex multiverse storytelling.",
+      "ai_tags": [
+        "娱乐",
+        "影视",
+        "Apple TV+"
+      ]
+    },
+    {
+      "id": "rss:www.theverge.com_rss_index.xml:3514518042226355869",
+      "source_type": "rss",
+      "title": "Anthropic was illegally blacklisted by the Trump administration, court rules",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/985947/anthropic-supply-chain-risk-lawsuit-judge-ruling",
+      "content": "On Thursday, a judge ruled that the Pentagon's blacklisting of Anthropic earlier this year was unconstitutional, delivering the AI lab a win in a monthslong rollercoaster of a battle with the Trump administration. The lawsuit, filed in March in a California district court, accused the Trump administration of unlawfully retaliating against Anthropic for setting \"red [&#8230;]",
+      "author": "Hayden Field",
+      "published_at": "2026-08-28T03:14:06+00:00",
+      "fetched_at": "2026-08-28T22:00:16.952868",
+      "metadata": {
+        "feed_name": "The Verge",
+        "category": "tech-news",
+        "tags": [
+          "AI",
+          "Anthropic",
+          "News"
+        ],
+        "title_zh": "法院裁定Anthropic黑名单违宪",
+        "summary_zh": "加州联邦法官裁定五角大楼此前将AI公司Anthropic列入黑名单的行为违宪，为这家AI实验室赢得法律诉讼。该诉讼于3月提起，指控特朗普政府的禁令缺乏合法依据。此裁决对AI行业监管环境有重要影响，可能影响政府与AI企业的合作模式，但内容偏向法律政策层面而非技术突破。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "Legal ruling affecting AI industry, relevant to AI policy landscape but more political than technical",
+      "ai_summary": "Federal judge rules Pentagon's blacklisting of Anthropic was unconstitutional, delivering a legal victory to the AI lab.",
+      "ai_tags": [
+        "AI",
+        "Anthropic",
+        "法律",
+        "政策监管"
+      ]
+    },
+    {
+      "id": "rss:www.theverge.com_rss_index.xml:-2620044625296001382",
+      "source_type": "rss",
+      "title": "The GTA VI ‘extended look’ is now streaming on YouTube",
+      "url": "https://www.theverge.com/games/985910/grand-theft-auto-gta-vi-extended-look-youtube-netflix-stream",
+      "content": "Rockstar has officially published its \"extended look\" at Grand Theft Auto VI on YouTube and on its website, as promised. The in-depth preview, which \"entirely\" features footage captured from the PS5 version of the game, initially premiered on Netflix at 3PM ET. But because Rockstar allowed creators to post reaction videos, you've technically been able [&#8230;]",
+      "author": "Jay Peters",
+      "published_at": "2026-08-28T01:05:18+00:00",
+      "fetched_at": "2026-08-28T22:00:16.952868",
+      "metadata": {
+        "feed_name": "The Verge",
+        "category": "tech-news",
+        "tags": [
+          "Entertainment",
+          "Gaming",
+          "News"
+        ],
+        "title_zh": "GTA 6扩展预告正式发布",
+        "summary_zh": "Rockstar Games正式在YouTube发布《GTA 6》扩展预览视频，内容完全基于PS5版本实机画面。该视频最初在Netflix首播，随后向内容创作者开放提前观看。作为游戏界最受期待的作品之一，GTA 6的预告片发布引发广泛关注，但属于游戏娱乐新闻，技术深度有限。"
+      },
+      "ai_score": 3.0,
+      "ai_reason": "Gaming entertainment news about GTA VI trailer release, low technical relevance",
+      "ai_summary": "Rockstar Games officially publishes the extended gameplay preview of Grand Theft Auto VI on YouTube.",
+      "ai_tags": [
+        "游戏",
+        "GTA 6",
+        "Rockstar",
+        "娱乐"
+      ]
+    },
+    {
+      "id": "rss:www.theverge.com_rss_index.xml:-34524666540678221",
+      "source_type": "rss",
+      "title": "The biggest video game of all time looks like a movie",
+      "url": "https://www.theverge.com/games/985891/grand-theft-auto-vi-gta-6-netflix-youtube-extended-look-game-movie",
+      "content": "I think I know why Rockstar Games debuted its \"extended look\" of Grand Theft Auto VI on Netflix instead of immediately dropping it for free on YouTube. Unlike most video game trailers, the almost 27-minute preview of GTA VI felt more like a slice of a prestige crime drama than any video game trailer that [&#8230;]",
+      "author": "Jay Peters",
+      "published_at": "2026-08-27T23:20:00+00:00",
+      "fetched_at": "2026-08-28T22:00:16.952868",
+      "metadata": {
+        "feed_name": "The Verge",
+        "category": "tech-news",
+        "tags": [
+          "Entertainment",
+          "Gaming",
+          "News"
+        ],
+        "title_zh": "GTA 6预告片像电影引讨论",
+        "summary_zh": "文章分析Rockstar为何选择在Netflix而非YouTube首发GTA 6近27分钟的扩展预览。作者认为该视频风格更像高端犯罪剧情片而非传统游戏预告，体现Rockstar在营销和内容呈现上的创新思路。这是游戏娱乐评论，缺乏技术深度，主要关注内容形式和营销策略。"
+      },
+      "ai_score": 3.0,
+      "ai_reason": "Opinion piece about GTA VI trailer style, entertainment commentary with low technical value",
+      "ai_summary": "Analysis of why Rockstar debuted GTA VI's extended look on Netflix, noting its cinematic crime drama style.",
+      "ai_tags": [
+        "游戏",
+        "GTA 6",
+        "营销",
+        "娱乐"
+      ]
+    },
+    {
+      "id": "rss:wechat2rss.xlab.app_feed_7131b577c61365cb47e81000738c10d872685908.xml:-7237367833829858551",
+      "source_type": "rss",
+      "title": "刚刚，港股AGI第一股杀疯了！Agent业务半年进账近5亿，Token收入Q2暴涨500%",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247916163&idx=1&sn=c5ff2c32d3b62c544a5061f43c287a20",
+      "content": "企业智能化服务撑起基本盘，第二增长曲线冒头\n\n--- From rss ---\nAgent自己分工、造假、拉人头\n\n--- From rss ---\nAI正在推动有限单群分类的完整机器核验\n\n--- From rss ---\n3个岗位（含实习），不设边界\n\n--- From rss ---\nCEO还在台前，方向盘已经换人",
+      "author": "量子位",
+      "published_at": "2026-08-28T09:15:00+00:00",
+      "fetched_at": "2026-08-28T22:00:19.963988",
+      "metadata": {
+        "feed_name": "量子位",
+        "category": "ai-news",
+        "tags": [],
+        "merged_sources": [
+          "rss"
+        ],
+        "title_zh": "港股AGI公司业绩爆发",
+        "summary_zh": "港股AGI第一股业绩表现强劲，Agent业务半年营收近5亿元，Token收入第二季度暴涨500%。企业智能化服务构成稳定基本盘，Agent业务成为第二增长曲线。文章还提及AI在数学定理机器核验、Agent自主分工等前沿应用。这反映AI Agent商业化加速和Token经济模式成熟，对理解AI产业趋势有重要参考价值。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "Significant AI industry news about AGI company's business performance with Agent and Token revenue growth, relevant to AI commercialization trends",
+      "ai_summary": "Hong Kong-listed AGI company reports strong performance with Agent business generating nearly 500 million in half a year and Token revenue surging 500% in Q2.",
+      "ai_tags": [
+        "AI",
+        "AGI",
+        "Agent",
+        "商业化",
+        "Token经济"
+      ]
+    },
+    {
+      "id": "rss:www.schneier.com_feed_atom_:-2001478179370299351",
+      "source_type": "rss",
+      "title": "Friday Squid Blogging: Truckload of Squid Spills in Rhode Island",
+      "url": "https://www.schneier.com/blog/archives/2026/08/friday-squid-blogging-truckload-of-squid-spills-in-rhode-island.html",
+      "content": "<p><a href=\"https://www.huffpost.com/entry/squid-spill-rhode-island-street_n_6a863090e4b0e9f1dd275d79\">Ugh</a>:</p>\n<blockquote><p>A tractor-trailer rollover sent a truckload of squid spilling into a Rhode Island roadway, leaving a stench as they sat in the road for hours in the summer heat. Local authorities have dubbed it the &#8220;Squidpocalypse of &#8217;26.&#8221;</p></blockquote>\n<p>That would be <a href=\"https://www.theguardian.com/us-news/2026/aug/19/squid-spill-rhode-island-highway\">twenty tons</a> of squid.</p>\n<p>As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered.</p>\n<p><a href=\"https://www.schneier.com/blog/archives/2024/06/new-blog-moderation-policy.html\">Blog moderation policy.</a></p>",
+      "author": "Bruce Schneier",
+      "published_at": "2026-08-28T21:02:44+00:00",
+      "fetched_at": "2026-08-28T22:00:24.767859",
+      "metadata": {
+        "feed_name": "Schneier on Security",
+        "category": "security",
+        "tags": [
+          "Uncategorized",
+          "squid"
+        ],
+        "title_zh": "罗德岛20吨鱿鱼泄漏事件",
+        "summary_zh": "Bruce Schneier博客的周五鱿鱼专栏文章，报道罗德岛州一辆卡车翻车导致20吨鱿鱼散落公路的事件。高温下鱿鱼产生严重异味，被当地人戏称为2026鱿鱼末日。这是Schneier博客的趣味闲聊栏目，与技术、AI、安全等领域完全无关，对技术受众无任何参考价值。"
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Completely off-topic blog post about squid spill, no technical or AI relevance",
+      "ai_summary": "Bruce Schneier's Friday squid blogging about a truckload of squid spilling on a Rhode Island roadway.",
+      "ai_tags": [
+        "闲聊",
+        "off-topic"
+      ]
+    },
+    {
+      "id": "rss:www.schneier.com_feed_atom_:3049194062481706376",
+      "source_type": "rss",
+      "title": "AI Doesn’t Mean the End of Mathematics—at Least Not Yet",
+      "url": "https://www.schneier.com/blog/archives/2026/08/ai-doesnt-mean-the-end-of-mathematics-at-least-not-yet.html",
+      "content": "<p><em>This essay was written with Kasra Rafi, and originally appeared in The Guardian.</em></p>\n<p>Earlier this month, about 40 top mathematicians <a href=\"https://www.washingtonpost.com/technology/2026/08/19/mathematicians-ask-whats-left-humans-when-ai-can-do-math-research/\">gathered</a> at OpenAI&#8217;s offices to discuss the future of their profession. The meeting was off-the-record, but if <a href=\"https://spectrum.ieee.org/ai-in-mathematics\">recent</a> <a href=\"https://arxiv.org/pdf/2608.16753\">articles</a> <a href=\"https://arxiv.org/html/2608.02859v1\">by</a> <a href=\"https://davidbessis.substack.com/p/the-fall-of-the-theorem-economy\">mathematicians</a> are any guide, it was mostly pretty glum. People fear for their jobs, their careers and the work they love.</p>\n<p>We think the <a href=\"https://www.daniellitt.com/blog/2026/8/11/the-end-of-mathematics/\">contrary</a> <a href=\"https://gowers.wordpress.com/2026/08/12/what-sort-of-maths-are-llms-good-at/\">view</a> is more likely, at least in the short-term. AI models are nowhere near as capable as experienced academic mathematicians.</p>\n<p>This isn&#8217;t to say that AIs aren&#8217;t producing stunning mathematical results at the level of PhD researchers. In mid-May, OpenAI ...</p>",
+      "author": "Bruce Schneier",
+      "published_at": "2026-08-28T11:02:22+00:00",
+      "fetched_at": "2026-08-28T22:00:24.767859",
+      "metadata": {
+        "feed_name": "Schneier on Security",
+        "category": "security",
+        "tags": [
+          "Uncategorized",
+          "AI",
+          "LLM",
+          "mathematics"
+        ],
+        "title_zh": "AI不会终结数学研究",
+        "summary_zh": "Bruce Schneier与Kasra Rafi联合撰写的文章探讨AI是否意味着数学的终结。OpenAI近期召集约40位顶尖数学家讨论数学职业未来。文章分析AI在数学领域的潜力与局限，认为尽管AI在计算方面表现出色，但数学研究所需的创造性和深度理解仍是AI难以替代的。这为理解AI技术边界和数学研究本质提供深刻洞察。"
+      },
+      "ai_score": 8.0,
+      "ai_reason": "Insightful essay about AI's relationship with mathematics, featuring discussion with top mathematicians at OpenAI, high technical and intellectual value",
+      "ai_summary": "Essay discussing whether AI threatens mathematics, based on a gathering of top mathematicians at OpenAI to discuss their profession's future.",
+      "ai_tags": [
+        "AI",
+        "数学",
+        "OpenAI",
+        "技术哲学"
+      ]
+    },
+    {
+      "id": "rss:hackaday.com_feed_:7830817215692744673",
+      "source_type": "rss",
+      "title": "DOOM Played on Series of 555 Timers",
+      "url": "https://hackaday.com/2026/08/28/doom-played-on-series-of-555-timers/",
+      "content": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"450\" src=\"https://hackaday.com/wp-content/uploads/2026/08/doom-555-main.png?w=800\" style=\"margin: 0 auto; margin-bottom: 15px;\" width=\"800\" /></div>It&#8217;s technically true that any piece of software can be reproduced in hardware, although modern software&#8217;s size and complexity generally makes this a non-starter. But if we go far enough <a class=\"read-more\" href=\"https://hackaday.com/2026/08/28/doom-played-on-series-of-555-timers/\">&#8230;read more</a>",
+      "author": "Bryan Cockfield",
+      "published_at": "2026-08-28T20:00:09+00:00",
+      "fetched_at": "2026-08-28T22:00:26.783729",
+      "metadata": {
+        "feed_name": "Hackaday",
+        "category": "hardware",
+        "tags": [
+          "digital audio hacks",
+          "555 timer",
+          "74 series logic",
+          "circuit",
+          "digital",
+          "doom",
+          "logic",
+          "music"
+        ],
+        "title_zh": "用555定时器玩DOOM",
+        "summary_zh": "一位硬件工程师使用一系列555定时器集成电路成功重现了经典游戏DOOM。该项目展示了复杂软件如何完全通过硬件电路实现，体现了计算本质。555定时器是经典的模拟集成电路，通常用于简单的定时和振荡功能，将其组合成能运行游戏的计算系统是一项极具挑战性的工程壮举，为理解计算机底层原理提供了独特视角。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "Creative technical deep-dive demonstrating DOOM implemented entirely in hardware using 555 timer circuits. Novel approach to understanding computation at the hardware level.",
+      "ai_summary": "A hardware engineer successfully recreated the classic game DOOM using only a series of 555 timer integrated circuits, demonstrating that complex software can be reproduced in pure hardware.",
+      "ai_tags": [
+        "硬件工程",
+        "555定时器",
+        "DOOM",
+        "复古计算",
+        "电子工程"
+      ]
+    },
+    {
+      "id": "rss:hackaday.com_feed_:2055281708382134411",
+      "source_type": "rss",
+      "title": "Casting Engine Parts from 3D Prints",
+      "url": "https://hackaday.com/2026/08/28/casting-engine-parts-from-3d-prints/",
+      "content": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"496\" src=\"https://hackaday.com/wp-content/uploads/2026/08/casting_lost_pla_engine_parts_camden_bowen_youtube.jpg?w=800\" style=\"margin: 0 auto; margin-bottom: 15px;\" width=\"800\" /></div>After building a couple of internal combustion engines by milling billet aluminium stock and cringing at the absolute waste of material this created, [Camden Bowen] figured he&#8217;d give casting metal <a class=\"read-more\" href=\"https://hackaday.com/2026/08/28/casting-engine-parts-from-3d-prints/\">&#8230;read more</a>",
+      "author": "Maya Posch",
+      "published_at": "2026-08-28T18:30:21+00:00",
+      "fetched_at": "2026-08-28T22:00:26.783729",
+      "metadata": {
+        "feed_name": "Hackaday",
+        "category": "hardware",
+        "tags": [
+          "Parts",
+          "kiln",
+          "lost pla casting",
+          "metal casting",
+          "metalwork"
+        ],
+        "title_zh": "3D打印模具铸造引擎零件",
+        "summary_zh": "一位创客开发了一种使用3D打印模具铸造金属发动机零件的方法。相比传统的从铝坯铣削加工，这种方法大幅减少了材料浪费。该项目展示了如何将现代3D打印技术与传统金属铸造工艺相结合，为小型制造和DIY爱好者提供了经济高效的零件生产方案。这种混合制造方法在原型制作和小批量生产中具有实用价值。"
+      },
+      "ai_score": 5.0,
+      "ai_reason": "Practical DIY manufacturing tutorial combining 3D printing with metal casting for engine parts. Useful for makers but not groundbreaking.",
+      "ai_summary": "A maker developed a method to cast metal engine parts using 3D printed molds, reducing material waste compared to traditional milling from billet aluminum.",
+      "ai_tags": [
+        "3D打印",
+        "金属铸造",
+        "DIY制造",
+        "发动机",
+        "创客"
+      ]
+    },
+    {
+      "id": "rss:hackaday.com_feed_:-2003830888976449642",
+      "source_type": "rss",
+      "title": "Hackaday Podcast Episode 384: OCR MOD Records, Magical PCBs, and the Gravity of Space Stations",
+      "url": "https://hackaday.com/2026/08/28/hackaday-podcast-episode-384-ocr-mod-records-magical-pcbs-and-the-gravity-of-space-stations/",
+      "content": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"484\" src=\"https://hackaday.com/wp-content/uploads/2016/05/microphone.jpg?w=800\" style=\"margin: 0 auto; margin-bottom: 15px;\" width=\"800\" /></div>What did Hackaday editors Elliot Williams and Al Williams read in Hackaday last week? Probably everything, but you can tune in and hear about their favorites on this week&#8217;s podcast. <a class=\"read-more\" href=\"https://hackaday.com/2026/08/28/hackaday-podcast-episode-384-ocr-mod-records-magical-pcbs-and-the-gravity-of-space-stations/\">&#8230;read more</a>",
+      "author": "Al Williams",
+      "published_at": "2026-08-28T16:00:48+00:00",
+      "fetched_at": "2026-08-28T22:00:26.783729",
+      "metadata": {
+        "feed_name": "Hackaday",
+        "category": "hardware",
+        "tags": [
+          "Hackaday Columns",
+          "Podcasts",
+          "Hackaday Podcast"
+        ],
+        "title_zh": "Hackaday播客第384期",
+        "summary_zh": "Hackaday编辑Elliot Williams和Al Williams在播客中讨论了本周最受欢迎的项目，包括在MOD唱片上进行OCR识别、神奇PCB设计以及空间站重力相关话题。这是一档常规的每周技术播客节目，主要回顾和讨论社区中的有趣项目。"
+      },
+      "ai_score": 3.0,
+      "ai_reason": "Routine podcast episode announcement with no specific technical depth. Generic content summarizing weekly highlights.",
+      "ai_summary": "Hackaday editors discuss their favorite projects from the week including OCR on MOD records, magical PCBs, and space station gravity topics.",
+      "ai_tags": [
+        "播客",
+        "Hackaday",
+        "创客",
+        "硬件项目"
+      ]
+    },
+    {
+      "id": "rss:hackaday.com_feed_:-8816211549525690594",
+      "source_type": "rss",
+      "title": "Building a Headless Game Boy Emulator",
+      "url": "https://hackaday.com/2026/08/28/building-a-headless-game-boy-emulator/",
+      "content": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"450\" src=\"https://hackaday.com/wp-content/uploads/2026/08/Gameboy-server-lets-anyone-connect-and-play-no-apps-2-53-screenshot.png?w=800\" style=\"margin: 0 auto; margin-bottom: 15px;\" width=\"800\" /></div>[Artificial-Age] has built a rather unique way to play old Game Boy games. It&#8217;s an emulator, but it doesn&#8217;t work in quite the way you might think! Since the Game <a class=\"read-more\" href=\"https://hackaday.com/2026/08/28/building-a-headless-game-boy-emulator/\">&#8230;read more</a>",
+      "author": "Zoe Skyforest",
+      "published_at": "2026-08-28T15:30:12+00:00",
+      "fetched_at": "2026-08-28T22:00:26.783729",
+      "metadata": {
+        "feed_name": "Hackaday",
+        "category": "hardware",
+        "tags": [
+          "Nintendo Game Boy Hacks",
+          "ESP32",
+          "game boy",
+          "phone",
+          "smart phone"
+        ],
+        "title_zh": "无头Game Boy模拟器",
+        "summary_zh": "开发者Artificial-Age构建了一种独特的无头Game Boy模拟器，以非传统方式运行老游戏。与传统模拟器不同，这个项目采用了创新的技术实现方式。无头模拟器通常不依赖图形界面输出，而是通过其他方式处理游戏逻辑，这种设计在自动化测试、速度运行和批量处理等场景中有独特应用价值。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "Interesting technical project with a novel approach to Game Boy emulation. Unique implementation worth knowing for emulation enthusiasts.",
+      "ai_summary": "A developer built a unique headless Game Boy emulator that plays old games in an unconventional way, differing from traditional emulation approaches.",
+      "ai_tags": [
+        "模拟器",
+        "Game Boy",
+        "复古游戏",
+        "无头计算",
+        "开源"
+      ]
+    },
+    {
+      "id": "rss:hackaday.com_feed_:8260238511597597641",
+      "source_type": "rss",
+      "title": "This Week in Security: Android Malware, VOIP Hijack, Signal Contact Discovery, and TeamPCP Arrests",
+      "url": "https://hackaday.com/2026/08/28/this-week-in-security-android-malware-voip-hijack-signal-contact-discovery-and-teampcp-arrests/",
+      "content": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"484\" src=\"https://hackaday.com/wp-content/uploads/2016/01/darkarts.jpg?w=800\" style=\"margin: 0 auto; margin-bottom: 15px;\" width=\"800\" /></div>On GitHub, [AyaanB] details buying a cheap Android TV streaming device, looking for, and finding, baked-in malware. Multiple warnings have been issued by the FBI and CISA regarding malware on <a class=\"read-more\" href=\"https://hackaday.com/2026/08/28/this-week-in-security-android-malware-voip-hijack-signal-contact-discovery-and-teampcp-arrests/\">&#8230;read more</a>",
+      "author": "Mike Kershaw",
+      "published_at": "2026-08-28T14:00:14+00:00",
+      "fetched_at": "2026-08-28T22:00:26.783729",
+      "metadata": {
+        "feed_name": "Hackaday",
+        "category": "hardware",
+        "tags": [
+          "Hackaday Columns",
+          "Security Hacks",
+          "Slider",
+          "boston scientific",
+          "cyberattack",
+          "krebs",
+          "ransomware",
+          "security",
+          "SGX",
+          "shinyhunters",
+          "signal",
+          "supply chain",
+          "teampcp",
+          "This Week in Security"
+        ],
+        "title_zh": "本周安全：Android恶意软件等",
+        "summary_zh": "本周安全报告涵盖多个重要安全事件：GitHub用户发现廉价Android电视流媒体设备内置恶意软件，FBI和CISA已发出多次警告；VOIP系统遭受劫持攻击；Signal通讯应用存在联系人发现漏洞；以及TeamPCP组织成员被捕。这些安全事件对普通用户和企业都有重要警示意义。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "Important security roundup covering Android malware in cheap TV devices, VOIP hijacking, and Signal vulnerabilities. Highly relevant to software security.",
+      "ai_summary": "Weekly security report covers Android malware found in cheap streaming devices, VOIP hijacking attacks, Signal contact discovery vulnerabilities, and TeamPCP arrests.",
+      "ai_tags": [
+        "安全",
+        "Android恶意软件",
+        "VOIP",
+        "Signal",
+        "隐私"
+      ]
+    },
+    {
+      "id": "rss:hackaday.com_feed_:-4690375222417443163",
+      "source_type": "rss",
+      "title": "RAM and eMMC Prices Are So High, Pine64 Has Stopped Linux Device Production",
+      "url": "https://hackaday.com/2026/08/28/ram-and-emmc-prices-are-so-high-pine64-has-stopped-linux-device-production/",
+      "content": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"450\" src=\"https://hackaday.com/wp-content/uploads/2026/08/pine64-ram-featured.jpg?w=800\" style=\"margin: 0 auto; margin-bottom: 15px;\" width=\"800\" /></div>We all know that the price of RAM and storage has shot up due to demand from the AI industry and other factors. In most cases that means we grumble <a class=\"read-more\" href=\"https://hackaday.com/2026/08/28/ram-and-emmc-prices-are-so-high-pine64-has-stopped-linux-device-production/\">&#8230;read more</a>",
+      "author": "Jenny List",
+      "published_at": "2026-08-28T11:00:51+00:00",
+      "fetched_at": "2026-08-28T22:00:26.783729",
+      "metadata": {
+        "feed_name": "Hackaday",
+        "category": "hardware",
+        "tags": [
+          "Business",
+          "emmc",
+          "flash",
+          "memory shortage",
+          "Pine64",
+          "ram"
+        ],
+        "title_zh": "Pine64停产Linux设备",
+        "summary_zh": "由于AI行业需求等因素导致RAM和eMMC存储价格大幅上涨，开源硬件厂商Pine64已停止Linux设备生产。这一决定反映了全球芯片供应链紧张对开源硬件社区的影响。尽管大多数消费者面临价格上涨，但像Pine64这样依赖特定组件的厂商受到的冲击更为直接，可能影响开源Linux设备的可用性和价格。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "Industry news about component price increases affecting Linux device production. Relevant to open-source hardware community but not groundbreaking.",
+      "ai_summary": "Pine64 has halted Linux device production due to high RAM and eMMC prices driven by AI industry demand and other market factors.",
+      "ai_tags": [
+        "硬件",
+        "供应链",
+        "Pine64",
+        "Linux",
+        "芯片价格"
+      ]
+    },
+    {
+      "id": "rss:hackaday.com_feed_:7379921261781051457",
+      "source_type": "rss",
+      "title": "Panoramic Photography with a Linear Scanner",
+      "url": "https://hackaday.com/2026/08/28/panoramic-photography-with-a-linear-scanner/",
+      "content": "<div><img alt=\"\" class=\"attachment-large size-large wp-post-image\" height=\"450\" src=\"https://hackaday.com/wp-content/uploads/2026/08/rail-camera-main.jpg?w=800\" style=\"margin: 0 auto; margin-bottom: 15px;\" width=\"800\" /></div>Although digital photography took a big bite of the film industry&#8217;s lunch, it wasn&#8217;t able to completely eliminate the need &#8212; or desire &#8212; for photographers to use film in <a class=\"read-more\" href=\"https://hackaday.com/2026/08/28/panoramic-photography-with-a-linear-scanner/\">&#8230;read more</a>",
+      "author": "Bryan Cockfield",
+      "published_at": "2026-08-28T08:00:00+00:00",
+      "fetched_at": "2026-08-28T22:00:26.783729",
+      "metadata": {
+        "feed_name": "Hackaday",
+        "category": "hardware",
+        "tags": [
+          "digital cameras hacks",
+          "camera",
+          "digital photography",
+          "panoramic",
+          "rail"
+        ],
+        "title_zh": "线性扫描仪拍全景照片",
+        "summary_zh": "一位摄影师使用线性扫描仪创作全景照片，将传统胶片摄影的需求与现代数字扫描技术相结合。尽管数码摄影已大幅取代胶片，但摄影师对特殊成像方式的需求依然存在。线性扫描仪通常用于文档扫描，将其用于摄影创作是一种创新尝试，为全景摄影提供了独特的技术路径和视觉效果。"
+      },
+      "ai_score": 5.0,
+      "ai_reason": "Creative photography project using linear scanner for panoramic images. Interesting technique but not highly technical or impactful.",
+      "ai_summary": "A photographer created panoramic images using a linear scanner, combining traditional film photography desires with modern digital scanning technology.",
+      "ai_tags": [
+        "摄影",
+        "线性扫描仪",
+        "全景摄影",
+        "创意技术",
+        "数码影像"
+      ]
+    },
+    {
+      "id": "rss:www.nature.com_nature.rss:-7149397783459012651",
+      "source_type": "rss",
+      "title": "Briefing Chat: How Dolly Parton left her mark on science",
+      "url": "https://www.nature.com/articles/d41586-026-02732-w",
+      "content": "<p>Nature, Published online: 28 August 2026; <a href=\"https://www.nature.com/articles/d41586-026-02732-w\">doi:10.1038/d41586-026-02732-w</a></p>Nature reporters discuss the country-music icon's advocacy for vaccines and public health — plus, promising trial results for an mRNA cancer therapy.",
+      "author": "Elizabeth Gibney",
+      "published_at": "2026-08-28T00:00:00+00:00",
+      "fetched_at": "2026-08-28T22:00:27.590654",
+      "metadata": {
+        "feed_name": "Nature",
+        "category": "science",
+        "tags": [],
+        "title_zh": "Dolly Parton与mRNA癌症疗法",
+        "summary_zh": "Nature记者讨论了乡村音乐偶像Dolly Parton在疫苗和公共卫生领域的倡导贡献，同时报道了mRNA癌症疗法临床试验的积极结果。Dolly Parton通过其基金会长期支持医学研究和公共卫生事业，而mRNA癌症疗法的试验进展为个性化癌症治疗带来了新希望，展示了mRNA技术在传染病之外的广阔应用前景。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "Nature article discussing Dolly Parton's science advocacy and mRNA cancer therapy trial results. The medical breakthrough mention adds value.",
+      "ai_summary": "Nature reporters discuss Dolly Parton's advocacy for vaccines and public health, alongside promising trial results for an mRNA cancer therapy.",
+      "ai_tags": [
+        "mRNA",
+        "癌症疗法",
+        "公共卫生",
+        "疫苗",
+        "Nature"
+      ]
+    },
+    {
+      "id": "rss:www.nature.com_nature.rss:1646010994495972347",
+      "source_type": "rss",
+      "title": "Mysteries of the deep and AI friendship: Books in brief",
+      "url": "https://www.nature.com/articles/d41586-026-02725-9",
+      "content": "<p>Nature, Published online: 28 August 2026; <a href=\"https://www.nature.com/articles/d41586-026-02725-9\">doi:10.1038/d41586-026-02725-9</a></p>Andrew Robinson reviews five of the best science picks.",
+      "author": "Andrew Robinson",
+      "published_at": "2026-08-28T00:00:00+00:00",
+      "fetched_at": "2026-08-28T22:00:27.590654",
+      "metadata": {
+        "feed_name": "Nature",
+        "category": "science",
+        "tags": [],
+        "title_zh": "Nature科学书籍简评",
+        "summary_zh": "Andrew Robinson在Nature上评论了五本精选科学书籍，主题涵盖深海奥秘和人工智能关系等。这是一篇常规的书评汇总文章，为读者提供科学读物的推荐和简介。"
+      },
+      "ai_score": 3.0,
+      "ai_reason": "Generic book review roundup from Nature. Low technical depth and routine content not directly relevant to software/AI research.",
+      "ai_summary": "Andrew Robinson reviews five science book picks covering topics including deep sea mysteries and AI relationships.",
+      "ai_tags": [
+        "书评",
+        "Nature",
+        "科学读物",
+        "深海",
+        "AI"
+      ]
+    },
+    {
+      "id": "rss:www.nature.com_nature.rss:3965562108584520372",
+      "source_type": "rss",
+      "title": "The Moderna cancer vaccine offers hope — now we must speed up personalized therapies",
+      "url": "https://www.nature.com/articles/d41586-026-02680-5",
+      "content": "<p>Nature, Published online: 28 August 2026; <a href=\"https://www.nature.com/articles/d41586-026-02680-5\">doi:10.1038/d41586-026-02680-5</a></p>A positive trial holds promise for treating people with cancer. More research is needed to get effective vaccines to the clinic.",
+      "author": "Patrick A. Ott",
+      "published_at": "2026-08-28T00:00:00+00:00",
+      "fetched_at": "2026-08-28T22:00:27.590654",
+      "metadata": {
+        "feed_name": "Nature",
+        "category": "science",
+        "tags": [],
+        "title_zh": "Moderna癌症mRNA疫苗突破",
+        "summary_zh": "Moderna的个性化mRNA癌症疫苗临床试验取得积极结果，为癌症治疗带来新希望。该疫苗根据患者肿瘤的特定基因突变定制，代表了精准医疗的重要进展。尽管试验结果令人鼓舞，但研究人员强调仍需更多研究才能将有效疫苗推向临床应用。这一突破展示了mRNA技术在个性化癌症治疗领域的巨大潜力，可能彻底改变癌症治疗方式。"
+      },
+      "ai_score": 8.0,
+      "ai_reason": "Significant medical breakthrough: Moderna's personalized mRNA cancer vaccine shows positive trial results. Major advancement in personalized cancer therapy.",
+      "ai_summary": "Moderna's personalized mRNA cancer vaccine shows promising trial results, offering hope for cancer treatment while highlighting the need to accelerate personalized therapies.",
+      "ai_tags": [
+        "mRNA疫苗",
+        "癌症治疗",
+        "精准医疗",
+        "Moderna",
+        "临床试验"
+      ]
+    },
+    {
+      "id": "rss:www.nature.com_nature.rss:3118190283166661579",
+      "source_type": "rss",
+      "title": "Heisuke Hironaka obituary: mathematician who smoothed out geometry’s complexities",
+      "url": "https://www.nature.com/articles/d41586-026-02688-x",
+      "content": "<p>Nature, Published online: 28 August 2026; <a href=\"https://www.nature.com/articles/d41586-026-02688-x\">doi:10.1038/d41586-026-02688-x</a></p>His awe-inspiring proof for the resolution of singularities — such as peaks, edges and self-crossings — revolutionized algebraic geometry.",
+      "author": "Allyn Jackson",
+      "published_at": "2026-08-28T00:00:00+00:00",
+      "fetched_at": "2026-08-28T22:00:27.590654",
+      "metadata": {
+        "feed_name": "Nature",
+        "category": "science",
+        "tags": []
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "Heisuke Hironaka obituary: mathematician who smoothed out geometry’s complexities",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.nature.com_nature.rss:2133170953600034502",
+      "source_type": "rss",
+      "title": "Will Meta’s deal make social media safe for kids? Researchers are dubious",
+      "url": "https://www.nature.com/articles/d41586-026-02733-9",
+      "content": "<p>Nature, Published online: 28 August 2026; <a href=\"https://www.nature.com/articles/d41586-026-02733-9\">doi:10.1038/d41586-026-02733-9</a></p>Nature talks to specialists about the changes coming to Facebook and Instagram, and whether there’s evidence they will help.",
+      "author": "Kaia Glickman",
+      "published_at": "2026-08-28T00:00:00+00:00",
+      "fetched_at": "2026-08-28T22:00:27.590654",
+      "metadata": {
+        "feed_name": "Nature",
+        "category": "science",
+        "tags": []
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "Will Meta’s deal make social media safe for kids? Researchers are dubious",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.nature.com_nature.rss:-7297168553435219052",
+      "source_type": "rss",
+      "title": "What employers are looking for in the age of AI — and four ways to provide it",
+      "url": "https://www.nature.com/articles/d41586-026-01913-x",
+      "content": "<p>Nature, Published online: 28 August 2026; <a href=\"https://www.nature.com/articles/d41586-026-01913-x\">doi:10.1038/d41586-026-01913-x</a></p>For applicants whose knowledge of AI stops at the name ChatGPT, Nature spoke to academics, employers and early-career researchers to find out what you need to expand your understanding.",
+      "author": "Ben Deighton",
+      "published_at": "2026-08-28T00:00:00+00:00",
+      "fetched_at": "2026-08-28T22:00:27.590654",
+      "metadata": {
+        "feed_name": "Nature",
+        "category": "science",
+        "tags": []
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "What employers are looking for in the age of AI — and four ways to provide it",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:api.quantamagazine.org_feed_:3014391201728287489",
+      "source_type": "rss",
+      "title": "Does Computer Science Need Computers?",
+      "url": "https://www.quantamagazine.org/does-computer-science-need-computers-20260828/",
+      "content": "The theoretical side of the field doesn’t require computing machines. But many questions would never have been posed without them.             <p>The post <a href=\"https://www.quantamagazine.org/does-computer-science-need-computers-20260828/\" target=\"_blank\">Does Computer Science Need Computers?</a> first appeared on <a href=\"https://www.quantamagazine.org\" target=\"_blank\">Quanta Magazine</a></p>",
+      "author": "Ben Brubaker",
+      "published_at": "2026-08-28T13:30:34+00:00",
+      "fetched_at": "2026-08-28T22:00:29.609906",
+      "metadata": {
+        "feed_name": "Quanta Magazine",
+        "category": "science",
+        "tags": [
+          "Computer Science"
+        ]
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "Does Computer Science Need Computers?",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:openai.com_blog_rss.xml:8866223480607401885",
+      "source_type": "rss",
+      "title": "Supporting Thailand’s next generation of AI startups",
+      "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
+      "content": "OpenAI and Thailand’s MHESI launch an eight-week accelerator helping 10 health, wellness, and education startups turn AI prototypes into trusted products.",
+      "author": "OpenAI Blog",
+      "published_at": "2026-08-28T02:00:00+00:00",
+      "fetched_at": "2026-08-28T22:00:31.842158",
+      "metadata": {
+        "feed_name": "OpenAI Blog",
+        "category": "ai-dev",
+        "tags": [
+          "Company"
+        ]
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "Supporting Thailand’s next generation of AI startups",
+      "ai_tags": []
+    },
+    {
+      "id": "rss:www.producthunt.com_feed:8321877074340655528",
+      "source_type": "rss",
+      "title": "Revalvo",
+      "url": "https://www.producthunt.com/products/revalvo",
+      "content": "<p>\n            Run prompts on every model at once. Score. Version. Ship.\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/revalvo?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |\n            <a href=\"https://www.producthunt.com/r/p/1234626?app_id=339\">Link</a>\n          </p>",
+      "author": "Lokesh",
+      "published_at": "2026-08-28T06:38:16+00:00",
+      "fetched_at": "2026-08-28T22:00:35.479389",
+      "metadata": {
+        "feed_name": "Product Hunt",
+        "category": "indie-dev",
+        "tags": []
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "Revalvo",
+      "ai_tags": []
+    },
+    {
+      "id": "telegram:zaihuapd:43456",
+      "source_type": "telegram",
+      "title": "🤖 谷歌发布 Gemini Omni 1.1 Flash，视频生成支持 40 秒扩展与 4K 输出",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/",
+      "content": "🤖 谷歌发布 Gemini Omni 1.1 Flash，视频生成支持 40 秒扩展与 4K 输出\n\n谷歌推出 Gemini Omni 1.1 Flash，面向开发者提供新的创意控制与生成视频能力，可通过 Gemini API 和 Google AI Studio 使用。场景扩展可参考此前 10 秒画面，按 10 秒递增延长至累计 40 秒；同时支持指定首尾关键帧、360p 草稿生成，以及 1080p 或 4K 高清输出。\n\nGoogle\n\n🌸 在花频道 · 茶馆水群 · 投稿通道",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T01:00:25+00:00",
+      "fetched_at": "2026-08-28T22:00:11.641123",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43456",
+        "channel": "zaihuapd"
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "🤖 谷歌发布 Gemini Omni 1.1 Flash，视频生成支持 40 秒扩展与 4K 输出",
+      "ai_tags": []
+    },
+    {
+      "id": "telegram:zaihuapd:43457",
+      "source_type": "telegram",
+      "title": "🤖 Anthropic 开放 AI 操控硬件标准预览，设备集成耗时缩至分钟级",
+      "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+      "content": "🤖 Anthropic 开放 AI 操控硬件标准预览，设备集成耗时缩至分钟级\n\nAnthropic 开放模型硬件标准（MHS）研究预览，让 AI 智能体安全操控显微镜、液体处理器、机械臂等设备并并行执行复杂任务，设备集成时间从数周至数月缩短到几小时甚至几分钟。\n\n首批合作方覆盖生物技术、机器人、量子计算等领域，包括基因泰克、卡内基梅隆大学、QuEra 等；其中 QuEra 的 AI 控制器可在 99.3% 的情况下无需人工干预恢复量子计算机的激光锁定。Anthropic 计划在完成安全评估后开源该标准。\n\nAnthropicAI\n\n🌸 在花频道 · 茶馆水群 · 投稿通道",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T01:38:15+00:00",
+      "fetched_at": "2026-08-28T22:00:11.641123",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43457",
+        "channel": "zaihuapd"
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "🤖 Anthropic 开放 AI 操控硬件标准预览，设备集成耗时缩至分钟级",
+      "ai_tags": []
+    },
+    {
+      "id": "telegram:zaihuapd:43458",
+      "source_type": "telegram",
+      "title": "台风 \"白海豚\" 在浙江玉环登陆 最大风力 14 级  今年第 13 号台风\"白海豚\"（强台风级）于 8 月 9 日 17 时 30 分前后在浙江省台州玉环市坎",
+      "url": "https://t.me/zaihuapd/43458",
+      "content": "台风 \"白海豚\" 在浙江玉环登陆 最大风力 14 级  今年第 13 号台风\"白海豚\"（强台风级）于 8 月 9 日 17 时 30 分前后在浙江省台州玉环市坎门街道沿海登陆，登陆时中心附近最大风力 14 级（42 米/秒），中心最低气压 945 百帕。  中央气象台  🌸 在花频道 · 茶馆水群 · 投稿通道",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T02:07:15+00:00",
+      "fetched_at": "2026-08-28T22:00:11.641123",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43458",
+        "channel": "zaihuapd"
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "台风 \"白海豚\" 在浙江玉环登陆 最大风力 14 级  今年第 13 号台风\"白海豚\"（强台风级）于 8 月 9 日 17 时 30 分前后在浙江省台州玉环市坎",
+      "ai_tags": []
+    },
+    {
+      "id": "telegram:zaihuapd:43459",
+      "source_type": "telegram",
+      "title": "🤖 OpenAI 被曝开发常驻 Codex，代理持续工作直至休眠",
+      "url": "https://www.wired.com/story/openai-is-developing-a-persistent-ai-agent/",
+      "content": "🤖 OpenAI 被曝开发常驻 Codex，代理持续工作直至休眠\n\n据 WIRED 审查的代码，OpenAI 正为命令行版 Codex 添加「常驻模式」：代理将持续工作直到被「休眠」，不同于现有模式几分钟或几小时后即停的做法。\n\n该模式内置「主动性」设定：答完请求后自行创建后续任务，可跨会话执行，并依据对用户的了解决定工作内容；改动用户系统之外的东西仍需事先批准。OpenAI 确认正在测试，暂无近期上线计划。\n\nWIRED\n\n🌸 在花频道 · 茶馆水群 · 投稿通道",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T02:47:07+00:00",
+      "fetched_at": "2026-08-28T22:00:11.642632",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43459",
+        "channel": "zaihuapd"
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "🤖 OpenAI 被曝开发常驻 Codex，代理持续工作直至休眠",
+      "ai_tags": []
+    },
+    {
+      "id": "telegram:zaihuapd:43460",
+      "source_type": "telegram",
+      "title": "🤖 美国国防部将 Anthropic 列入黑名单 国防科技公司停止使用 Claude  特朗普政府决定将人工智能公司 Anthropic 列入黑名单并将其技术指",
+      "url": "https://t.me/zaihuapd/43460",
+      "content": "🤖 美国国防部将 Anthropic 列入黑名单 国防科技公司停止使用 Claude  特朗普政府决定将人工智能公司 Anthropic 列入黑名单并将其技术指定为供应链风险后，多家国防科技公司要求员工停止使用 Claude 模型，并切换至其他人工智能工具。  CNBC  🍀在花频道  🍵茶馆聊天  📮投稿",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T03:15:08+00:00",
+      "fetched_at": "2026-08-28T22:00:11.643095",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43460",
+        "channel": "zaihuapd",
+        "title_zh": "美国防部将Anthropic列入黑名单",
+        "summary_zh": "特朗普政府将人工智能公司Anthropic列入黑名单并指定为供应链风险，多家国防科技公司随即要求员工停止使用Claude模型并切换至其他AI工具。此举反映出美国政府对AI技术在国防领域应用的审慎态度，可能重塑AI行业竞争格局，对其他AI企业的政府合同获取和合规策略产生深远影响。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "美国国防部将AI公司列入黑名单是重大政策变化，影响AI行业供应链格局，对全球AI企业发展战略有重要参考价值",
+      "ai_summary": "US Defense Department blacklists Anthropic, causing defense tech companies to stop using Claude and switch to alternative AI tools.",
+      "ai_tags": [
+        "AI政策",
+        "Anthropic",
+        "国防科技",
+        "供应链风险"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:43461",
+      "source_type": "telegram",
+      "title": "发改委谈机器人产业，须因地制宜防一哄而上",
+      "url": "https://mp.weixin.qq.com/s/twr-S4z_ePlQLLem2c4BTw",
+      "content": "发改委谈机器人产业，须因地制宜防一哄而上\n\n国家发改委政策研究室副主任李超在 8 月例行发布会上表示，机器人产业涉及人工智能、先进制造、新材料等前沿技术，必须因地制宜、健康有序发展，立足本地资源禀赋和产业优势，找准定位、发挥优势，防止盲目跟风、一哄而上，推动相关行业行稳致远。\n\n财联社\n\n🌸 在花频道 · 茶馆水群 · 投稿通道",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T05:02:17+00:00",
+      "fetched_at": "2026-08-28T22:00:11.643599",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43461",
+        "channel": "zaihuapd",
+        "title_zh": "发改委：机器人产业须防一哄而上",
+        "summary_zh": "国家发改委政策研究室副主任李超在8月例行发布会上表示，机器人产业涉及人工智能、先进制造、新材料等前沿技术，各地必须因地制宜、健康有序发展。强调要立足本地资源禀赋和产业优势，找准定位、发挥优势，防止盲目跟风、一哄而上，推动相关行业行稳致远。这一政策信号旨在引导机器人产业理性发展。"
+      },
+      "ai_score": 5.0,
+      "ai_reason": "发改委对机器人产业的政策指导，属于常规产业政策发布，对行业有指导意义但非突破性",
+      "ai_summary": "China's NDRC advises local governments to develop robotics industry based on local advantages rather than blindly following trends.",
+      "ai_tags": [
+        "产业政策",
+        "机器人",
+        "发改委",
+        "先进制造"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:43462",
+      "source_type": "telegram",
+      "title": "GLM 收费首日，DeepSeek 夺回 OpenCode 使用量榜首",
+      "url": "https://x.com/opencode/status/2093159743351120207",
+      "content": "GLM 收费首日，DeepSeek 夺回 OpenCode 使用量榜首\n\n据 OpenCode 称，GLM 进入付费阶段的第一天，DeepSeek 便重新夺回榜首位置；紧随其后的 Muse Spark 则被视作低调黑马。\n\nOpenCode(@opencode)\n\n🌸 在花频道 · 茶馆水群 · 投稿通道",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T06:00:58+00:00",
+      "fetched_at": "2026-08-28T22:00:11.643599",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43462",
+        "channel": "zaihuapd",
+        "title_zh": "GLM收费首日DeepSeek重夺榜首",
+        "summary_zh": "据OpenCode平台数据显示，在GLM进入付费阶段的第一天，DeepSeek便重新夺回使用量榜首位置。紧随其后的Muse Spark被视作低调黑马，表现亮眼。这一市场变化反映出国内AI模型竞争格局的动态调整，收费策略对用户选择产生直接影响，也显示出开发者对性价比的敏感度。"
+      },
+      "ai_score": 5.0,
+      "ai_reason": "反映国内AI模型市场竞争格局变化，GLM收费后DeepSeek重夺榜首，属于市场动态更新",
+      "ai_summary": "DeepSeek regains top usage spot on OpenCode on the first day GLM switches to paid model, with Muse Spark emerging as a dark horse.",
+      "ai_tags": [
+        "AI模型",
+        "DeepSeek",
+        "GLM",
+        "市场竞争"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:43463",
+      "source_type": "telegram",
+      "title": "🐧 腾讯混元发布 Hy4 preview，盲测得分略胜 GLM-5.3 与 Kimi K3",
+      "url": "https://mp.weixin.qq.com/s/ymr3X878B8oa2XP15CH8TQ",
+      "content": "🐧 腾讯混元发布 Hy4 preview，盲测得分略胜 GLM-5.3 与 Kimi K3\n\n2026 年 8 月 28 日，腾讯发布迄今最强开源模型 Hy4 preview，总参数量 770B、活跃参数 49B、上下文窗口 1M token，主攻长周期软件工程、文档办公与科学研究，已上线腾讯云、GitHub、HuggingFace、ModelScope、AtomGit、OpenRouter 等渠道。\n\n盲评 203 个工程任务中，Hy4 preview 以 2.99 分小胜 GLM 5.3（2.92）与 Kimi K3（2.94）；API 定价为每 1M tokens 输入 0.834 美元、输出 2.501 美元。\n\n腾讯混元 | Blog | Hugging Face\n\n🌸 在花频道 · 茶馆水群 · 投稿通道",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T06:11:26+00:00",
+      "fetched_at": "2026-08-28T22:00:11.644604",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43463",
+        "channel": "zaihuapd",
+        "title_zh": "腾讯混元发布Hy4 preview大模型",
+        "summary_zh": "腾讯发布迄今最强开源模型Hy4 preview，总参数量770B、活跃参数49B、上下文窗口达1M token，主攻长周期软件工程、文档办公与科学研究。在203个工程任务盲评中，Hy4 preview以2.99分小胜GLM 5.3（2.92）与Kimi K3（2.94）。模型已上线腾讯云、GitHub、HuggingFace等多渠道，API定价为每1M tokens输入0.834美元。"
+      },
+      "ai_score": 8.0,
+      "ai_reason": "腾讯发布770B参数大模型Hy4 preview，1M上下文窗口，盲测超越GLM-5.3和Kimi K3，是重大技术发布",
+      "ai_summary": "Tencent releases Hy4 preview, a 770B parameter open-source model with 1M token context window, outperforming GLM-5.3 and Kimi K3 in blind tests.",
+      "ai_tags": [
+        "腾讯",
+        "大模型",
+        "开源",
+        "Hy4"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:43464",
+      "source_type": "telegram",
+      "title": "美国 FTC 调查 YouTube 封号行为，称内容政策或误导用户",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-27/us-ftc-probing-youtube-over-social-media-policies",
+      "content": "美国 FTC 调查 YouTube 封号行为，称内容政策或误导用户\n\n美国联邦贸易委员会（FTC）正在调查 Alphabet 旗下 YouTube 封禁用户账号是否违反消费者保护法。知情人士称，调查自去年启动，目前已进入准备潜在诉讼的最后阶段。\n\n调查重点包括 YouTube 封禁或降权内容时是否违反其自身用户政策，以及用户是否被内容政策误导、以为可发布某些内容却遭下架或封号。YouTube 与 FTC 均拒绝评论，公司尚未被指控有不当行为。\n\nBloomberg\n\n🌸 在花频道 · 茶馆水群 · 投稿通道",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T07:48:03+00:00",
+      "fetched_at": "2026-08-28T22:00:11.644604",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43464",
+        "channel": "zaihuapd",
+        "title_zh": "美FTC调查YouTube封号行为",
+        "summary_zh": "美国联邦贸易委员会（FTC）正在调查Alphabet旗下YouTube封禁用户账号是否违反消费者保护法。调查自去年启动，目前已进入准备潜在诉讼的最后阶段。调查重点包括YouTube封禁或降权内容时是否违反其自身用户政策，以及用户是否被内容政策误导、以为可发布某些内容却遭下架或封号。YouTube与FTC均拒绝评论。"
+      },
+      "ai_score": 4.0,
+      "ai_reason": "FTC调查YouTube封号行为属于消费者保护范畴，与软件工程和AI技术关联度较低",
+      "ai_summary": "US FTC investigates YouTube's account banning practices, examining whether content policies mislead users and violate consumer protection laws.",
+      "ai_tags": [
+        "FTC",
+        "YouTube",
+        "消费者保护",
+        "内容政策"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:43465",
+      "source_type": "telegram",
+      "title": "央行定于 9 月 4 日发行人工智能金银纪念币，金质币面额 80 元限量 1 万枚",
+      "url": "https://mp.weixin.qq.com/s/HkNhU22JlueqJi4loWosCw",
+      "content": "央行定于 9 月 4 日发行人工智能金银纪念币，金质币面额 80 元限量 1 万枚\n\n中国人民银行定于 2026 年 9 月 4 日发行科创未来（人工智能）金银纪念币一套，共 3 枚，均为中华人民共和国法定货币。其中 5 克正方形金质纪念币面额 80 元、最大发行量 1 万枚；两枚 15 克圆形银质纪念币面额各 5 元、各限量 2 万枚。\n\n纪念币正面为国徽，背面以芯片、脑形电路纹理、0 和 1 及人工智能元素符号等图形组合设计。该套币由上海造币有限公司和深圳国宝造币有限公司铸造，中国金币集团有限公司总经销。\n\n中国人民银行\n\n🌸 在花频道 · 茶馆水群 · 投稿通道",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T08:45:45+00:00",
+      "fetched_at": "2026-08-28T22:00:11.645278",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43465",
+        "channel": "zaihuapd",
+        "title_zh": "央行发行AI主题金银纪念币",
+        "summary_zh": "中国人民银行定于2026年9月4日发行科创未来（人工智能）金银纪念币一套，共3枚。其中5克正方形金质纪念币面额80元、最大发行量1万枚；两枚15克圆形银质纪念币面额各5元、各限量2万枚。纪念币背面以芯片、脑形电路纹理、0和1及人工智能元素符号等图形组合设计，由上海造币有限公司和深圳国宝造币有限公司铸造。"
+      },
+      "ai_score": 3.0,
+      "ai_reason": "央行发行AI主题纪念币属于纪念性质，技术含量低，与软件工程和AI研发关联度弱",
+      "ai_summary": "People's Bank of China issues AI-themed gold and silver commemorative coins on September 4, with limited edition quantities.",
+      "ai_tags": [
+        "央行",
+        "纪念币",
+        "人工智能",
+        "收藏"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:43466",
+      "source_type": "telegram",
+      "title": "谷歌员工内测下一代 Gemini 3.8 Flash，测试者称明显优于 3.7 Flash",
+      "url": "https://www.businessinsider.com/google-employees-testing-next-gemini-flash-3-8-model-2026-8",
+      "content": "谷歌员工内测下一代 Gemini 3.8 Flash，测试者称明显优于 3.7 Flash\n\n谷歌员工已开始内测下一代 Gemini 3.8 Flash 预览版，一名测试者称其明显优于 3.7 Flash。该预览版通过内部编码平台 Jetski 向员工开放，谷歌拒绝置评。\n\n谷歌新一代旗舰大模型一再延期，转而加快推出更快、更便宜的 Flash 系列：3.6 Flash 于今年 7 月发布，3.7 Flash 三周后跟进，CEO 皮查伊曾表示计划近乎每月推新。\n\nBusiness Insider\n\n🌸 在花频道 · 茶馆水群 · 投稿通道",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T09:38:16+00:00",
+      "fetched_at": "2026-08-28T22:00:11.645782",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43466",
+        "channel": "zaihuapd",
+        "title_zh": "谷歌内测Gemini 3.8 Flash预览版",
+        "summary_zh": "谷歌员工已开始内测下一代Gemini 3.8 Flash预览版，一名测试者称其明显优于3.7 Flash。该预览版通过内部编码平台Jetski向员工开放，谷歌拒绝置评。值得注意的是，谷歌新一代旗舰大模型一再延期，转而加快推出更快、更便宜的Flash系列：3.6 Flash于今年7月发布，3.7 Flash三周后跟进，CEO皮查伊曾表示计划近乎每月推新。"
+      },
+      "ai_score": 6.0,
+      "ai_reason": "谷歌内测Gemini 3.8 Flash预览版，反映谷歌加速Flash系列迭代策略，有一定技术参考价值",
+      "ai_summary": "Google employees internally test next-generation Gemini 3.8 Flash preview, with testers reporting it significantly outperforms 3.7 Flash.",
+      "ai_tags": [
+        "谷歌",
+        "Gemini",
+        "Flash",
+        "大模型"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:43467",
+      "source_type": "telegram",
+      "title": "阿里胜诉拿下 Alibaba.ai 域名，投资者欲以十倍价格转售",
+      "url": "http://alibaba.ai/",
+      "content": "阿里胜诉拿下 Alibaba.ai 域名，投资者欲以十倍价格转售\n\n一名投资者 2026 年 7 月 6 日以 3,333 美元从 Spaceship 购入 Alibaba.ai 域名，随后挂牌 33,333 美元出售。阿里巴巴集团曾于 6 月 15 日向该域名前持有人发函，并就 Alibaba.ai 和 Tmall.ai 提起 UDRP 投诉。买家辩称「Ali Baba」在阿拉伯世界有独立文化含义，但未获采纳，仲裁小组最终裁定两域名转移给阿里巴巴。\n\n来源\n\n🌸 在花频道 · 茶馆水群 · 投稿通道",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T11:07:51+00:00",
+      "fetched_at": "2026-08-28T22:00:11.657676",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43467",
+        "channel": "zaihuapd",
+        "title_zh": "阿里胜诉获Alibaba.ai域名",
+        "summary_zh": "一名投资者于2026年7月6日以3333美元从Spaceship购入Alibaba.ai域名，随后挂牌33333美元出售。阿里巴巴集团曾于6月15日向该域名前持有人发函，并就Alibaba.ai和Tmall.ai提起UDRP投诉。买家辩称「Ali Baba」在阿拉伯世界有独立文化含义，但未获采纳，仲裁小组最终裁定两域名转移给阿里巴巴。"
+      },
+      "ai_score": 3.0,
+      "ai_reason": "阿里域名仲裁胜诉属于法律商业新闻，技术价值低，对行业影响有限",
+      "ai_summary": "Alibaba wins UDRP dispute to acquire Alibaba.ai domain from an investor who attempted to resell it at ten times the purchase price.",
+      "ai_tags": [
+        "阿里巴巴",
+        "域名",
+        "UDRP",
+        "知识产权"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:43468",
+      "source_type": "telegram",
+      "title": "长鑫科技：2026 年上半年净利润 776.05 亿元，同比扭亏为盈",
+      "url": "https://t.me/zaihuapd/43468",
+      "content": "长鑫科技：2026 年上半年净利润 776.05 亿元，同比扭亏为盈\n\n8 月 28 日晚，长鑫科技披露半年报，公司上半年实现营业收入 1503.1 亿元，同比增长 873.64%；归属于上市公司股东的净利润 776.05 亿元，上年同期亏损 23.32 亿元；经营活动产生的现金流量净额为 1311.56 亿元，同比增长 2985.64%；基本每股收益 1.2893 元。\n\n分季度来看，长鑫科技第一季度归母净利润 247.62 亿元，第二季度归母净利润 528.43 亿元，环比增长 113%，上半年主营业务毛利率达 84.84%。\n\n🌸 在花频道 · 茶馆水群 · 投稿通道",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T11:34:27+00:00",
+      "fetched_at": "2026-08-28T22:00:11.657676",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43468",
+        "channel": "zaihuapd",
+        "title_zh": "长鑫科技上半年扭亏为盈",
+        "summary_zh": "长鑫科技披露2026年上半年业绩，实现营业收入1503.1亿元，同比增长873.64%；归属于上市公司股东的净利润776.05亿元，上年同期亏损23.32亿元，成功扭亏为盈。经营活动现金流量净额1311.56亿元，同比增长2985.64%。分季度看，Q2归母净利润528.43亿元环比增长113%，上半年主营业务毛利率达84.84%，展现出强劲盈利能力。"
+      },
+      "ai_score": 7.0,
+      "ai_reason": "长鑫科技扭亏为盈且业绩大幅增长，反映国产存储芯片产业突破，对半导体供应链意义重大",
+      "ai_summary": "CXMT Technology reports H1 2026 net profit of 77.6 billion yuan, achieving a turnaround from losses with 873% revenue growth.",
+      "ai_tags": [
+        "长鑫科技",
+        "存储芯片",
+        "半导体",
+        "财报"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:43469",
+      "source_type": "telegram",
+      "title": "两部门：将个人住房贷款期限由最长 30 年延长至最长 40 年",
+      "url": "https://news.ifeng.com/c/8vxm6huJOMR",
+      "content": "两部门：将个人住房贷款期限由最长 30 年延长至最长 40 年\n\n中国人民银行、国家金融监督管理总局 28 日联合印发《关于改革完善房地产信贷管理 推动加快构建房地产发展新模式的意见》，为适应经济社会发展需要，《意见》将个人住房贷款期限由最长 30 年延长至最长 40 年，给予借贷双方更大灵活度，具体期限由购房人与商业银行协商确定。\n\n财联社\n\n🌸 在花频道 · 茶馆水群 · 投稿通道",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T12:16:36+00:00",
+      "fetched_at": "2026-08-28T22:00:11.658625",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43469",
+        "channel": "zaihuapd",
+        "title_zh": "房贷期限延长至最长40年",
+        "summary_zh": "中国人民银行、国家金融监督管理总局联合印发《关于改革完善房地产信贷管理 推动加快构建房地产发展新模式的意见》，将个人住房贷款期限由最长30年延长至最长40年，给予借贷双方更大灵活度，具体期限由购房人与商业银行协商确定，以适应经济社会发展需要。"
+      },
+      "ai_score": 2.0,
+      "ai_reason": "房贷期限延长至40年属于房地产金融政策，与软件工程和AI技术领域无关",
+      "ai_summary": "Chinese regulators extend maximum personal housing loan term from 30 years to 40 years to provide more flexibility for borrowers.",
+      "ai_tags": [
+        "房贷政策",
+        "房地产",
+        "央行",
+        "金融监管"
+      ]
+    },
+    {
+      "id": "telegram:zaihuapd:43470",
+      "source_type": "telegram",
+      "title": "长宁 4.7 级地震后现“7.7 级”预警，中国地震局指系违规推送  2026 年 8 月 24 日，四川宜宾长宁发生 4.7 级地震，中国地震预警网震后 6 ",
+      "url": "https://t.me/zaihuapd/43470",
+      "content": "长宁 4.7 级地震后现“7.7 级”预警，中国地震局指系违规推送  2026 年 8 月 24 日，四川宜宾长宁发生 4.7 级地震，中国地震预警网震后 6 秒向震中周边 1000 余万用户推送官方预警。中国地震局今日回应，成都高新减灾研究所擅自用自建系统生成“四川长宁 7.7 级”预警，以“中国地震预警网”名义通过荣耀、vivo、魅族手机及小天才手表等终端违规向全国推送。  震情信息依法由地震部门统一发布，7 月 22 日四川省地震局已终止与该所播发协议。目前四川、重庆、广东等 27 省份已出台法规，明确任何单位不得擅自发布预警。…",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T13:01:45+00:00",
+      "fetched_at": "2026-08-28T22:00:11.658625",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43470",
+        "channel": "zaihuapd"
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "长宁 4.7 级地震后现“7.7 级”预警，中国地震局指系违规推送  2026 年 8 月 24 日，四川宜宾长宁发生 4.7 级地震，中国地震预警网震后 6 ",
+      "ai_tags": []
+    },
+    {
+      "id": "telegram:zaihuapd:43471",
+      "source_type": "telegram",
+      "title": "Z.ai 发布 GLM-5.3-Flash，18B 激活参数价格仅上代十分之一，限时价格低至每百万 Tokens 输入 0.075 美元  Z.ai 发布 GL",
+      "url": "https://t.me/zaihuapd/43471",
+      "content": "Z.ai 发布 GLM-5.3-Flash，18B 激活参数价格仅上代十分之一，限时价格低至每百万 Tokens 输入 0.075 美元  Z.ai 发布 GLM-5 系列首个原生多模态模型 GLM-5.3-Flash，总参数 320B、激活参数仅 18B。其在多项编程和智能体基准上超过 GLM-5.2，价格降至约十分之一，并接近 Claude Opus 4.8。限时优惠期间，API 输入价格为每百万 Tokens 0.075 美元，缓存输入为 0.015 美元，输出为 0.25 美元，缓存存储暂时免费；原价分别为…",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T15:32:23+00:00",
+      "fetched_at": "2026-08-28T22:00:11.659130",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43471",
+        "channel": "zaihuapd"
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "Z.ai 发布 GLM-5.3-Flash，18B 激活参数价格仅上代十分之一，限时价格低至每百万 Tokens 输入 0.075 美元  Z.ai 发布 GL",
+      "ai_tags": []
+    },
+    {
+      "id": "telegram:zaihuapd:43472",
+      "source_type": "telegram",
+      "title": "iPhone 18 Pro 预售或推迟至 9 月 12 日，开售时间改为午夜",
+      "url": "https://www.macrumors.com/2026/08/28/iphone-18-pro-pre-orders-may-start-at-unusual-time/",
+      "content": "iPhone 18 Pro 预售或推迟至 9 月 12 日，开售时间改为午夜\n\niPhone 18 Pro 预售可能推迟到 9 月 12 日（周六），比往常的周五晚一天。消息称与 9 月 11 日恰逢 9·11 恐袭 25 周年有关，2015 年苹果也曾因此把 iPhone 6S 预售推迟到 9 月 12 日。\n\n往常美西时间凌晨 5 点开始的预售，今年据称改为周六午夜 0 点。该日期预计适用于 iPhone 18 Pro、Apple Watch Series 12 和 Ultra 4；折叠屏 iPhone 预售或推迟到 9 月底。\n\nMacRumors\n\n🌸 在花频道 · 茶馆水群 · 投稿通道",
+      "author": "zaihuapd",
+      "published_at": "2026-08-28T16:09:56+00:00",
+      "fetched_at": "2026-08-28T22:00:11.659130",
+      "metadata": {
+        "msg_url": "https://t.me/zaihuapd/43472",
+        "channel": "zaihuapd"
+      },
+      "ai_score": 0.0,
+      "ai_reason": "Analysis failed",
+      "ai_summary": "iPhone 18 Pro 预售或推迟至 9 月 12 日，开售时间改为午夜",
+      "ai_tags": []
+    }
+  ]
+}

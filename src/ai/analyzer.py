@@ -76,4 +76,50 @@ class ContentAnalyzer:
                     item.ai_tags = []
                 time.sleep(2)
 
+        # 重试 0 分条目（API 超时/解析失败的批次）
+        zero_items = [x for x in items if (x.ai_score or 0) == 0]
+        if zero_items:
+            print(f"\n  Retrying {len(zero_items)} zero-scored items...")
+            for bs in range(0, len(zero_items), BATCH):
+                batch = zero_items[bs:bs + BATCH]
+                bn = bs // BATCH + 1
+                print(f"  Retry Batch {bn}: items {bs+1}-{bs+len(batch)}")
+                # 复用上面的评分逻辑
+                txt = []
+                for i, item in enumerate(batch):
+                    m = item.metadata
+                    eng = []
+                    if m.get("score"): eng.append("score:{}".format(m["score"]))
+                    if m.get("descendants"): eng.append("{}cmts".format(m["descendants"]))
+                    eng_str = " [" + ", ".join(eng) + "]" if eng else ""
+                    content_snip = ""
+                    if item.content:
+                        clean = re.sub(r"<[^>]+>", "", item.content)
+                        if "--- Top Comments ---" in clean:
+                            clean = clean.split("--- Top Comments ---")[0]
+                        content_snip = "\n    Content: " + clean[:300]
+                    txt.append("[{}] {} | {} | {}{}{}".format(
+                        i+1, item.id, item.title, item.source_type.value, eng_str, content_snip))
+                prompt = BATCH_ANALYSIS_USER.format(count=len(batch), items="\n".join(txt))
+                try:
+                    resp = await self.client.complete(
+                        system=BATCH_ANALYSIS_SYSTEM, user=prompt, max_tokens=8192)
+                    r = self._parse_json_response(resp)
+                    if not r or "results" not in r:
+                        raise ValueError("parse fail")
+                    rl = r["results"]
+                    print("    OK Received {} results".format(len(rl)))
+                    for idx, item in enumerate(batch):
+                        if idx < len(rl) and isinstance(rl[idx], dict):
+                            d = rl[idx]
+                            item.ai_score = float(d.get("score", 0))
+                            item.ai_reason = d.get("reason", "")
+                            item.ai_summary = d.get("summary", item.title)
+                            item.ai_tags = d.get("tags", [])
+                            if d.get("title_zh"): item.metadata["title_zh"] = d["title_zh"]
+                            if d.get("summary_zh"): item.metadata["summary_zh"] = d["summary_zh"]
+                except Exception as e:
+                    print("    FAIL Retry Batch {}: {}".format(bn, e))
+                    time.sleep(2)
+
         return items

@@ -25,7 +25,7 @@ class StorageManager:
                 f"Please create it based on the template in README.md"
             )
 
-        with open(self.config_path, "r", encoding="utf-8") as f:
+        with open(self.config_path, "r", encoding="utf-8-sig") as f:
             data = json.load(f)
 
         return Config.model_validate(data)

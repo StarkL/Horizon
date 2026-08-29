@@ -5,6 +5,17 @@
 #   - Python 使用项目 .venv（直接跑源码模块，确保用最新代码，不依赖 PATH）
 #   - 发布逻辑统一委托 publish-to-vps.ps1（VitePress 博客 + admin+sudo SSH + 微信草稿箱）
 
+param(
+    [int]$Hours = 24   # 聚合时间窗口（小时），默认 24，补跑可传 48 等
+)
+
+# ============================================================
+# AI 模型配置（更新 key 来源或端点改这里）
+# ============================================================
+$AI_KEY_ENV_NAME = "CODING_PLAN__API_KEY"                # 从哪个系统环境变量读 API key
+$AI_BASE_URL = "https://coding.dashscope.aliyuncs.com/apps/anthropic"
+$AI_CUSTOM_HEADERS = "X-DashScope-Wait-Timeout: 30"      # DashScope 必须的自定义头，否则 401
+
 # 强制 UTF-8 输出
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $OutputEncoding = [System.Text.Encoding]::UTF8
@@ -36,11 +47,23 @@ $ErrorActionPreference = "Continue"
 $pythonExe = Join-Path $PSScriptRoot ".venv\Scripts\python.exe"
 
 # ============================================================
-# Step 1: 聚合（核心流程）
+# Step 1: 同步 AI 配置到 config.json（确保 Python 读到最新值）
 # ============================================================
-Write-Log "[Horizon] 开始聚合: python -m src.main --hours 24 ..."
+$configPath = Join-Path $PSScriptRoot "data\config.json"
+$configContent = Get-Content $configPath -Raw -Encoding UTF8
+$configContent = $configContent -replace '"api_key_env"\s*:\s*"[^"]*"', "`"api_key_env`": `"$AI_KEY_ENV_NAME`""
+$configContent = $configContent -replace '"base_url"\s*:\s*"[^"]*"', "`"base_url`": `"$AI_BASE_URL`""
+Set-Content $configPath -Value $configContent -Encoding UTF8
+# 自定义头通过环境变量传给 Python（与 ccswitch 配置对齐，DashScope 没这个头就 401）
+$env:ANTHROPIC_CUSTOM_HEADERS = $AI_CUSTOM_HEADERS
+Write-Log "[Config] AI 配置已同步: api_key_env=$AI_KEY_ENV_NAME, base_url=$AI_BASE_URL, headers=$AI_CUSTOM_HEADERS"
+
+# ============================================================
+# Step 2: 聚合（核心流程）
+# ============================================================
+Write-Log "[Horizon] 开始聚合: python -m src.main --hours $Hours ..."
 try {
-    $horizonOutput = & $pythonExe -m src.main --hours 24 2>&1
+    $horizonOutput = & $pythonExe -m src.main --hours $Hours 2>&1
     $horizonOutput | Add-Content -Path $logFile -Encoding UTF8
 } catch {
     Write-Log "[Horizon] 聚合进程异常: $_"
@@ -48,10 +71,41 @@ try {
 Write-Log "[Horizon] 聚合完成 (exit code: $LASTEXITCODE)"
 
 # ============================================================
-# Step 2: 归档中文摘要（仅当 D:\ 可用；失败不影响后续）
+# Step 2.5: 给摘要文件加时间戳（防止同一天多次运行互相覆盖）
+# ============================================================
+$summariesDir = Join-Path $PSScriptRoot "data\summaries"
+$timestamp = Get-Date -Format "HHmm"
+$today = Get-Date -Format "yyyy-MM-dd"
+
+# 查找今天生成的摘要文件（兼容有无时间戳的格式）
+$todayFiles = @(
+    Get-ChildItem -Path $summariesDir -Filter "horizon-${today}-*.md" | Where-Object { $_.Name -notmatch "-\d{4}-" },  # 无时间戳的
+    Get-ChildItem -Path $summariesDir -Filter "horizon-${today}-????.md" | Where-Object { $_.Name -match "-\d{4}-" }   # 有时间戳的
+) | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+
+if ($todayFiles) {
+    $oldFile = $todayFiles
+    $newName = $oldFile.Name -replace "horizon-${today}-(zh|en)\.md$", "horizon-${today}-${timestamp}-`$1.md"
+
+    if ($oldFile.Name -ne $newName) {
+        # 如果新文件名已存在，先备份
+        $newPath = Join-Path $summariesDir $newName
+        if (Test-Path $newPath) {
+            $backupName = $newName + ".bak-${timestamp}"
+            $backupPath = Join-Path $summariesDir $backupName
+            Rename-Item -Path $newPath -NewName $backupName -Force
+            Write-Log "[Rename] 已备份旧文件: $backupName"
+        }
+
+        Rename-Item -Path $oldFile.FullName -NewName $newName
+        Write-Log "[Rename] 已添加时间戳: $($oldFile.Name) -> $newName"
+    }
+}
+
+# ============================================================
+# Step 3: 归档中文摘要（仅当 D:\ 可用；失败不影响后续）
 # ============================================================
 $archiveDir = "D:\每日信息搜索任务"
-$summariesDir = Join-Path $PSScriptRoot "data\summaries"
 if (Test-Path "D:\") {
     try {
         if (-not (Test-Path $archiveDir)) { New-Item -Path $archiveDir -ItemType Directory -Force | Out-Null }
@@ -70,7 +124,7 @@ if (Test-Path "D:\") {
 }
 
 # ============================================================
-# Step 3: 发布博客 + 微信草稿箱（委托已验证的 publish-to-vps.ps1）
+# Step 4: 发布博客 + 微信草稿箱（委托已验证的 publish-to-vps.ps1）
 # ============================================================
 $publishScript = Join-Path $PSScriptRoot "publish-to-vps.ps1"
 if (Test-Path $publishScript) {

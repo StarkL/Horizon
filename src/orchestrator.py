@@ -54,6 +54,9 @@ class HorizonOrchestrator:
         """
         self.console.print("[bold cyan]🌅 Horizon - Starting aggregation...[/bold cyan]\n")
 
+        # 清理旧 checkpoint（下次跑之前清理，而不是成功后清理）
+        clear_checkpoints()
+
         # Check email subscriptions if configured
         if self.email_manager and self.config.email and self.config.email.enabled:
             self.console.print("📧 Checking for new email subscriptions...")
@@ -238,7 +241,7 @@ class HorizonOrchestrator:
                     )
 
             save_checkpoint("final", important_items, {"total_fetched": len(all_items)})
-            clear_checkpoints()
+            # 保留 checkpoint 供查看，下次运行时再清理
 
             self.console.print("[bold green]✅ Horizon completed successfully![/bold green]")
             usage = get_usage_snapshot()
