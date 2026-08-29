@@ -55,3 +55,12 @@ logs/*.log
 
 # todo
 todo.txt
+
+# 临时文件
+.claude/
+.codegraph/
+*.png
+*.jpg
+*.bak
+data/seen_urls.json
+data/checkpoints/
