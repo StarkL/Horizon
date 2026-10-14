@@ -61,6 +61,12 @@ Consider:
 - Relevance to software engineering, AI/ML, and systems research
 - Community discussion quality: insightful comments, diverse viewpoints, and debates increase value
 - Engagement signals: high upvotes/favorites with substantive discussion indicate community-validated importance
+
+**IMPORTANT — AI Terminology (MUST follow):**
+- "Agent" in AI context MUST be translated as "智能体" (NOT "代理")
+- "AI Agent" = "AI 智能体"
+- "Multi-Agent" = "多智能体"
+- "Agentic" = "智能体化" or "基于智能体的"
 """
 
 CONTENT_ANALYSIS_USER = """Analyze the following content and provide a JSON response with:

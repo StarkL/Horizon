@@ -1,4 +1,4 @@
-﻿# Horizon Daily Automation
+# Horizon Daily Automation
 # Runs every day at 6:00 AM
 # Pipeline: fetch -> convert -> blog build/deploy -> cover -> wechat publish
 
@@ -67,7 +67,7 @@ try {
             $result += $line
         }
         $text = ($result -join "`n") -replace '\n{4,}', "`n`n`n"
-        $fm = "---`ntitle: `"`u6BCF日科技要闻`"`ndate: $today`ndescription: `"AI 驱动的信息聚合，精选全球科技动态`"`n---`n`n"
+        $fm = "---`ntitle: `"每日科技要闻`"`ndate: $today`ndescription: `"AI 驱动的信息聚合，精选全球科技动态`"`n---`n`n"
         Set-Content -Path $articleFile -Value ($fm + $text) -Encoding UTF8
         Log "[2/5] Article created: $articleFile"
     } else {
@@ -125,12 +125,12 @@ try {
     $ssh = "C:\Program Files\Git\usr\bin\ssh.exe"
     $scp = "C:\Program Files\Git\usr\bin\scp.exe"
 
-    if (Test-Path $summaryFile -and Test-Path $coverPath) {
+    if ((Test-Path $summaryFile) -and (Test-Path $coverPath)) {
         $tempWxFile = [System.IO.Path]::GetTempFileName() + ".md"
         & "C:\Users\29093\anaconda3\python.exe" "F:\document\pf\IT\projects\Horizon\scripts\transform_summary.py" $summaryFile $tempWxFile --format wechat 2>&1 | Add-Content -Path $logFile -Encoding UTF8
 
         $tempHtmlFile = [System.IO.Path]::GetTempFileName() + ".html"
-        & npx -y bun "F:\document\pf\IT\projects\Horizon\scripts\render-wechat.ts" $tempWxFile $tempHtmlFile "每日科技要闻 | $today" "grace" "blue" 2>&1 | Add-Content -Path $logFile -Encoding UTF8
+        & npx -y bun "F:\document\pf\IT\projects\Horizon\scripts\render-wechat.ts" $tempWxFile $tempHtmlFile "每日科技要闻 - $today" "grace" "blue" 2>&1 | Add-Content -Path $logFile -Encoding UTF8
 
         & $scp -o BatchMode=yes -o StrictHostKeyChecking=no -i $sshKey $tempHtmlFile admin@182.92.95.136:/tmp/wechat-content.html 2>$null
         & $scp -o BatchMode=yes -o StrictHostKeyChecking=no -i $sshKey $coverPath admin@182.92.95.136:/tmp/wechat-cover.png 2>$null
@@ -138,7 +138,7 @@ try {
         $configJson = @{
             app_id = "wx1413a97c5ecec720"
             app_secret = "add87948a1d33c170b60ade2c0a0998c"
-            title = "每日科技要闻 | $today"
+            title = "每日科技要闻 - $today"
             author = "AI自动化"
             cover_path = "/tmp/wechat-cover.png"
         } | ConvertTo-Json -Compress
